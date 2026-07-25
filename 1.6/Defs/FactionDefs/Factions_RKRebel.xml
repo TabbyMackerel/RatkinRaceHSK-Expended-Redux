@@ -9,7 +9,6 @@
 		<settlementGenerationWeight>1.7</settlementGenerationWeight>
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
 		<canMakeRandomly>true</canMakeRandomly>
-		<leaderTitle>총사령관</leaderTitle>
 		<earliestRaidDays>50</earliestRaidDays>
 		<factionNameMaker>NamerFaction_RatkinRebel</factionNameMaker>
 		<settlementNameMaker>NamerSettlement_RatkinRebel</settlementNameMaker>	
@@ -66,10 +65,344 @@
 		</allowedCultures>
 	</FactionDef>
 
+	<!-- 랫킨 군벌 세력 -->
 	<FactionDef ParentName="RatkinRebelFactionBase">
-		<defName>RatkinRebel_Unethical</defName>
-		<label>랫킨 비윤리적인 반군</label>
-		<description>기존의 왕정 질서를 무너뜨리고 새로운 정권을 세우려는 랫킨 반란군들입니다. 이들에개는 윤리와 인간성이라는 것을 하나도 찾을 수 없으며 마약 밀매, 약탈과 학살을 벌이고 어린 랫킨을 납치하여 소년병을 만드는 등 여러 불법적인 행위를 하고 있으며 여러 세력에게도 똑같은 행위를 반복하여 미움을 사고 있습니다.</description>
+		<defName>Ratkin_Warlord</defName>
+		<label>랫킨 군벌</label>
+		<description>랫킨 내전 당시에 공화파 혁명군이 변질되어 약물 밀매 및 무기 밀수 등의 각종 범죄산업과 침략과 약탈 등의 불법적인 행위들로 자신들만의 사리사욕만을 채우려는 집단입니다. 이 군벌 집단은 무질서하고 부패했으며 이기적인 성향을 가지고 있습니다. 게다가 기회주의적으로 활동하며 자신들보다 기술력이 떨어지는 만만한 세력들을 노려서 침략하기도 합니다.</description>
+		<colorSpectrum>
+			<li>(0.53, 0.45, 0.34)</li>
+			<li>(0.61, 0.32, 0.27)</li>
+		</colorSpectrum>
+		<earliestRaidDays>40</earliestRaidDays>
+		<factionNameMaker>NamerFaction_RatkinWarlord</factionNameMaker>
+		<settlementNameMaker>NamerSettlement_RatkinWarlord</settlementNameMaker>	
+		<caravanTraderKinds>
+			<li>Caravan_RatkinRebel_DrugTrader</li>
+			<li>Caravan_RatkinRebel_LootTrafficker</li>
+			<li>Caravan_RatkinRebelUnethical_TechnologySmuggler</li>
+		</caravanTraderKinds>
+		<xenotypeSet>
+		  <xenotypeChances>
+			<Baseline_Ratkin MayRequire="Ludeon.RimWorld.Biotech">999</Baseline_Ratkin>
+		  </xenotypeChances>
+		</xenotypeSet>
+		<raidCommonalityFromPointsCurve>
+			<points>
+				<li>(0, 0.01)</li>
+				<li>(500, 0.05)</li>
+				<li>(1500, 0.2)</li>
+				<li>(3000, 0.5)</li>
+				<li>(6000, 0.7)</li>
+				<li>(9500, 1.1)</li>
+				<li>(12500, 0.8)</li>
+				<li>(16000, 0.5)</li>
+			</points>
+		</raidCommonalityFromPointsCurve>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(600, 100)</li>
+				<li>(2400, 150)</li>
+				<li>(5500, 180)</li>
+				<li>(7000, 220)</li>
+				<li>(9500, 260)</li>
+				<li>(12000, 300)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<RK_RebelUnethical_Collaborator>15</RK_RebelUnethical_Collaborator>
+					<RK_RebelUnethical_Manhunter>5</RK_RebelUnethical_Manhunter>
+					<RK_RebelUnethical_Raider>5</RK_RebelUnethical_Raider>
+					<RK_RebelUnethical_WarloadMember>3</RK_RebelUnethical_WarloadMember>
+					<RK_RebelUnethical_Warload_Field_Commander>1</RK_RebelUnethical_Warload_Field_Commander>
+					<RK_RebelUnethical_WarloadBoss>1</RK_RebelUnethical_WarloadBoss>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<RK_RebelUnethical_Smuggler>1</RK_RebelUnethical_Smuggler>
+				</traders>
+				<carriers> 
+					<Ratkin_KingHamster>5</Ratkin_KingHamster>
+					<Muffalo>2</Muffalo>
+					<Buffalo>2</Buffalo>
+					<Megabadger>1</Megabadger>
+					<Bear_Grizzly>2</Bear_Grizzly>
+				</carriers>
+				<guards>
+					<RK_RebelUnethical_Collaborator>2</RK_RebelUnethical_Collaborator>
+					<RK_RebelUnethical_Manhunter>4</RK_RebelUnethical_Manhunter>
+					<RK_RebelUnethical_Raider>4</RK_RebelUnethical_Raider>
+					<RK_RebelUnethical_Raider_Destroyer>3</RK_RebelUnethical_Raider_Destroyer>
+					<RK_RebelUnethical_Raider_Kamikaze>2</RK_RebelUnethical_Raider_Kamikaze>
+					<RK_RebelUnethical_WarloadAssaulter>5</RK_RebelUnethical_WarloadAssaulter>
+					<RK_RebelUnethical_WarloadSkirmisher>6</RK_RebelUnethical_WarloadSkirmisher>
+					<RK_RebelUnethical_WarloadMember>2</RK_RebelUnethical_WarloadMember>
+					<RK_RebelUnethical_WarloadSoldier>2</RK_RebelUnethical_WarloadSoldier>
+				</guards>
+			</li>
+			<!-- 다양한 병과 습격 -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>80</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+					<li>ImmediateAttackSmart</li>
+					<li>ImmediateAttackBreachingSmart</li>
+<!--					<li>RK_Paratrooper_ImmediateAttack_Center</li>
+					<li>RK_Paratrooper_StageThenAttack_Edge</li>
+					<li>RK_Paratrooper_Smart</li>
+					<li>RK_Paratrooper_Sappers</li>
+					<li>RK_Paratrooper_Siege</li>
+					<li>RK_Paratrooper_Failed</li>
+					<li>RK_Juggernaut_ImmediateAttack_Center</li>
+					<li>RK_Juggernaut_StandardEdgeDrop_Smart</li>
+					<li>RK_Juggernaut_StandardEdgeDrop_Stage</li>
+					<li>RK_Juggernaut_SiegeDrop</li>-->
+				</disallowedStrategies>
+				<options>
+					<RK_RebelUnethical_Rioter_Ranged>10</RK_RebelUnethical_Rioter_Ranged>
+					<RK_RebelUnethical_Rioter_Melee>12</RK_RebelUnethical_Rioter_Melee>
+					<RK_RebelUnethical_Manhunter>8</RK_RebelUnethical_Manhunter>
+					<RK_RebelUnethical_Raider>4</RK_RebelUnethical_Raider>
+					<RK_RebelUnethical_Raider_Destroyer>2</RK_RebelUnethical_Raider_Destroyer>
+					<RK_RebelUnethical_Raider_Kamikaze>1</RK_RebelUnethical_Raider_Kamikaze>
+					<RK_RebelUnethical_WarloadSkirmisher>4</RK_RebelUnethical_WarloadSkirmisher>
+					<RK_RebelUnethical_WarloadMember>3</RK_RebelUnethical_WarloadMember>
+				</options>
+			</li>
+			<!-- 저티어 원거리 및 근거리 병과 습격-->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>60</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+					<li>ImmediateAttackSmart</li>
+					<li>ImmediateAttackBreachingSmart</li>
+<!--					<li>RK_Paratrooper_ImmediateAttack_Center</li>
+					<li>RK_Paratrooper_StageThenAttack_Edge</li>
+					<li>RK_Paratrooper_Smart</li>
+					<li>RK_Paratrooper_Sappers</li>
+					<li>RK_Paratrooper_Siege</li>
+					<li>RK_Paratrooper_Failed</li>
+					<li>RK_Juggernaut_ImmediateAttack_Center</li>
+					<li>RK_Juggernaut_StandardEdgeDrop_Smart</li>
+					<li>RK_Juggernaut_StandardEdgeDrop_Stage</li>
+					<li>RK_Juggernaut_SiegeDrop</li>-->
+				</disallowedStrategies>
+				<options>
+					<RK_RebelUnethical_Raider>8</RK_RebelUnethical_Raider>
+					<RK_RebelUnethical_Manhunter>14</RK_RebelUnethical_Manhunter>
+					<RK_RebelUnethical_WarloadSkirmisher>6</RK_RebelUnethical_WarloadSkirmisher>
+					<RK_RebelUnethical_Raider_Destroyer>3</RK_RebelUnethical_Raider_Destroyer>
+					<RK_RebelUnethical_Raider_Kamikaze>3</RK_RebelUnethical_Raider_Kamikaze>
+				</options>
+			</li>
+			<!-- 군벌 단원 포함 집단 습격 -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>38</commonality>
+				<disallowedStrategies>
+					<li>ImmediateAttackSappers</li>
+					<li>ImmediateAttackBreaching</li>
+					<li>ImmediateAttackBreachingSmart</li>
+<!--					<li>RK_Paratrooper_ImmediateAttack_Center</li>
+					<li>RK_Paratrooper_StageThenAttack_Edge</li>
+					<li>RK_Paratrooper_Smart</li>
+					<li>RK_Paratrooper_Sappers</li>
+					<li>RK_Paratrooper_Siege</li>
+					<li>RK_Paratrooper_Failed</li>
+					<li>RK_Juggernaut_ImmediateAttack_Center</li>
+					<li>RK_Juggernaut_StandardEdgeDrop_Smart</li>
+					<li>RK_Juggernaut_StandardEdgeDrop_Stage</li>
+					<li>RK_Juggernaut_SiegeDrop</li>-->
+				</disallowedStrategies>
+				<options>
+					<RK_RebelUnethical_Raider>5</RK_RebelUnethical_Raider>
+					<RK_RebelUnethical_Manhunter>5</RK_RebelUnethical_Manhunter>
+					<RK_RebelUnethical_Raider_Destroyer>3</RK_RebelUnethical_Raider_Destroyer>
+					<RK_RebelUnethical_Raider_Kamikaze>3</RK_RebelUnethical_Raider_Kamikaze>
+					<RK_RebelUnethical_WarloadSkirmisher>3</RK_RebelUnethical_WarloadSkirmisher>
+					<RK_RebelUnethical_WarloadMember>5</RK_RebelUnethical_WarloadMember>
+					<RK_RebelUnethical_WarloadSoldier>8</RK_RebelUnethical_WarloadSoldier>
+					<RK_RebelUnethical_WarloadSniper>2</RK_RebelUnethical_WarloadSniper>
+					<RK_RebelUnethical_WarloadAssaulter>4</RK_RebelUnethical_WarloadAssaulter>
+					<RK_RebelUnethical_Warload_HeavyGunner>1</RK_RebelUnethical_Warload_HeavyGunner>
+					<RK_RebelUnethical_Warload_Field_Commander>1</RK_RebelUnethical_Warload_Field_Commander>
+					<RK_RebelUnethical_ChildSoldier>5</RK_RebelUnethical_ChildSoldier>
+					<RK_RebelUnethical_ChildSoldier_Biotech MayRequire="Ludeon.RimWorld.Biotech">4</RK_RebelUnethical_ChildSoldier_Biotech>
+					<RK_RebelUnethical_ChildSoldier_Biotech_Kamikaze MayRequire="Ludeon.RimWorld.Biotech">2</RK_RebelUnethical_ChildSoldier_Biotech_Kamikaze>
+				</options>
+			</li>
+			<!-- 군벌 중무장 습격 -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>20</commonality>				
+				<disallowedStrategies>
+				    <li>ImmediateAttackSappers</li>
+					<li>ImmediateAttackBreachingSmart</li>
+<!--				<li>RK_Paratrooper_ImmediateAttack_Center</li>
+					<li>RK_Paratrooper_StageThenAttack_Edge</li>
+					<li>RK_Paratrooper_Smart</li>
+					<li>RK_Paratrooper_Sappers</li>
+					<li>RK_Paratrooper_Siege</li>
+					<li>RK_Paratrooper_Failed</li>
+					<li>RK_Juggernaut_ImmediateAttack_Center</li>
+					<li>RK_Juggernaut_StandardEdgeDrop_Smart</li>
+					<li>RK_Juggernaut_StandardEdgeDrop_Stage</li>
+					<li>RK_Juggernaut_SiegeDrop</li>-->
+				</disallowedStrategies>
+				<options>
+					<RK_RebelUnethical_WarloadAssaulter>12</RK_RebelUnethical_WarloadAssaulter>
+					<RK_RebelUnethical_WarloadSoldier>6</RK_RebelUnethical_WarloadSoldier>
+					<RK_RebelUnethical_Warload_HeavyGunner>1</RK_RebelUnethical_Warload_HeavyGunner>
+					<RK_RebelUnethical_Warload_Field_Commander>1</RK_RebelUnethical_Warload_Field_Commander>
+					<RK_RebelUnethical_ChildSoldier>5</RK_RebelUnethical_ChildSoldier>
+					<RK_RebelUnethical_ChildSoldier_Biotech MayRequire="Ludeon.RimWorld.Biotech">10</RK_RebelUnethical_ChildSoldier_Biotech>
+					<RK_RebelUnethical_ChildSoldier_Biotech_Kamikaze MayRequire="Ludeon.RimWorld.Biotech">10</RK_RebelUnethical_ChildSoldier_Biotech_Kamikaze>
+				</options>
+			</li>
+			<!-- 군벌 돌격대 위주 습격 -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>40</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+					<li>StageThenAttack</li>
+					<li>ImmediateAttackBreachingSmart</li>
+<!--					<li>RK_Paratrooper_ImmediateAttack_Center</li>
+					<li>RK_Paratrooper_StageThenAttack_Edge</li>
+					<li>RK_Paratrooper_Smart</li>
+					<li>RK_Paratrooper_Sappers</li>
+					<li>RK_Paratrooper_Siege</li>
+					<li>RK_Paratrooper_Failed</li>
+					<li>RK_Juggernaut_ImmediateAttack_Center</li>
+					<li>RK_Juggernaut_StandardEdgeDrop_Smart</li>
+					<li>RK_Juggernaut_StandardEdgeDrop_Stage</li>
+					<li>RK_Juggernaut_SiegeDrop</li>-->
+				</disallowedStrategies>
+				<options>
+					<RK_RebelUnethical_WarloadAssaulter>25</RK_RebelUnethical_WarloadAssaulter>
+					<RK_RebelUnethical_Raider_Kamikaze>8</RK_RebelUnethical_Raider_Kamikaze>
+					<RK_RebelUnethical_Raider_Destroyer>8</RK_RebelUnethical_Raider_Destroyer>
+					<RK_RebelUnethical_Warload_Field_Commander>1</RK_RebelUnethical_Warload_Field_Commander>
+					<RK_RebelUnethical_ChildSoldier_Biotech MayRequire="Ludeon.RimWorld.Biotech">5</RK_RebelUnethical_ChildSoldier_Biotech>
+					<RK_RebelUnethical_ChildSoldier_Biotech_Kamikaze MayRequire="Ludeon.RimWorld.Biotech">5</RK_RebelUnethical_ChildSoldier_Biotech_Kamikaze>
+				</options>
+			</li>
+			<!-- 군벌 습격자 계열 및 파괴자 위주 습격 -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>50</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+					<li>ImmediateAttackSmart</li>
+<!--					<li>RK_Paratrooper_ImmediateAttack_Center</li>
+					<li>RK_Paratrooper_StageThenAttack_Edge</li>
+					<li>RK_Paratrooper_Smart</li>
+					<li>RK_Paratrooper_Sappers</li>
+					<li>RK_Paratrooper_Siege</li>
+					<li>RK_Paratrooper_Failed</li>
+					<li>RK_Juggernaut_ImmediateAttack_Center</li>
+					<li>RK_Juggernaut_StandardEdgeDrop_Smart</li>
+					<li>RK_Juggernaut_StandardEdgeDrop_Stage</li>
+					<li>RK_Juggernaut_SiegeDrop</li>-->
+				</disallowedStrategies>
+				<options>
+					<RK_RebelUnethical_Raider>4</RK_RebelUnethical_Raider>
+					<RK_RebelUnethical_Manhunter>4</RK_RebelUnethical_Manhunter>
+					<RK_RebelUnethical_WarloadSkirmisher>4</RK_RebelUnethical_WarloadSkirmisher>
+					<RK_RebelUnethical_Raider_Destroyer>8</RK_RebelUnethical_Raider_Destroyer>
+					<RK_RebelUnethical_Raider_Kamikaze>2</RK_RebelUnethical_Raider_Kamikaze>
+					<RK_RebelUnethical_WarloadAssaulter>3</RK_RebelUnethical_WarloadAssaulter>
+				</options>
+			</li>
+			<!-- 군벌 무장단체 -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>10</commonality>
+<!--				<disallowedStrategies>
+					<li>RK_Paratrooper_ImmediateAttack_Center</li>
+					<li>RK_Paratrooper_StageThenAttack_Edge</li>
+					<li>RK_Paratrooper_Smart</li>
+					<li>RK_Paratrooper_Sappers</li>
+					<li>RK_Paratrooper_Siege</li>
+					<li>RK_Paratrooper_Failed</li>
+					<li>RK_Juggernaut_ImmediateAttack_Center</li>
+					<li>RK_Juggernaut_StandardEdgeDrop_Smart</li>
+					<li>RK_Juggernaut_StandardEdgeDrop_Stage<li>
+					<li>RK_Juggernaut_SiegeDrop</li>
+                </disallowedStrategies>-->
+				<options>
+					<RK_RebelUnethical_WarloadMember>4</RK_RebelUnethical_WarloadMember>
+					<RK_RebelUnethical_WarloadSoldier>12</RK_RebelUnethical_WarloadSoldier>
+					<RK_RebelUnethical_WarloadSniper>3</RK_RebelUnethical_WarloadSniper>
+					<RK_RebelUnethical_WarloadAssaulter>7</RK_RebelUnethical_WarloadAssaulter>
+					<RK_RebelUnethical_Warload_HeavyGunner>3</RK_RebelUnethical_Warload_HeavyGunner>
+					<RK_RebelUnethical_WarloadBoss>1</RK_RebelUnethical_WarloadBoss>
+					<RK_RebelUnethical_ChildSoldier>4</RK_RebelUnethical_ChildSoldier>
+					<RK_RebelUnethical_ChildSoldier_Biotech MayRequire="Ludeon.RimWorld.Biotech">4</RK_RebelUnethical_ChildSoldier_Biotech>
+					<RK_RebelUnethical_ChildSoldier_Biotech_Kamikaze MayRequire="Ludeon.RimWorld.Biotech">2</RK_RebelUnethical_ChildSoldier_Biotech_Kamikaze>
+				</options>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<RK_RebelUnethical_Raider>5</RK_RebelUnethical_Raider>
+					<RK_RebelUnethical_Manhunter>5</RK_RebelUnethical_Manhunter>
+					<RK_RebelUnethical_Raider_Destroyer>3</RK_RebelUnethical_Raider_Destroyer>
+					<RK_RebelUnethical_Raider_Kamikaze>3</RK_RebelUnethical_Raider_Kamikaze>
+					<RK_RebelUnethical_WarloadAssaulter>6</RK_RebelUnethical_WarloadAssaulter>
+					<RK_RebelUnethical_WarloadSoldier>12</RK_RebelUnethical_WarloadSoldier>
+					<RK_RebelUnethical_WarloadSniper>5</RK_RebelUnethical_WarloadSniper>
+					<RK_RebelUnethical_Warload_HeavyGunner>3</RK_RebelUnethical_Warload_HeavyGunner>
+					<RK_RebelUnethical_Warload_Field_Commander>2</RK_RebelUnethical_Warload_Field_Commander>
+					<RK_RebelUnethical_WarloadBoss>1</RK_RebelUnethical_WarloadBoss>
+					<RK_RebelUnethical_ChildSoldier>1</RK_RebelUnethical_ChildSoldier>
+					<RK_RebelUnethical_ChildSoldier_Biotech MayRequire="Ludeon.RimWorld.Biotech">1</RK_RebelUnethical_ChildSoldier_Biotech>
+					<RK_RebelUnethical_ChildSoldier_Biotech_Kamikaze MayRequire="Ludeon.RimWorld.Biotech">4</RK_RebelUnethical_ChildSoldier_Biotech_Kamikaze>
+				</options>
+			</li>
+		</pawnGroupMakers>
+		<naturalEnemy>true</naturalEnemy>
+		<mustStartOneEnemy>true</mustStartOneEnemy>
+		<factionIconPath>Icon/RK_Rebel_Unethical</factionIconPath>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
+		</requiredMemes>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">FleshPurity</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+		</disallowedMemes>
+		<disallowedPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+		</disallowedPrecepts>
+		<attackersDownPercentageRangeForAutoFlee>0.43~0.71</attackersDownPercentageRangeForAutoFlee>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>58</configurationListOrderPriority>
+	</FactionDef>
+
+	<!-- 랫킨 혁명군 과격파 무장단체 세력-->
+	<FactionDef ParentName="RatkinRebelFactionBase">
+		<defName>Ratkin_Revolutionary_Radical_Remnants</defName>
+		<label>랫킨 혁명군 과격파 잔당</label>
+		<description>랫킨 내전에서 왕정을 무너뜨리는게 목표였지만, 왕정과의 평화조약을 맺은 랫킨 공화국을 배신자라고 취급하면서 동시에 무장 투쟁을 계속하는 구 혁명군의 급진파들이 집단으로 탈영하면서 형성된 잔당세력입니다. 이들은 무장 투쟁에 필요한 여러 장비들을 마련하려고 군벌과 서로의 목적 달성을 위해 교류하면서도 스스로 불법적인 약물 밀수와 같은 기존의 군벌과 다를게 없는 세력이 되어가고 있습니다.</description>
 		<colorSpectrum>
 			<li>(0.53, 0.45, 0.34)</li>
 			<li>(0.61, 0.32, 0.27)</li>
@@ -399,9 +732,9 @@
 	</FactionDef>
 
 	<FactionDef ParentName="RatkinRebelFactionBase">
-		<defName>RatkinRebel</defName>
-		<label>랫킨 반군</label>
-		<description>기존의 왕정 질서를 무너뜨리고 새로운 질서를 세우려는 랫킨 반란군 집단입니다. 이들은 여러 최신 문물을 받아들이고 신식 군대를 양성하고 있으며 무고한 자들이 왕국군과의 전투에서 희생되는것을 최대한 막으려고 합니다.</description>
+		<defName>RatkinRepublic</defName>
+		<label>랫킨 공화국</label>
+		<description>왕정과의 내전을 벌인 혁명군 세력이 평화협상을 맺으면서 분리독립한 공화국 정부입니다. 왕정과는 다르게 농업 중심의 산업에서 경공업과 중공업을 중심으로 하는 산업으로 바꾸는 정책을 시행 중이며, 자국의 기술력 발전과 안보를 위해 군사조직 개편과 함께 현대화가 진행중이면서 타 세력과 무역과 교류를 하면서 기술 발전을 중요시하고 있습니다.</description>
 		<colorSpectrum>
 			<li>(0.25, 0.57, 0.25)</li>
 			<li>(0.10, 0.50, 0.10)</li>
