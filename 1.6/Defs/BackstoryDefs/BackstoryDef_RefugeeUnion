@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- 랫킨 난민 연합 유년기 -->
+
+	<AlienRace.AlienBackstoryDef ParentName="BaseRatkinBackStory" Name="BaseRatkinBackStoryExpended">
+		<defName>RatkinEX_ReUnion_RefugeeChild</defName>
+		<title>랫킨 피난민 아이</title>
+		<titleShort>피난민</titleShort>
+		<description>[PAWN_nameDef]은 자신이 살던 마을에서 대규모 봉기가 발생하였고, 왕국군과 혁명군 간의 전투에 휘말렸습니다. 치열한 전투의 여파로 인하여 [PAWN_nameDef]의 고향이 쑥대밭이 되어버리면서 죽을 힘을 다해 도망쳤습니다.</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<skillGains>
+            <Shooting>2</Shooting>
+			<Melee>2</Melee>
+            <Plants>4</Plants>
+		</skillGains>
+		<workDisables>
+			<li>Intellectual</li>
+		</workDisables>
+		<spawnCategories>
+			<li>RatkinEX_RefugeeUnion</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="BaseRatkinBackStory" Name="BaseRatkinBackStoryExpended">
+		<defName>RatkinEX_ReUnion_RefugeeCampErrand</defName>
+		<title>랫킨 난민촌 심부름꾼</title>
+		<titleShort>심부름꾼</titleShort>
+		<description>[PAWN_nameDef]은 난민이 되어버린 랫킨들이 모여서 만들어진 난민촌에서 건축물을 운반하며 식량과 물자를 생산하는 일도 도맡아서 하는 역할인 너무 일찍 철이 든 아이였습니다.....</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<skillGains>
+            <Shooting>2</Shooting>
+			<Melee>2</Melee>
+            <Plants>4</Plants>
+		</skillGains>
+		<workDisables>
+			<li>Intellectual</li>
+		</workDisables>
+		<spawnCategories>
+			<li>RatkinEX_RefugeeUnion</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="BaseRatkinBackStory" Name="BaseRatkinBackStoryExpended">
+		<defName>RatkinEX_ReUnion_Hamspherd</defName>
+		<title>랫킨 햄스터치기</title>
+		<titleShort>햄스터치기</titleShort>
+		<description>[PAWN_nameDef]은 난민 연합 마을에서 소중한 자산인 거대 햄스터들을 방목하고 털을 깎으며 관리하는 역할을 맡았습니다. 또한 어른들에게 살아남는 방법을 배우고 자신을 보호하기 위한 석궁을 지급받았으며, 도적 떼거리나 천적이 오는지 감시하는 역할도 했습니다. 하지만 위험한 일이 거의 없는 평화로운 일상이 대부분을 차지했고, 따분함을 느낀 [PAWN_nameDef]은 거짓말을 해서 마을 주민들에게 크게 혼난적이 많았습니다.</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<skillGains>
+            <Shooting>2</Shooting>
+			<Melee>2</Melee>
+            <Plants>4</Plants>
+		</skillGains>
+		<workDisables>
+			<li>Intellectual</li>
+		</workDisables>
+		<spawnCategories>
+			<li>RatkinEX_RefugeeUnion</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef ParentName="BaseRatkinBackStory" Name="BaseRatkinBackStoryExpended">
+		<defName>RatkinEX_ReUnion_UndergroundChild</defName>
+		<title>랫킨 지하마을 아이</title>
+		<titleShort>땅굴쥐</titleShort>
+		<description>[PAWN_nameDef]은 끔찍한 내전의 트라우마를 경험한 랫킨 난민들이 땅굴을 파면서 만든 지하 마을에 거주하였습니다. 지하 마을 사람들에게 지상은 위험한 곳이라는 것을 항상 전해들었으며, 함부로 밖으로 나가면 생명을 잃을 수도 있다는 것을 기억했습니다. 그래서 바깥을 두려워하면서 지하에 틀어박혀 지내는 걸 선호합니다.</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<skillGains>
+            <Shooting>2</Shooting>
+			<Melee>2</Melee>
+            <Plants>4</Plants>
+		</skillGains>
+		<workDisables>
+			<li>Intellectual</li>
+		</workDisables>
+		<spawnCategories>
+			<li>RatkinEX_RefugeeUnion</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+<!-- 랫킨 난민 연합 성년기 -->
+
+</Defs>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationFindMod"> 
+	<mods>
+		<li>Parabellum War Trophy</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="PaWT_MP40I"]/weaponTags</xpath>
+				  <value>
+					<li>RK_Militiaman</li>
+					<li>RK_RebelSMG</li>
+				  </value>
+				</li>
+
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="PaWT_M1A1_30PDW"]/weaponTags</xpath>
+				  <value>
+					<li>RK_Militiaman</li>
+					<li>RK_RebelSMG</li>
+				  </value>
+				</li>
+
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="PaWT_XM16E1FPW"]/weaponTags</xpath>
+				  <value>
+					<li>RK_RebelRifleElite</li>
+					<li>RK_VolunteerArmy</li>
+					<li>RK_Warload</li>
+				  </value>
+				</li>
+
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="PaWT_HK51k"]/weaponTags</xpath>
+				  <value>
+					<li>RK_RebelRifleElite</li>
+				  </value>
+				</li>
+
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="PaWT_M1A1C"]/weaponTags</xpath>
+				  <value>
+					<li>RK_RebelRifleElite</li>
+					<li>RK_VolunteerArmy</li>
+					<li>RK_Warload</li>
+				  </value>
+				</li>
+
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="PaWT_M2C"]/weaponTags</xpath>
+				  <value>
+					<li>RK_RebelRifleElite</li>
+					<li>RK_VolunteerArmy</li>
+					<li>RK_Warload</li>
+				  </value>
+				</li>
+
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="PaWT_Marlin1895C"]/weaponTags</xpath>
+				  <value>
+					<li>RK_Militiaman</li>
+					<li>RK_VolunteerArmy</li>
+				  </value>
+				</li>
+
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="PaWT_GalilACE21H"]/weaponTags</xpath>
+				  <value>
+					<li>RK_RebelRifleElite</li>
+				  </value>
+				</li>
+
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="PaWT_Abzats"]/weaponTags</xpath>
+				  <value>
+					<li>RK_Juggernaut_Heavyweaponer</li>
+				  </value>
+				</li>
+
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="PaWT_HK21EK"]/weaponTags</xpath>
+				  <value>
+					<li>RK_Juggernaut_Heavyweaponer</li>
+				  </value>
+				</li>
+
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="PaWT_HK25K"]/weaponTags</xpath>
+				  <value>
+					<li>RK_Juggernaut_Heavyweaponer</li>
+				  </value>
+				</li>
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>

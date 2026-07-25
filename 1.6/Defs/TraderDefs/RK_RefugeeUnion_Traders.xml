@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- 랫킨 난민 연맹 -->
+	<!-- 연맹 소속 광물자재 수출 협동조합 -->
+
+	<TraderKindDef>
+		<defName>Caravan_RatkinRefugeeUnion_OreExportCooperative</defName>
+		<label>광물 수출 협동조합</label>
+		<commonality>0.6</commonality>
+		<stockGenerators>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>600~1250</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Steel</thingDef>
+				<countRange>100~250</countRange>
+			</li> 
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Nickel</thingDef>
+				<price>Expensive</price>
+				<countRange>45~90</countRange>
+			</li>
+
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Copper</thingDef>
+				<countRange>170~300</countRange>
+			</li>
+
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Tin</thingDef>
+				<countRange>120~240</countRange>
+			</li>
+
+     		<li Class="StockGenerator_SingleDef">
+        	  <thingDef>Anglesite</thingDef>
+        	  <countRange>55~110</countRange>
+      		</li>
+
+     		<li Class="StockGenerator_SingleDef">
+        	    <thingDef>Aluminium</thingDef>
+				<price>Expensive</price>
+        	    <countRange>30~125</countRange>
+      		</li>
+
+     		<li Class="StockGenerator_SingleDef">
+        	    <thingDef>Ilmenite</thingDef>
+				<price>Expensive</price>
+        	    <countRange>25~50</countRange>
+      		</li>
+
+
+     		<li Class="StockGenerator_SingleDef">
+        	    <thingDef>Wolframite</thingDef>
+				<price>Expensive</price>
+        	    <countRange>15~40</countRange>
+      		</li>
+         
+			<li Class="StockGenerator_BuyExpensiveSimple" />
+
+			<li Class="StockGenerator_BuySingleDef">
+				<thingDef>Gold</thingDef>
+			</li>
+
+			<li Class="StockGenerator_BuySingleDef">
+				<thingDef>Jade</thingDef>
+			</li>
+
+     		<li Class="StockGenerator_BuyTradeTag">
+       		    <tag>Art</tag>
+      		</li>
+
+     		<li Class="StockGenerator_BuyTradeTag">
+       		    <tag>HiTechArmor</tag>
+      		</li>
+
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>Exotic</tag>
+			</li>
+
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>ExoticMisc</tag>
+			</li>
+
+			<li Class="StockGenerator_BuySingleDef">
+				<thingDef>AntidoteSafe</thingDef>
+			</li>
+
+			<li Class="StockGenerator_BuySingleDef">
+				<thingDef>MedicalDrink</thingDef>
+			</li>
+
+			<li Class="StockGenerator_BuySingleDef">
+				<thingDef>MushroomTincture</thingDef>
+			</li>	
+
+			<li Class="StockGenerator_BuySingleDef">
+				<thingDef>HealrootTincture</thingDef>
+			</li>
+
+		</stockGenerators>
+	</TraderKindDef>
+
+	<!-- 연맹 소속 식자재 수출 협동조합 -->
+
+	<TraderKindDef>
+		<defName>Caravan_RatkinRefugeeUnion_FoodExportCooperative</defName>
+		<label>식자재 수출 협동조합</label>
+		<commonality>0.85</commonality>
+		<stockGenerators>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>1250~2000</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>FruitFoodRaw</thingDef>
+				<thingDefCountRange>1~3</thingDefCountRange>
+				<totalPriceRange>350~1000</totalPriceRange>
+			</li> 
+
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>EggPtarmiganUnfertilized</thingDef>
+				<countRange>8~24</countRange>
+			</li>
+
+     		<li Class="StockGenerator_Category">
+        	  <categoryDef>EggsUnfertilized</categoryDef>
+        	  <thingDefCountRange>1~1</thingDefCountRange>
+        	  <totalPriceRange>250~425</totalPriceRange>
+      		</li> 
+
+     		<li Class="StockGenerator_Category">
+        	  <categoryDef>ExtraPlantFoodRaw</categoryDef>
+        	  <thingDefCountRange>1~2</thingDefCountRange>
+        	  <totalPriceRange>400~800</totalPriceRange>
+      		</li> 
+
+     		<li Class="StockGenerator_Category">
+        	  <categoryDef>BasicPlantFoodRaw</categoryDef>
+        	  <thingDefCountRange>2~3</thingDefCountRange>
+        	  <totalPriceRange>600~1200</totalPriceRange>
+      		</li> 
+
+			<li Class="StockGenerator_Category">
+        	  <categoryDef>CookingSupplies</categoryDef>
+        	  <thingDefCountRange>2~4</thingDefCountRange>
+       	      <totalPriceRange>800~1500</totalPriceRange>
+      		</li>    
+
+     		<li Class="StockGenerator_SingleDef">
+        	  <thingDef>Honey</thingDef>
+        	  <countRange>25~100</countRange>
+			  <price>Expensive</price>
+      		</li>
+
+			<li Class="StockGenerator_Tag">
+				<tradeTag></tradeTag>
+				<thingDefCountRange>1~2</thingDefCountRange>
+				<countRange>1~3</countRange>
+			</li>
+
+			<li Class="StockGenerator_SingleDef">
+				<thingDef></thingDef>
+				<countRange>5~15</countRange>
+			</li>
+
+			<li Class="StockGenerator_SingleDef">
+				<thingDef></thingDef>
+				<price>Expensive</price>
+				<countRange>25~50</countRange>
+			</li>
+
+     		<li Class="StockGenerator_SingleDef">
+        	  <thingDef></thingDef>
+       		  <price>Expensive</price>
+        	  <countRange>15~30</countRange>
+      		</li>
+
+			<li Class="StockGenerator_Category">
+				<categoryDef></categoryDef>
+				<thingDefCountRange>2~3</thingDefCountRange>
+				<totalPriceRange>300~1000</totalPriceRange>
+			</li>
+
+			<li Class="StockGenerator_Tag">
+				<tradeTag></tradeTag>
+				<thingDefCountRange>1~4</thingDefCountRange>
+       			<excludedThingDefs>
+          		  <li MayRequire="Ludeon.RimWorld.Anomaly"></li>
+        		</excludedThingDefs>
+				<countRange>5~25</countRange>
+			</li>	
+
+     		<li Class="StockGenerator_SingleDef">
+        	    <thingDef></thingDef>
+        	    <countRange>100~400</countRange>
+      		</li>
+
+     		<li Class="StockGenerator_SingleDef">
+        	    <thingDef></thingDef>
+        	    <countRange>50~250</countRange>
+      		</li>
+
+
+     		<li Class="StockGenerator_SingleDef">
+        	    <thingDef></thingDef>
+        	    <countRange>25~100</countRange>
+      		</li>
+
+			<li Class="StockGenerator_Category">
+				<categoryDef></categoryDef>
+				<thingDefCountRange>2~5</thingDefCountRange>
+				<countRange>2~4</countRange>
+			</li>
+ 	 	
+			<li Class="StockGenerator_Category">
+     		   <categoryDef></categoryDef>
+    	   	   <thingDefCountRange>-1~5</thingDefCountRange>
+  			   <countRange>-1~2</countRange>
+ 		    </li>
+
+      		<li Class="StockGenerator_Category">
+        	  <categoryDef></categoryDef>
+        	  <thingDefCountRange>-1~2</thingDefCountRange>
+        	  <countRange>-1~2</countRange>
+     		 </li>
+
+     		 <li Class="StockGenerator_Category">
+     		  <categoryDef></categoryDef>
+   		      <thingDefCountRange>-1~4</thingDefCountRange>
+    		  <countRange>-1~3</countRange>
+ 		     </li>
+
+  		    <li Class="StockGenerator_Category">
+       		  <categoryDef></categoryDef>
+        	  <thingDefCountRange>-1~4</thingDefCountRange>
+        	  <countRange>-1~3</countRange>
+    		</li>
+
+ 		     <li Class="StockGenerator_Category">
+       		   <categoryDef></categoryDef>
+	           <thingDefCountRange>-1~2</thingDefCountRange>
+               <countRange>-1~3</countRange>
+   		    </li>
+
+      		<li Class="StockGenerator_Category">
+        	  <categoryDef></categoryDef>
+        	  <thingDefCountRange>-1~2</thingDefCountRange>
+       	      <countRange>-1~2</countRange>
+     		</li>
+
+     	    <li Class="StockGenerator_Tag">
+       		  <tradeTag></tradeTag>
+        	  <thingDefCountRange>3~5</thingDefCountRange>
+        	  <totalPriceRange>100~2000</totalPriceRange>
+        	  <countRange>100~700</countRange>
+      		</li>
+         
+			<li Class="StockGenerator_BuyExpensiveSimple" />
+
+			<li Class="StockGenerator_BuySingleDef">
+				<thingDef>Gold</thingDef>
+			</li>
+
+     		<li Class="StockGenerator_BuyTradeTag">
+       		    <tag>Art</tag>
+      		</li>
+
+     		<li Class="StockGenerator_BuyTradeTag">
+       		    <tag>HiTechArmor</tag>
+      		</li>
+
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>Exotic</tag>
+			</li>
+
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>ExoticMisc</tag>
+			</li>
+
+			<li Class="StockGenerator_BuySingleDef">
+				<thingDef>AntidoteSafe</thingDef>
+			</li>
+
+			<li Class="StockGenerator_BuySingleDef">
+				<thingDef>MedicalDrink</thingDef>
+			</li>
+
+			<li Class="StockGenerator_BuySingleDef">
+				<thingDef>MushroomTincture</thingDef>
+			</li>	
+
+			<li Class="StockGenerator_BuySingleDef">
+				<thingDef>HealrootTincture</thingDef>
+			</li>
+
+		</stockGenerators>
+	</TraderKindDef>
+
+    <!-- 연맹 소속 건축자재 수출업자 -->
+
+	<TraderKindDef>
+		<defName>Caravan_RatkinRefugeeUnion_BuildngMaterialsCooperative</defName>
+		<label>건축자재 수출 협동조합</label>
+		<commonality>0.5</commonality>
+		<stockGenerators>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>750~1500</countRange>
+			</li>
+
+			<li Class="StockGenerator_Category">
+				<categoryDef>ConstructionParts</categoryDef>
+				<thingDefCountRange>2~4</thingDefCountRange>
+				<totalPriceRange>700~1300</totalPriceRange>
+			</li>
+         
+			<li Class="StockGenerator_BuyExpensiveSimple" />
+
+			<li Class="StockGenerator_BuySingleDef">
+				<thingDef>Gold</thingDef>
+			</li>
+
+			<li Class="StockGenerator_BuySingleDef">
+				<thingDef>Jade</thingDef>
+			</li>
+
+     		<li Class="StockGenerator_BuyTradeTag">
+       		    <tag>Art</tag>
+      		</li>
+
+     		<li Class="StockGenerator_BuyTradeTag">
+       		    <tag>HiTechArmor</tag>
+      		</li>
+
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>Exotic</tag>
+			</li>
+
+			<li Class="StockGenerator_BuyTradeTag">
+				<tag>ExoticMisc</tag>
+			</li>
+
+			<li Class="StockGenerator_BuySingleDef">
+				<thingDef>AntidoteSafe</thingDef>
+			</li>
+
+			<li Class="StockGenerator_BuySingleDef">
+				<thingDef>MedicalDrink</thingDef>
+			</li>
+
+			<li Class="StockGenerator_BuySingleDef">
+				<thingDef>MushroomTincture</thingDef>
+			</li>	
+
+			<li Class="StockGenerator_BuySingleDef">
+				<thingDef>HealrootTincture</thingDef>
+			</li>
+
+		</stockGenerators>
+	</TraderKindDef>
+
+    <!-- 연맹 소속 중간재(가공품) 수출업자 -->
+
+    <!-- 연맹 소속 축산품 수출업자 -->
+
+    <!-- 연맹 소속 생필품 수출업자 -->
+    
+    <!-- 연맹 소속 인력 중개상 -->
+
+    <!-- 스캐빈저 -->
+    
+</Defs>

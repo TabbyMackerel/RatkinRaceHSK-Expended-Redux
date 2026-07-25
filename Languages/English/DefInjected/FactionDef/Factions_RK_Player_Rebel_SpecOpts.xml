@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+
+	<RK_Rebel_Player_SpecOpts.label>Ratkin Spec Ops Rebel</RK_Rebel_Player_SpecOpts.label>
+	<RK_Rebel_Player_SpecOpts.description>The Ratkin Rebels are a special forces unit authorized to take individual action to sabotage the monarchy.</RK_Rebel_Player_SpecOpts.description>
+    <RK_Rebel_Player_SpecOpts.pawnSingular>Spec Ops</RK_Rebel_Player_SpecOpts.pawnSingular>
+	<RK_Rebel_Player_SpecOpts.pawnsPlural>Special Forces Rebels</RK_Rebel_Player_SpecOpts.pawnsPlural>
+	
+</LanguageData>

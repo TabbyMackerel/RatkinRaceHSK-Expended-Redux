@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Ratkin Expended HSK Redux</name>
+	<author>Tabby_Mackerel</author>
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+	<packageId>TabbyMackerel.RatkinExpendedSK</packageId>
+	<description>
+KOR: 랫킨 종족 확장모드. 1.6 버전 히드코어 SK 모드팩 전용.
+
+{추가되는 확장 콘텐츠들 목록}
+
+[세력] 
+
+1. 혁명군이 왕정과의 평화협상을 맺으면서, 랫킨 공화국이 분리독립하면서 동시에 새로운 세력으로 등장합니다! 왕정과는 다르게, 기존의 뒤떨어진 무기체계를 개선하면서, 왕정은 농업 중심의 사회이지만, 공화국은 반대로 경공업과 중공업을 중요하게 여기며, 제조업과 관련된 정책을 시행하면서 발전하려고 합니다. 또한 우호적인 첨단 기술을 가진 세력과 무역과 교류를 하여 성장해나가고 있습니다. 
+2. 구 공화파 반군세력의 일부 과격하고 극단적인 분파들은 아직도 왕정이 있는 것이 진정한 혁명이 아니라고 주장하며, 왕정과 공화정 모두에게 적개심을 보이며 무장 투쟁을 이어나가려고 대규모의 탈영을 했고, 기존의 군벌들과도 연합했습니다. 일부 군벌은 서로의 이득을 위하여 협력하기로 하면서 과격파 혁명군들을 받아들였지만, 다른 군벌 분파는 과격파 반군에게 좋지 않은 과거의 악감정을 느끼면서 서로 총칼을 겨누고 있습니다.
+3. 내전으로 인하려 많은 난민들이 발생하였으며, 삶의 터전을 잃은 수많은 랫킨들 중 새로운 터전을 만들었습니다. 하지만 변방계 행성에서의 생존과 앞으로 일어날 불안한 사건에 대비하기 위해서 다른 난민이 된 동족들과 함께 힘을 합쳤습니다. 보통 "난민 연맹"이라고 불리는 독립적인 이 생존주의자 랫킨 세력은 자신들의 삶의 터전과 생존에만 관심이 있고, 기존의 내전과 연루된 랫킨 세력들과는 멀리하려고 합니다.
+
+[시나리오]
+1. 
+2. 
+3. 
+
++ 일부 랫킨들은 잃을 것이 없어서 도적이 되어버렸으며, 랫킨 병사들 일부가 탈영하면서 해적질에 가담했다는 설정으로, 우주 해적 세력의 습격에서 등장할 수 있습니다.
+ 난민 시나리오는 HSK more contents 모드가 있으면 추가적인 물품이 지급됩니다.
+
+
+
+	</description>
+	<modDependencies>
+		<li>
+            <packageId>Solaris.RatkinRaceMod</packageId>
+            <displayName>NewRatkinPlus</displayName>
+        </li>
+	</modDependencies>
+  <loadAfter>
+    <li>Solaris.RatkinRaceMod</li>
+  </loadAfter>
+</ModMetaData>

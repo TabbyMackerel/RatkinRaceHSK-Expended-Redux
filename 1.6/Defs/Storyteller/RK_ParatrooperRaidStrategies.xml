@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<!-- 공수부대 중앙 낙하 -->
+  <RaidStrategyDef Name="RKE_ImmediateAttack_ParatrooperBase">
+    <defName>RK_Paratrooper_ImmediateAttack_Center</defName>
+    <label>공수부대 강하</label>
+    <workerClass>RaidStrategyWorker_ImmediateAttack</workerClass>
+		<selectionWeightPerPointsCurve>
+			<points>
+				<li>(300,1.5)</li>
+				<li>(700,1.15)</li>
+			</points>
+		</selectionWeightPerPointsCurve>
+		<selectionWeightCurvesPerFaction>
+			<li>
+				<faction>RatkinRebel</faction>
+				<selectionWeightPerPointsCurve>
+					<points>
+						<li>(150, 0.86)</li>
+						<li>(300, 0.75)</li>
+           				<li>(600, 0.65)</li>
+           				<li>(1200, 0.45)</li>
+					</points>
+				</selectionWeightPerPointsCurve>
+			</li>
+		</selectionWeightCurvesPerFaction>
+		<pointsFactorCurve>
+			<points>
+				<li>0, 0.9</li>
+				<li>9000, 0.85</li>
+				<li>14000, 0.7</li>
+			</points>
+		</pointsFactorCurve>
+    <arriveModes>
+      <li>RKE_CenterDrop_Paratroopers</li>
+    </arriveModes>
+    <letterLabelEnemy>공수부대 중심부 투입</letterLabelEnemy>
+    <arrivalTextEnemy>랫킨 반군 세력과의 관계 악화로 인한 지속적인 적대적인 상황으로 인하여, 반군 사령부는 당신의 거점으로 공수부대원들을 투입하는 작전을 승인하였습니다! 바로 당신 거점 중심부를 향해 낙하하고 있습니다!</arrivalTextEnemy>
+    <letterLabelFriendly>공수부대 지원</letterLabelFriendly>
+    <arrivalTextFriendly>우호적인 랫킨 공수부대가 당신을 지원하기 위해 상공에서 낙하 중입니다! 그들은 즉시 작전을 개시하려 합니다.</arrivalTextFriendly>
+  </RaidStrategyDef>
+
+	<RaidStrategyDef ParentName="RKE_ImmediateAttack_ParatrooperBase">
+		<defName>RK_Paratrooper_ImmediateAttack_CenterFriendly</defName>
+		<workerClass>RaidStrategyWorker_ImmediateAttackFriendly</workerClass>
+		<pawnsCanBringFood>True</pawnsCanBringFood>
+	</RaidStrategyDef>
+
+<!-- 공수부대 가장자리 강하 -->
+  <RaidStrategyDef>
+    <defName>RK_Paratrooper_StageThenAttack_Edge</defName>
+    <label>공수부대 강하</label>
+    <workerClass>RaidStrategyWorker_StageThenAttack</workerClass>
+		<selectionWeightPerPointsCurve>
+			<points>
+				<li>(100, 0)</li>
+				<li>(300, 0.2)</li>
+				<li>(700, 0.5)</li>
+			</points>
+		</selectionWeightPerPointsCurve>
+		<selectionWeightCurvesPerFaction>
+			<li>
+				<faction>RatkinRebel</faction>
+				<selectionWeightPerPointsCurve>
+					<points>
+						<li>(250, 0)</li>
+						<li>(500, 0.85)</li>
+           				<li>(1000, 0.95)</li>
+            			<li>(2000, 1.15)</li>
+					</points>
+				</selectionWeightPerPointsCurve>
+			</li>
+		</selectionWeightCurvesPerFaction>
+		<pointsFactorCurve>
+			<points>
+				<li>0, 0.9</li>
+				<li>12000, 0.8</li>
+				<li>18000, 0.75</li>
+			</points>
+		</pointsFactorCurve>
+    <arriveModes>
+      <li>RKE_EdgeDrop_Paratroopers</li>
+      <li>RKE_EdgeDropGroups_Paratroopers</li>
+    </arriveModes>
+    <letterLabelEnemy>공수부대 투입 후 작전 준비</letterLabelEnemy>
+    <arrivalTextEnemy>랫킨 반군 세력과의 관계 악화로 인한 지속적인 적대적인 상황으로 인하여, 반군 사령부 측이 당신의 거점으로 공수부대원들을 투입하는 작전을 승인하였습니다! 하지만 부대는 공격 전 잠시 주변을 정비하고 정찰을 수행하려는 계획을 보이고 있습니다.</arrivalTextEnemy>
+    <letterLabelFriendly>공수부대 지원군 대기 후 작전준비</letterLabelFriendly>
+    <arrivalTextFriendly>우호적인 랫킨 공수부대가 낙하 후 임시 거점을 확보하며, 상황을 정비한 뒤 전투에 돌입할 예정입니다.</arrivalTextFriendly>
+  </RaidStrategyDef>
+
+<!-- 특수작전단(포탑 및 함정 회피) 공수부대 강하 -->
+  <RaidStrategyDef>
+    <defName>RK_Paratrooper_Smart</defName>
+    <label>특수작전단 공수부대 강하</label>
+    <workerClass>RaidStrategyWorker_ImmediateAttackSmart</workerClass>
+		<selectionWeightPerPointsCurve>
+			<points>
+				<li>(100, 0)</li>
+				<li>(300, 0.2)</li>
+				<li>(700, 0.5)</li>
+			</points>
+		</selectionWeightPerPointsCurve>
+		<selectionWeightCurvesPerFaction>
+			<li>
+				<faction>RatkinRebel</faction>
+				<selectionWeightPerPointsCurve>
+					<points>
+						<li>(200, 0)</li>
+						<li>(600, 0.8)</li>
+            			<li>(800, 0.75)</li>
+            			<li>(1600, 0.65)</li>
+					</points>
+				</selectionWeightPerPointsCurve>
+			</li>
+		</selectionWeightCurvesPerFaction>
+		<pointsFactorCurve>
+			<points>
+				<li>0, 1</li>
+				<li>12000, 0.9</li>
+				<li>20000, 0.8</li>
+			</points>
+		</pointsFactorCurve>
+    <arriveModes>
+      <li>RKE_EdgeDrop_Paratroopers</li>
+      <li>RKE_EdgeDropGroups_Paratroopers</li>
+    </arriveModes>
+    <letterLabelEnemy>특수작전단 공수부대 투입</letterLabelEnemy>
+    <arrivalTextEnemy>랫킨 반군 세력과의 관계 악화로 인한 지속적인 적대적인 상황으로 인하여, 반군 사령부 측이 당신의 거점으로 공수부대원들을 투입하는 작전을 승인하였습니다! 특수작전단 소속 랫킨 반군 특수부대가 낙하 후 전술적으로 포탑과 함정을 회피하며, 약점을 노리고 있습니다!</arrivalTextEnemy>
+    <letterLabelFriendly>특수작전단 공수부대 지원</letterLabelFriendly>
+    <arrivalTextFriendly>우호적인 랫킨 공수부대가 전술적인 지원을 위해 낙하하였습니다! 이들은 적의 방어선을 정밀하게 분석하고 작전을 수행합니다.</arrivalTextFriendly>
+  </RaidStrategyDef>
+
+<!-- 공병 포함 공수부대 강하 -->
+  <RaidStrategyDef>
+    <defName>RK_Paratrooper_Sappers</defName>
+    <label>공병 소속 공수부대 강하</label>
+    <workerClass>RaidStrategyWorker_ImmediateAttackSappers</workerClass>
+     <minPawns>5</minPawns>
+		<selectionWeightPerPointsCurve>
+			<points>
+				<li>(100, 0)</li>
+				<li>(300, 0.2)</li>
+				<li>(700, 0.5)</li>
+			</points>
+		</selectionWeightPerPointsCurve>
+		<selectionWeightCurvesPerFaction>
+			<li>
+				<faction>RatkinRebel</faction>
+				<selectionWeightPerPointsCurve>
+					<points>
+						<li>(150, 0)</li>
+						<li>(450, 0.75)</li>
+            			<li>(700, 0.65)</li>
+            			<li>(1500, 0.45)</li>
+					</points>
+				</selectionWeightPerPointsCurve>
+			</li>
+		</selectionWeightCurvesPerFaction>
+		<pointsFactorCurve>
+			<points>
+				<li>0, 1</li>
+				<li>12000, 0.85</li>
+				<li>18000, 0.75</li>
+			</points>
+		</pointsFactorCurve>
+    <arriveModes>
+      <li>RKE_EdgeDrop_Paratroopers</li>
+      <li>RKE_EdgeDropGroups_Paratroopers</li>
+    </arriveModes>
+    <letterLabelEnemy>공병 공수부대 투입</letterLabelEnemy>
+    <arrivalTextEnemy>랫킨 반군 세력과의 관계 악화로 인한 지속적인 적대적인 상황으로 인하여, 반군 사령부 측이 당신의 거점으로 공수부대원들을 투입하는 작전을 승인하였습니다! 그리고 랫킨 공수부대가 낙하 후 벽을 파괴하며 당신의 거점에 침투하고 있습니다! 즉시 대비하세요!</arrivalTextEnemy>
+    <letterLabelFriendly>우호적 공병 공수부대 지원</letterLabelFriendly>
+    <arrivalTextFriendly>우호적인 랫킨 공수공병 부대가 적 방어선을 돌파하기 위해 낙하하였습니다. 그들은 장애물을 제거하며 전투를 지원할 예정입니다.</arrivalTextFriendly>
+  </RaidStrategyDef>
+
+<!-- 공수부대 포격전 -->
+  <RaidStrategyDef >
+    <defName>RK_Paratrooper_Siege</defName>
+    <label>포병 소속 공수부대 강하</label>
+    <workerClass>RaidStrategyWorker_Siege</workerClass>
+    <minPawns>8</minPawns>
+		<selectionWeightCurvesPerFaction>
+			<li>
+				<faction>RatkinRebel</faction>
+				<selectionWeightPerPointsCurve>
+					<points>
+						<li>(300, 0.00)</li>
+						<li>(800, 1.15)</li>
+            			<li>(1700, 1.5)</li>
+            			<li>(4000, 2)</li>
+					</points>
+				</selectionWeightPerPointsCurve>
+			</li>
+		</selectionWeightCurvesPerFaction>
+		<pointsFactorCurve>
+			<points>
+				<li>0, 0.85</li>
+				<li>7500, 0.8</li>
+				<li>15000, 0.75</li>
+			</points>
+		</pointsFactorCurve>
+    <arriveModes>
+      <li>RKE_EdgeDrop_Paratroopers</li>
+    </arriveModes>
+    <letterLabelEnemy>공수부대 포격 개시!</letterLabelEnemy>
+    <arrivalTextEnemy>랫킨 반군 세력과의 관계 악화로 인한 지속적인 적대적인 상황으로 인하여, 반군 사령부 측이 당신의 거점으로 공수부대원들을 투입하는 작전을 승인하였습니다! 멀리 떨어진 곳에서 랫킨 공수부대가 낙하 후 거점을 확보하고 장거리 포격 작전을 개시하려 합니다. 긴급 방어를 준비하세요!</arrivalTextEnemy>
+    <letterLabelFriendly>공수부대 포격 지원!</letterLabelFriendly>
+    <arrivalTextFriendly>우호적인 랫킨 공수부대가 낙하하여 포격 지점을 설정하고 지원 사격을 개시하려 합니다.</arrivalTextFriendly>
+  </RaidStrategyDef>
+
+<!-- 공수부대 강하 작전 중 문제 발생 -->
+  <RaidStrategyDef>
+    <defName>RK_Paratrooper_Failed</defName>
+    <label>공수부대 강하 작전 실패</label>
+    <workerClass>RaidStrategyWorker_ImmediateAttack</workerClass>
+		<selectionWeightPerPointsCurve>
+			<points>
+				<li>(300, 0)</li>
+				<li>(700, 1.5)</li>
+			</points>
+		</selectionWeightPerPointsCurve>
+		<selectionWeightCurvesPerFaction>
+			<li>
+				<faction>RatkinRebel</faction>
+				<selectionWeightPerPointsCurve>
+					<points>
+						<li>(300, 0)</li>
+						<li>(300, 0.85)</li>
+           				<li>(600, 0.95)</li>
+            			<li>(1200, 1.25)</li>
+					</points>
+				</selectionWeightPerPointsCurve>
+			</li>
+		</selectionWeightCurvesPerFaction>
+		<pointsFactorCurve>
+			<points>
+				<li>0, 0.9</li>
+				<li>7000, 0.85</li>
+				<li>14000, 0.75</li>
+			</points>
+		</pointsFactorCurve>
+    <arriveModes>
+      <li>RKE_RandomDrop_Paratroopers</li>
+    </arriveModes>
+    <letterLabelEnemy>공수부대 투입 작전 중 사고</letterLabelEnemy>
+    <arrivalTextEnemy>랫킨 반군 세력과의 관계 악화로 인한 지속적인 적대적인 상황으로 인하여, 반군 사령부 측이 당신의 거점으로 공수부대원들을 투입하는 작전을 승인하였습니다! 그러나 강하하는 도중에 작전에 예상치 못한 사고가 생겼는지 각자 멀리 떨어진 장소로 낙하하고 있습니다!</arrivalTextEnemy>
+    <letterLabelFriendly>공수부대 지원군 투입 중 사고</letterLabelFriendly>
+    <arrivalTextFriendly>우호적인 랫킨 공수부대가 당신에게 지원군을 보낸 공수부대원들이 낙하 도중에 문제가 발생했습니다. 각자 멀리 떨어진 장소로 낙하하면서, 신속하게 도울 것입니다!</arrivalTextFriendly>
+  </RaidStrategyDef>
+
+</Defs>

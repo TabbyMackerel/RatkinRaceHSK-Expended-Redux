@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+   <Operation Class="PatchOperationAdd">
+    <xpath>Defs/FactionDef[defName="Pirate"]/pawnGroupMakers/li[1]/options</xpath>
+	<value>
+		<Ratkin_Deviator>6</Ratkin_Deviator>
+		<Ratkin_Looter>2</Ratkin_Looter>
+		<Ratkin_Thug>2</Ratkin_Thug>
+		<RatkinCombatant_Deserter>1</RatkinCombatant_Deserter>
+		<RatkinSoldier_Deserter>1</RatkinSoldier_Deserter>
+	</value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/FactionDef[defName="Pirate"]/pawnGroupMakers/li[3]/options</xpath>
+	<value>
+		<Ratkin_Deviator>6</Ratkin_Deviator>
+		<Ratkin_Thug>2</Ratkin_Thug>
+	</value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/FactionDef[defName="Pirate"]/pawnGroupMakers/li[4]/options</xpath>
+	<value>
+		<Ratkin_Looter>2</Ratkin_Looter>
+		<RatkinCombatant_Deserter>4</RatkinCombatant_Deserter>
+		<RatkinSoldier_Deserter>2</RatkinSoldier_Deserter>
+	</value>
+  </Operation> 
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/FactionDef[defName="Pirate"]/pawnGroupMakers/li[5]/options</xpath>
+	<value>
+		<RatkinCombatant_Deserter>3</RatkinCombatant_Deserter>
+		<RatkinSoldier_Deserter>1</RatkinSoldier_Deserter>
+	</value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/FactionDef[defName="Pirate"]/pawnGroupMakers</xpath>
+	<value>
+	<li>
+		<!-- 랫킨 도적 무리 -->
+		<kindDef>Combat</kindDef>
+		<commonality>45</commonality>
+		<options>
+		<Ratkin_Deviator>7</Ratkin_Deviator>
+		</options>
+		</li>
+	</value>
+  </Operation>
+ 
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/FactionDef[defName="Pirate"]/pawnGroupMakers</xpath>
+	<value>
+	<li>
+		<!-- 랫킨 강력한 도적 무리 -->
+		<kindDef>Combat</kindDef>
+		<commonality>27</commonality>
+		<options>
+		<Ratkin_Deviator>7</Ratkin_Deviator>
+  		<Ratkin_Looter>2</Ratkin_Looter>
+		<Ratkin_Thug>2</Ratkin_Thug>		
+		</options>
+	</li>
+	</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/FactionDef[defName="Pirate"]/pawnGroupMakers</xpath>
+	<value>
+	<li>
+		<!-- 랫킨 근접 -->
+		<kindDef>Combat</kindDef>
+		<commonality>30</commonality>
+		<options>
+		<Ratkin_Deviator>6</Ratkin_Deviator>
+		<Ratkin_Thug>2</Ratkin_Thug>
+		</options>
+	</li>
+	</value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/FactionDef[defName="Pirate"]/pawnGroupMakers</xpath>
+	<value>
+	<li>
+		<!-- 랫킨 원거리 -->
+		<kindDef>Combat</kindDef>
+		<commonality>30</commonality>
+		<options>
+		<Ratkin_Looter>2</Ratkin_Looter>
+		</options>
+	</li>
+	</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/FactionDef[defName="Pirate"]/pawnGroupMakers</xpath>
+	<value>
+	<li>
+		<!-- 랫킨 탈영병 무리 -->
+		<kindDef>Combat</kindDef>
+		<commonality>10</commonality>
+		<options>
+		<RatkinCombatant_Deserter>2</RatkinCombatant_Deserter>
+		<RatkinSoldier_Deserter>2</RatkinSoldier_Deserter>
+		</options>
+	</li>
+	</value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/FactionDef[defName="Pirate"]/pawnGroupMakers</xpath>
+	<value>
+	<li>
+		<!-- 랫킨 일탈자무리 -->
+		<kindDef>Combat</kindDef>
+		<commonality>17</commonality>
+		<options> 		
+		<Ratkin_Deviator>10</Ratkin_Deviator>
+		</options>
+	</li>
+	</value>
+  </Operation>
+</Patch>

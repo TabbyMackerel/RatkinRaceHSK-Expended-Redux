@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <!-- 랫킨 도적 계열 -->
+    <!-- 일탈자 -->
+    <Ratkin_Deviator.label>ratkin deviator</Ratkin_Deviator.label>
+    <Ratkin_Deviator.labelPlural>ratkin deviators</Ratkin_Deviator.labelPlural>
+    <Ratkin_Deviator.labelMale>male ratkin deviator</Ratkin_Deviator.labelMale>
+    <Ratkin_Deviator.labelMalePlural>male ratkin deviators</Ratkin_Deviator.labelMalePlural>
+    <Ratkin_Deviator.labelFemale>female ratkin deviator</Ratkin_Deviator.labelFemale>
+    <Ratkin_Deviator.labelFemalePlural>female ratkin deviators</Ratkin_Deviator.labelFemalePlural>
+
+    <!-- 약탈자 -->
+    <Ratkin_Looter.label>ratkin looter</Ratkin_Looter.label>
+    <Ratkin_Looter.labelPlural>ratkin looters</Ratkin_Looter.labelPlural>
+    <Ratkin_Looter.labelMale>male ratkin looter</Ratkin_Looter.labelMale>
+    <Ratkin_Looter.labelMalePlural>male ratkin looters</Ratkin_Looter.labelMalePlural>
+    <Ratkin_Looter.labelFemale>female ratkin looter</Ratkin_Looter.labelFemale>
+    <Ratkin_Looter.labelFemalePlural>female ratkin looters</Ratkin_Looter.labelFemalePlural>
+
+    <!-- 폭력배 -->
+    <Ratkin_Thug.label>ratkin thug</Ratkin_Thug.label>
+    <Ratkin_Thug.labelPlural>ratkin thugs</Ratkin_Thug.labelPlural>
+    <Ratkin_Thug.labelMale>male ratkin thug</Ratkin_Thug.labelMale>
+    <Ratkin_Thug.labelMalePlural>male ratkin thugs</Ratkin_Thug.labelMalePlural>
+    <Ratkin_Thug.labelFemale>female ratkin thug</Ratkin_Thug.labelFemale>
+    <Ratkin_Thug.labelFemalePlural>female ratkin thugs</Ratkin_Thug.labelFemalePlural>
+
+    <!-- 랫킨 탈영병 -->
+    <!-- 탈영 전투원 -->
+    <RatkinCombatant_Deserter.label>ratkin deserter combatant</RatkinCombatant_Deserter.label>
+    <RatkinCombatant_Deserter.labelPlural>ratkin deserter combatant</RatkinCombatant_Deserter.labelPlural>
+    <RatkinCombatant_Deserter.labelMale>male ratkin deserter combatant</RatkinCombatant_Deserter.labelMale>
+    <RatkinCombatant_Deserter.labelMalePlural>male ratkin deserter combatant</RatkinCombatant_Deserter.labelMalePlural>
+    <RatkinCombatant_Deserter.labelFemale>female ratkin deserter combatant</RatkinCombatant_Deserter.labelFemale>
+    <RatkinCombatant_Deserter.labelFemalePlural>female ratkin deserter combatant</RatkinCombatant_Deserter.labelFemalePlural>
+
+    <!-- 탈영 군인 -->
+    <RatkinSoldier_Deserter.label>ratkin deserter soldier</RatkinSoldier_Deserter.label>
+    <RatkinSoldier_Deserter.labelPlural>ratkin deserter soldier</RatkinSoldier_Deserter.labelPlural>
+    <RatkinSoldier_Deserter.labelMale>male ratkin deserter soldier</RatkinSoldier_Deserter.labelMale>
+    <RatkinSoldier_Deserter.labelMalePlural>male ratkin deserter soldier</RatkinSoldier_Deserter.labelMalePlural>
+    <RatkinSoldier_Deserter.labelFemale>female ratkin deserter soldier</RatkinSoldier_Deserter.labelFemale>
+    <RatkinSoldier_Deserter.labelFemalePlural>female ratkin deserter soldier</RatkinSoldier_Deserter.labelFemalePlural>
+
+</LanguageData>

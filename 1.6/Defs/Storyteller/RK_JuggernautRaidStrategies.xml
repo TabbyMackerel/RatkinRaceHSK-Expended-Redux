@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- 저거넛 부대: 중앙 낙하 + 내부 침투 -->
+  <RaidStrategyDef Name="RKE_ImmediateAttack_JuggernautBase">
+    <defName>RK_Juggernaut_ImmediateAttack_Center</defName>
+    <label>저거넛 중심부 침투</label>
+    <workerClass>RaidStrategyWorker_ImmediateAttack</workerClass>
+		<selectionWeightPerPointsCurve>
+			<points>
+				<li>(300,1.5)</li>
+				<li>(700,1.15)</li>
+			</points>
+		</selectionWeightPerPointsCurve>
+		<selectionWeightCurvesPerFaction>
+			<li>
+				<faction>RatkinRebel</faction>
+				<selectionWeightPerPointsCurve>
+					<points>
+						<li>(250, 0)</li>
+						<li>(500, 0.65)</li>
+            			<li>(1000, 0.85)</li>
+            			<li>(3000, 1.15)</li>
+					</points>
+				</selectionWeightPerPointsCurve>
+			</li>
+		</selectionWeightCurvesPerFaction>
+		<pointsFactorCurve>
+			<points>
+				<li>0, 0.9</li>
+				<li>12500, 0.65</li>
+				<li>22500, 0.45</li>
+			</points>
+		</pointsFactorCurve>
+    <arriveModes>
+      <li>CenterDrop</li>
+    </arriveModes>
+    <letterLabelEnemy>저거넛 돌파 작전</letterLabelEnemy>
+    <arrivalTextEnemy>중무장한 랫킨 반군의 최정예 특수부대인 저거넛 부대가 거점 중심부를 향해 낙하했습니다! 낙하기에서 모습을 드러내며 돌파 작전으로 내부로 침투하려 합니다!</arrivalTextEnemy>
+    <letterLabelFriendly>우호적 저거넛 낙하 지원</letterLabelFriendly>
+    <arrivalTextFriendly>우호적인 랫킨 반군의 최정예 특수부대인 저거넛 부대가 거점 내부를 향해 낙하했습니다. 낙하기에서 모습을 드러내며 돌파 작전을 통해 적을 정리할 예정입니다!</arrivalTextFriendly>
+  </RaidStrategyDef>
+
+	<RaidStrategyDef ParentName="RKE_ImmediateAttack_JuggernautBase">
+		<defName>RK_Paratrooper_Juggernaut_CenterFriendly</defName>
+		<workerClass>RaidStrategyWorker_ImmediateAttackFriendly</workerClass>
+		<pawnsCanBringFood>True</pawnsCanBringFood>
+	</RaidStrategyDef>
+
+  <!-- 저거넛 부대: 가장자리 낙하 + 전술적인 습격 -->
+  <RaidStrategyDef>
+    <defName>RK_Juggernaut_StandardEdgeDrop_Smart</defName>
+    <label>저거넛 정보 확보 후 낙하</label>
+    <workerClass>RaidStrategyWorker_ImmediateAttackSmart</workerClass>
+		<selectionWeightPerPointsCurve>
+			<points>
+				<li>(100, 0)</li>
+				<li>(300, 0.2)</li>
+				<li>(700, 0.5)</li>
+			</points>
+		</selectionWeightPerPointsCurve>
+		<selectionWeightCurvesPerFaction>
+			<li>
+				<faction>RatkinRebel</faction>
+				<selectionWeightPerPointsCurve>
+					<points>
+						<li>(300, 0)</li>
+						<li>(800, 0.85)</li>
+            			<li>(1600, 0.9)</li>
+            			<li>(3200, 1.3)</li>
+					</points>
+				</selectionWeightPerPointsCurve>
+			</li>
+		</selectionWeightCurvesPerFaction>
+		<pointsFactorCurve>
+			<points>
+				<li>0, 0.9</li>
+				<li>10000, 0.6</li>
+				<li>18000, 0.4</li>
+			</points>
+		</pointsFactorCurve>
+    <arriveModes>
+      <li>RKE_EdgeDrop_Juggernaut</li>
+      <li>RKE_EdgeDropGroups_Juggernaut</li>
+    </arriveModes>
+    <letterLabelEnemy>저거넛 정보 입수 후 투입</letterLabelEnemy>
+    <arrivalTextEnemy>중무장한 랫킨 반군의 최정예 특수부대인 저거넛 부대가 외곽으로 낙하하기 전에 미리 정착지의 함정과 포탑의 위치를 정보를 통해 입수한 것 같습니다. 따라서 함정과 포탑의 위치를 피하면서 전술적인 공격 계획을 준비하고 있습니다. 주의하세요!</arrivalTextEnemy>
+    <letterLabelFriendly>우호적 저거넛 정보 입수 후 외곽 지원</letterLabelFriendly>
+    <arrivalTextFriendly>우호적인 랫킨 반군의 최정예 특수부대인 저거넛 부대가 당신이 공격받고 있다는 정보를 받았으며, 외곽으로 낙하하여 정착지의 함정 작동과 포탑 오사를 피해 신속하게 지원 작전을 개시할 예정입니다.</arrivalTextFriendly>
+  </RaidStrategyDef>
+
+  <!-- 저거넛 부대: 가장자리 낙하 + 대기 후 습격 -->
+  <RaidStrategyDef>
+    <defName>RK_Juggernaut_StandardEdgeDrop_Stage</defName>
+    <label>저거넛 외곽 낙하</label>
+    <workerClass>RaidStrategyWorker_StageThenAttack</workerClass>
+		<selectionWeightPerPointsCurve>
+			<points>
+				<li>(100, 0)</li>
+				<li>(300, 0.2)</li>
+				<li>(700, 0.5)</li>
+			</points>
+		</selectionWeightPerPointsCurve>
+		<selectionWeightCurvesPerFaction>
+			<li>
+				<faction>RatkinRebel</faction>
+				<selectionWeightPerPointsCurve>
+					<points>
+						<li>(0, 0.0)</li>
+						<li>(300, 0.95)</li>
+            <li>(600, 0.85)</li>
+            <li>(1600, 1.1)</li>
+            <li>(3200, 1.35)</li>
+					</points>
+				</selectionWeightPerPointsCurve>
+			</li>
+		</selectionWeightCurvesPerFaction>
+		<pointsFactorCurve>
+			<points>
+				<li>0, 0.9</li>
+				<li>12500, 0.85</li>
+				<li>23000, 0.75</li>
+			</points>
+		</pointsFactorCurve>
+    <arriveModes>
+      <li>RKE_EdgeDrop_Juggernaut</li>
+      <li>RKE_EdgeDropGroups_Juggernaut</li>
+    </arriveModes>
+    <letterLabelEnemy>저거넛 외곽 투입</letterLabelEnemy>
+    <arrivalTextEnemy>중무장한 랫킨 반군의 최정예 특수부대인 저거넛 부대가 외곽에서 낙하하여 대기 후 공격을 준비하고 있습니다. 주의하세요!</arrivalTextEnemy>
+    <letterLabelFriendly>우호적 저거넛 외곽 지원</letterLabelFriendly>
+    <arrivalTextFriendly>우호적인 랫킨 반군의 최정예 특수부대인 저거넛 부대가 외곽에서 낙하하여 주변 정비 후 당신을 지원할 작전을 개시할 예정입니다.</arrivalTextFriendly>
+  </RaidStrategyDef>
+
+  <!-- 저거넛 부대: 가장자리 낙하 + 포격 지원 -->
+  <RaidStrategyDef>
+    <defName>RK_Juggernaut_SiegeDrop</defName>
+    <label>저거넛 포격전 준비</label>
+    <workerClass>RaidStrategyWorker_Siege</workerClass>
+    <minPawns>8</minPawns>
+		<selectionWeightPerPointsCurve>
+			<points>
+				<li>(100, 0)</li>
+				<li>(300, 0.2)</li>
+				<li>(700, 0.5)</li>
+			</points>
+		</selectionWeightPerPointsCurve>
+		<selectionWeightCurvesPerFaction>
+			<li>
+				<faction>RatkinRebel</faction>
+				<selectionWeightPerPointsCurve>
+					<points>
+						<li>(300, 0.00)</li>
+						<li>(800, 0.85)</li>
+            <li>(1600, 0.95)</li>
+            <li>(3200, 1.3)</li>
+					</points>
+				</selectionWeightPerPointsCurve>
+			</li>
+		</selectionWeightCurvesPerFaction>
+		<pointsFactorCurve>
+			<points>
+				<li>0, 1</li>
+				<li>15000, 0.95</li>
+				<li>30000, 0.8</li>
+			</points>
+		</pointsFactorCurve>
+    <arriveModes>
+      <li>RKE_EdgeDrop_Juggernaut</li>
+    </arriveModes>
+    <letterLabelEnemy>저거넛 부대 포격 개시</letterLabelEnemy>
+    <arrivalTextEnemy>중무장한 랫킨 반군의 최정예 특수부대인 랫킨 저거넛 부대가 바리케이드를 제작할 자재와 장거리 포격 화기 재료를 포함한 포탄과 함께 외곽 지역으로 낙하 후, 포격 지점을 확보하면서 당신의 거점에 대한 포격전을 시작했습니다!</arrivalTextEnemy>
+    <letterLabelFriendly>저거넛 부대 포격 지원</letterLabelFriendly>
+    <arrivalTextFriendly>우호적인 랫킨 반군의 최정예 특수부대인 저거넛 부대가 바리케이드를 제작할 자재와 장거리 포격 화기 재료를 포함한 포탄과 함께 외곽 지역으로 낙하 후, 포격 지점을 확보하면서 침략자들을 응징할 장거리 포격 지원을 시작합니다.</arrivalTextFriendly>
+  </RaidStrategyDef>
+
+</Defs>

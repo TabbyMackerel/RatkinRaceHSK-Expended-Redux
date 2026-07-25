@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperation.FindModByID"> 
+	<mods>
+		<li>arpomo6.hmc.project</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+<!-- 랫킨 특수부대 시나리오 장비 변경 -->
+
+				<li Class="PatchOperationReplace">	
+				<xpath>Defs/ScenarioDef[defName="RK_Scenario_Rebel_SpecOpts"]/scenario/parts/li[@Class="ScenPart_StartingThing_Defined"][8]</xpath>
+				<value>
+				  <li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+                    <thingDef>Spas12_HMC</thingDef>
+					<count>2</count>
+                  </li>
+				</value>
+				</li>
+
+				<li Class="PatchOperationReplace">	
+				<xpath>Defs/ScenarioDef[defName="RK_Scenario_Rebel_SpecOpts"]/scenario/parts/li[@Class="ScenPart_StartingThing_Defined"][12]</xpath>
+				<value>
+				  <li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+                    <thingDef>Gun_AEK973_HMC</thingDef>
+					<count>2</count>
+                  </li>
+				</value>
+				</li>
+
+			<!-- 랫킨 난민 시나리오 추가 보급품 -->
+			
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ScenarioDef[defName="RK_Scenario_Refugee"]/scenario/parts</xpath>
+				<value>
+				  <li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+                    <thingDef>Crate_Cannon_HMC</thingDef>
+                  </li>
+				</value>
+				</li>
+
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ScenarioDef[defName="RK_Scenario_Refugee"]/scenario/parts</xpath>
+				<value>
+				  <li Class="ScenPart_StartingThing_Defined">
+				    <def>StartingThing_Defined</def>
+				    <thingDef>Ammo_CannonBall_Solid_HMC</thingDef>
+				    <count>25</count>
+			      </li>
+				</value>
+				</li>
+
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ScenarioDef[defName="RK_Scenario_Refugee"]/scenario/parts</xpath>
+				<value>
+				  <li Class="ScenPart_StartingThing_Defined">
+				    <def>StartingThing_Defined</def>
+				    <thingDef>Ammo_CannonBall_Explosive_HMC</thingDef>
+				    <count>10</count>
+			      </li>
+				</value>
+				</li>
+
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ScenarioDef[defName="RK_Scenario_Refugee"]/scenario/parts</xpath>
+				<value>
+				  <li Class="ScenPart_StartingThing_Defined">
+				    <def>StartingThing_Defined</def>
+				    <thingDef>Ammo_CannonBall_Grape_HMC</thingDef>
+				    <count>25</count>
+			      </li>
+				</value>
+				</li>
+
+			<!-- 랫킨 난민 시나리오 추가 보급품 -->
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ScenarioDef[defName="RK_Scenario_Refugee"]/scenario/parts</xpath>
+				<value>
+				  <li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+                    <thingDef>Crate_Cannon_HMC</thingDef>
+                  </li>
+				</value>
+				</li>
+
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ScenarioDef[defName="RK_Scenario_Refugee"]/scenario/parts</xpath>
+				<value>
+				  <li Class="ScenPart_StartingThing_Defined">
+				    <def>StartingThing_Defined</def>
+				    <thingDef>Ammo_CannonBall_Solid_HMC</thingDef>
+				    <count>25</count>
+			      </li>
+				</value>
+				</li>
+
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ScenarioDef[defName="RK_Scenario_Refugee"]/scenario/parts</xpath>
+				<value>
+				  <li Class="ScenPart_StartingThing_Defined">
+				    <def>StartingThing_Defined</def>
+				    <thingDef>Ammo_CannonBall_Explosive_HMC</thingDef>
+				    <count>10</count>
+			      </li>
+				</value>
+				</li>
+
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ScenarioDef[defName="RK_Scenario_Refugee"]/scenario/parts</xpath>
+				<value>
+				  <li Class="ScenPart_StartingThing_Defined">
+				    <def>StartingThing_Defined</def>
+				    <thingDef>Ammo_CannonBall_Grape_HMC</thingDef>
+				    <count>25</count>
+			      </li>
+				</value>
+				</li>
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>

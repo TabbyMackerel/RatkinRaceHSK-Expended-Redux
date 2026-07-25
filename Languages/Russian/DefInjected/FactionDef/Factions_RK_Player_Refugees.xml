@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<RK_Shelter.label>Укрытие раткинов</RK_Shelter.label>
+<RK_Shelter.description>Это место, где некоторые раткины решили укрыться из-за разрушений, вызванных гражданской войной.</RK_Shelter.description>
+<RK_Shelter.pawnSingular>ратскинский беженец</RK_Shelter.pawnSingular>
+<RK_Shelter.pawnsPlural>ратскинские беженцы</RK_Shelter.pawnsPlural>
+	
+</LanguageData>

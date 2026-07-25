@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ScenarioDef>
+		<defName>RK_Scenario_Refugee</defName>
+		<label>세상을 도피하러 도망친 랫킨들</label>
+		<description>랫킨 왕국에서 왕과 귀족을 중심으로 한 권력을 중심으로 나라를 지배하는 것에 불만을 품은 랫킨들이 왕정을 무너뜨리고 시민들이 나라를 이끌어가는 새로운 체제를 만들려고 봉기를 일으켰습니다. 
+하지만 시간이 지날수록 내전은 끝나지가 않았고 행성에 거주하는 다른 외부 세력과 적대하고 그들을 침략하는 야만적인 왕정 분파로도 모자라 이제는 반란군 세력에도 이해관계 다툼으로 인해 두 파벌이 생걌습니다.
+
+랫킨 왕국에 대항하여 처음으로 봉기를 일으켰을 때부터 지금까지 활동하는 반란군(혁명군)은 무고한 민간인이 전투에 휘말려서 희생되는것을 최대한 줄이려고 노력하며, 왕국에 반란을 일으킨 이유를 정당화하려고 여러 세력에 널리 알려왔습니다. 이들은 자신들의 대의를 위해 합법적으로만 벌어들이는 자금으로 왕국과 맞써 싸우면서 소년병을 징집하거나 민간인을 수탈하지 않는 등 야만적인 행위를 하지 않았기 때문애 행성에 있는 여러 세력에서 많은 지원을 받고 있습니다.
+
+내부다툼으로 인해 분열되어 떨어져 나간 또다른 분파는 "혁명군"이라는 단어에 먹칠합니다. 마약 밀매와 같이 각종 불법적인 사업을 통해 자금을 벌어들이며 약탈과 학살을 통해 부수적인 수입을 얻습니다. 심지어는 어린 랫킨을 납치하여 소년병으로 써서 총알받이로 만들기도 합니다. 원래 왕정 체제을 무너뜨리고 공화정으로 바꾸려는 목적은 사라지고 자신들에게 이득이 간다면 수단과 방법을 가리지 않고 자신들의 배만 채울 궁리만 하는 윤리따윈 개나 줘버린 타락한 군벌 집단이자 쓰레기같은 도적 패거리들로 변질되었습니다.
+
+이런 암담하고 비참한 현실에서 환멸을 느낀 일부 랫킨들은 뜻에 맞는 자들과 함께 서로 자기만의 새로운 삶의 터전을 찾아서 살아가기로 결정했습니다. 물론 위험한 상황에 대비해서 모두 석궁을 들면서 "내전 도중에 양측에서 정신없이 전투 중일때 몰래 빌려간 물자들"까지 말이죠.......</description>
+	<scenario>
+	<summary>랫킨 왕국과 반란군의 내전이 끝나지 않자 환멸을 느낀 랫킨들이 자신들만의 길을 가기로 결심했습니다.</summary>
+		<playerFaction>
+			<def>PlayerFaction</def>
+			<factionDef>RK_Shelter</factionDef>
+		</playerFaction>
+		<parts>
+		
+			<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+				<def>ConfigurePawnsXenotypes</def>
+				<pawnChoiceCount>10</pawnChoiceCount>
+				<xenotypeCounts>
+					<li>
+						<count>8</count>
+						<requiredAtStart>True</requiredAtStart>
+						<xenotype>Baseline_Ratkin</xenotype>
+						<allowedDevelopmentalStages>Child, Adult</allowedDevelopmentalStages>
+						<description>랫킨</description>
+					</li>
+				</xenotypeCounts>
+			</li>
+			
+			<li Class="ScenPart_PlayerPawnsArriveMethod">
+				<def>PlayerPawnsArriveMethod</def>
+				<method>Standing</method>
+			</li>
+			<li Class="ScenPart_StartingResearch">
+				<def>StartingResearch</def>
+				<project>Ratkin_Apparel_B1</project>
+			</li>
+			<li Class="ScenPart_StartingResearch">
+				<def>StartingResearch</def>
+				<project>Ratkin_Apparel_B2</project>
+			</li>
+			<li Class="ScenPart_StartingResearch">
+				<def>StartingResearch</def>
+				<project>Craft_B1</project>
+			</li>
+			<li Class="ScenPart_StartingResearch">
+				<def>StartingResearch</def>
+				<project>Bow_B2</project>
+			</li>
+			<li Class="ScenPart_StartingResearch">
+				<def>StartingResearch</def>
+				<project>Ballista_B1</project>
+			</li>
+			<li Class="ScenPart_StartingResearch">
+				<def>StartingResearch</def>
+				<project>Smithing</project>
+			</li>
+			<li Class="ScenPart_StartingResearch">
+				<def>StartingResearch</def>
+				<project>Food_B1</project>
+			</li>
+			<li Class="ScenPart_StartingResearch">
+				<def>StartingResearch</def>
+				<project>Food_B3</project>
+			</li>
+			<li Class="ScenPart_StartingResearch">
+				<def>StartingResearch</def>
+				<project>Food_Plants_A2</project>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Silver</thingDef>
+				<count>500</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>PickledVeg</thingDef>
+				<count>150</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>BasicCannedFood</thingDef>
+				<count>300</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>bread</thingDef>
+				<count>18</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>RawCorn</thingDef>
+				<count>60</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Rawwheat</thingDef>
+				<count>60</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>RawPotatoes</thingDef>
+				<count>60</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>RawRice</thingDef>
+				<count>60</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Watermelon_seeds</thingDef>
+				<count>20</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Seedwheat</thingDef>
+				<count>20</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Ammo_Bolt_Metallic</thingDef>
+				<count>400</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>MedicineHerbal</thingDef>
+				<count>30</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>HerbMedicine</thingDef>
+				<count>10</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>ComponentIndustrial</thingDef>
+				<count>30</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>ScatterThingsNearPlayerStart</def>
+				<thingDef>Bronze</thingDef>
+				<count>250</count>		
+			</li>	
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>ScatterThingsNearPlayerStart</def>
+				<thingDef>Bamboo</thingDef>
+				<count>150</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>ScatterThingsNearPlayerStart</def>
+				<thingDef>RK_GaurdenUniform</thingDef>
+				<stuff>RK_Wool_KingHamster</stuff>
+				<count>3</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>ScatterThingsNearPlayerStart</def>
+				<thingDef>RK_Plate</thingDef>
+				<stuff>Plasteel</stuff>
+				<count>2</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>ScatterThingsNearPlayerStart</def>
+				<thingDef>RK_PlateHelmA</thingDef>
+				<stuff>Plasteel</stuff>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>ScatterThingsNearPlayerStart</def>
+				<thingDef>RK_PlateHelmB</thingDef>
+				<stuff>Plasteel</stuff>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>ScatterThingsNearPlayerStart</def>
+				<thingDef>RK_HeavyShield</thingDef>
+				<stuff>Bronze</stuff>
+				<count>2</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>ScatterThingsNearPlayerStart</def>
+				<thingDef>RK_LongSword</thingDef>
+				<stuff>Bronze</stuff>
+				<count>2</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>MeleeWeapon_Dagger</thingDef>
+				<stuff>Bronze</stuff>
+				<count>2</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>TFJ_Tool_Woodcutting_Handaxe</thingDef>
+				<stuff>Bronze</stuff>
+				<count>3</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>TFJ_Tool_Mining_Pickaxe</thingDef>
+				<stuff>Bronze</stuff>
+				<count>4</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>TFJ_Tool_Building_Hammer</thingDef>
+				<stuff>Bronze</stuff>
+				<count>2</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>TFJ_Tool_Sickle</thingDef>
+				<stuff>Bronze</stuff>
+				<count>3</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>TFJ_Tool_Hoe</thingDef>
+				<stuff>Bronze</stuff>
+				<count>3</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>TFJ_Tool_Broom</thingDef>
+				<stuff>Bamboo</stuff>
+				<count>3</count>
+			</li>			
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>RK_Rifle</thingDef>
+				<count>2</count>
+				<quality>Poor</quality>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Gun_RKShotgun</thingDef>
+				<quality>Awful</quality>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Ammo_303British_FMJ</thingDef>
+				<count>100</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Ammo_12Gauge_Buck</thingDef>
+				<count>80</count>
+			</li>			
+
+
+
+			<li Class="ScenPart_StartingAnimal">
+				<def>StartingAnimal</def>
+				<animalKind>Rottie</animalKind>
+				<count>1</count>
+				<bondToRandomPlayerPawnChance>1</bondToRandomPlayerPawnChance>
+			</li>		
+
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>Plasteel</thingDef>
+				<count>120</count>
+				<allowRoofed>True</allowRoofed>
+			</li>
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>ShipChunk</thingDef>
+				<count>14</count>
+				<allowRoofed>True</allowRoofed>
+			</li>
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>ShipMechChunk</thingDef>
+				<count>8</count>
+				<allowRoofed>True</allowRoofed>
+			</li>
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>Cairn</thingDef>
+				<stuff>ClayBrick</stuff>
+				<count>9</count>
+				<allowRoofed>false</allowRoofed>
+			</li>
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>BambooPlank</thingDef>
+				<count>20</count>
+				<allowRoofed>false</allowRoofed>
+			</li>
+			<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>BlocksSandstone</thingDef>
+				<count>30</count>
+				<allowRoofed>false</allowRoofed>
+			</li>
+
+			<li Class="ScenPart_ForcedTrait">
+				<def>ForcedTrait</def>
+				<chance>0.15</chance>
+				<context>PlayerStarter</context>
+				<trait>Hardened</trait>
+			</li>
+			<li Class="ScenPart_ForcedTrait">
+				<def>ForcedTrait</def>
+				<chance>0.4</chance>
+				<context>PlayerStarter</context>
+				<trait>NaturalMood</trait>
+				<degree>-1</degree>
+			</li>
+			<li Class="ScenPart_ForcedTrait">
+				<def>ForcedTrait</def>
+				<chance>0.08</chance>
+				<context>PlayerStarter</context>
+				<trait>Faith</trait>
+			</li>
+
+			<li Class="ScenPart_ForcedHediff">
+				<def>ForcedHediff</def>
+				<chance>0.45</chance>
+				<context>PlayerStarter</context>
+				<hediff>Malnutrition</hediff>
+				<severityRange>0.304333329~0.700333357</severityRange>
+			</li>
+
+
+			<li Class="ScenPart_GameStartDialog">
+				<def>GameStartDialog</def>
+				<text>내전으로 인한 혼란스러운 상황에서 챙길 수 있는 물품들은 챙긴 채로 살기 위해서 며칠동안 쉬지 않고 피란길을 걸었고, 드디어 새로운 터전이 될 안식처를 발견했습니다. 그러나 정신적인 상처는 여전히 잊을 수 없습니다...... 
+				시가전에서 총성과 함께 울리는 비명소리, 왕정군과 공화국군의 포격전으로 떨어지는 포탄이 폭발음과 함께 비명지르면서 도망치는 랫킨들과 포탄에 맞아 죽은 자식을 안고 우는 어머니가 생각납니다....... 
+				그리고 도망치던 중, 동족의 인식을 더럽히는 역겨운 군벌 조직이 무고한 랫킨들을 약탈하고 학살한 현장에서 싸늘한 시체더미로 맞이하는 동족들의 참혹한 광경들.... 잊을 수 있다면 잊고 싶지만 씻을 수 없는 상처가 내면에서 메아리칩니다. 
+				아무튼 내전은 언제 끝날까요? 언젠가는 쥐구멍에 볕 들 날이 있을까요? 일단 정신적인 상처들과 지친 상태를 회복한 뒤에 안식처를 만들 계획을 세워야 합니다.</text>
+			</li>
+
+		</parts>
+	</scenario>
+	</ScenarioDef>
+</Defs>

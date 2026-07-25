@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationFindMod"> 
+	<mods>
+		<li>HMC Vile's Pre-Industrial Overhaul</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="Gun_Pistolet"]/weaponTags</xpath>
+				  <value>
+					<li>RK_Trapper_Rookie</li>
+				  </value>
+				</li>
+
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="Gun_Charleville"]/weaponTags</xpath>
+				  <value>
+					<li>RK_Trapper_Rookie</li>
+				  </value>
+				</li>
+
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="Gun_BrownBess"]/weaponTags</xpath>
+				  <value>
+					<li>RK_Trapper_Rookie</li>
+				  </value>
+				</li>
+
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="Gun_SharpsCarbine"]/weaponTags</xpath>
+				  <value>
+					<li>RK_Trapper_Experienced</li>
+				  </value>
+				</li>
+
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="Gun_ColtPeacemaker"]/weaponTags</xpath>
+				  <value>
+					<li>RK_Militiaman</li>
+					<li>RK_Trapper_BomberSidearm</li>
+				  </value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="Gun_Winchester"]/weaponTags</xpath>
+				  <value>
+					<li>RK_Militiaman</li>
+					<li>RK_Trapper_Expert</li>
+				  </value>
+				</li>
+
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>

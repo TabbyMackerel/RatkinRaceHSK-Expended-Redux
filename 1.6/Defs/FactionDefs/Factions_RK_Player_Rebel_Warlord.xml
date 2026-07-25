@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef ParentName="RK_PlayerFactionBase">
+		<defName>RK_Rebel_Player_Warlord</defName>
+		<label>랫킨 소규모 군벌 부대</label>
+		<description>왕정을 뒤엎고 공화정으로 바꾸려는 혁명이라는 목적에서 결국 변질되어버렸고, 자신만들의 이익과 세력 확장에 신경쓰면서, 금전적인 이득만 있디면 비윤리적인 행위도 서슴치 않는 군벌에 종속된 반-독립적인 부대입니다.</description>
+		<isPlayer>true</isPlayer>
+		<basicMemberKind>RK_RebelUnethical_WarloadMember_Player</basicMemberKind>
+		<pawnSingular>군벌 단원</pawnSingular>
+		<pawnsPlural>역겨운 군벌 떨거지들</pawnsPlural>
+		<techLevel>Industrial</techLevel>
+		<backstoryCategories>
+			<li>Offworld</li>
+		</backstoryCategories>
+		<settlementTexturePath>Icon/RK_DefaultColony</settlementTexturePath>
+		<factionIconPath>Icon/RK_Rebel_Unethical</factionIconPath>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFaction_RatkinWarlord</factionNameMaker>
+		<settlementNameMaker>NamerSettlement_RatkinWarlord</settlementNameMaker>
+		<melaninRange>0~1</melaninRange>
+		<xenotypeSet>
+		  <xenotypeChances>
+			<Baseline_Ratkin MayRequire="Ludeon.RimWorld.Biotech">999</Baseline_Ratkin>
+		  </xenotypeChances>
+		</xenotypeSet>
+		<startingResearchTags>
+			<li>ClassicStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>ClassicStart</li>
+		</startingTechprintsResearchTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Plasteel</li>
+				<li>DevilstrandCloth</li>
+				<li>Kevlar</li>
+				<li>RK_Wool_KingHamster</li>
+				<li>SteelBar</li>
+			</thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
+
+</Defs>

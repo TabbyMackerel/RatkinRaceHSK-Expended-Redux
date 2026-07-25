@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ScenarioDef>
+		<defName>RK_Scenario_Bandits_EveryoneHatesUs</defName>
+		<label>랫킨 도적 떼거지들(모든 세력 적대)</label>
+		<description>왕정과 공화파의 내전으로 인한 참사에서 살아남으려는 일부 랫킨들이 있었습니다. 그들은 살기 위헤서 극단적인 생존주의를 중시한 나머지, 동족을 살해하고 약탈하면서 점점 익숙해졌고, 모두에게 미움받는 도적 패거리가 되어서 이제는 돌아갈 수 없는 강을 건너게 되었습니다...... 우리는 이제 누구에게도 환영받지 못합니다.... 운수 좋은 날인지는 모르겠지만, 최근에 추락한 것으로 보이는 우주선의 잔해와 일부 탈출 포드의 흔적을 발견하면서 전리품을 챙기는 것과 동시에 여기를 은신처로 만들기로 결정했습니다. 그리고 도적단의 규모를 늘리기로 결심했습니다. 그래야 누구도 우릴 건들 수 없을 테니끼요. 모두가 우리를 싫어하고 증오한다면, 우리들도 그것들을 증오할 것이며, 건들면 보복할 것이라고 다짐하며 생존을 위한 극단적인 투쟁을 시작했습니다.
+(참고: 이 랫킨 도적단 시나리오에서는 모두가 당신을 증오합니다! 즉, 당신의 소속이 아니라면 모두가 적이라고 생각하세요. 그리고 쓸만한 포로들을 당신의 편으로 만들면서 쓸만한 전리품들을 노획하고 첨단 기술을 배우세요. 그런 다음 이딴 살고 싶지 않은 변방계를 탈출하거나, 공허의 힘을 받아들이면서 절망을 퍼뜨리세요! 아니면 모두가 죽는 비참한 결말이 될지도 모르죠......)</description>
+		<scenario>
+			<summary>내전으로 인한 참사에서 살아남으려고 결국 넘지 말아야 할 선을 넘어버린 강도 무리가 되어버린 랫킨들..... 결국 모두에게 미움받는 신세가 되었다.</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>RK_Bandits_Hideout</factionDef>
+			</playerFaction>
+			<parts>
+
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+					<def>ConfigurePawnsXenotypes</def>
+					<pawnChoiceCount>8</pawnChoiceCount>
+					<xenotypeCounts>
+						<li>
+							<count>4</count>
+							<requiredAtStart>True</requiredAtStart>
+							<xenotype>Baseline_Ratkin</xenotype>
+							<allowedDevelopmentalStages>Adult</allowedDevelopmentalStages>
+							<description>랫킨</description>
+						</li>
+					</xenotypeCounts>
+				</li>
+
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>Standing</method>
+				</li>
+
+				<!-- Starting research -->
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>Ratkin_Apparel_B1</project>
+				</li>
+
+				<!-- Other -->
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Silver</thingDef>
+					<count>1000</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>BasicCannedFood</thingDef>
+					<count>180</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MealSurvivalPack</thingDef>
+					<count>15</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>PickledVeg</thingDef>
+					<count>125</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>RK_Rifle</thingDef>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Ammo_303British_FMJ</thingDef>
+					<count>100</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>RF_Gun_Tecnine</thingDef>
+					<count>2</count>
+				</li>
+					<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Ammo_9x19mmPara_FMJ</thingDef>
+					<count>300</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Gun_RKShotgun</thingDef>
+				</li>				
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>RK_Backpack</thingDef>
+					<stuff>Leather_Plain</stuff>
+					<count>4</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Ammo_12Gauge_Buck</thingDef>
+					<count>80</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MedicineHerbal</thingDef>
+					<count>25</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MedicineIndustrial</thingDef>
+					<count>10</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>ComponentIndustrial</thingDef>
+					<count>15</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>Plasteel</thingDef>
+					<count>80</count>
+					<allowRoofed>false</allowRoofed>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>Bronze</thingDef>
+					<count>140</count>
+					<allowRoofed>false</allowRoofed>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>RK_OneHanded</thingDef>
+					<stuff>Plasteel</stuff>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>RK_Dagger</thingDef>
+					<stuff>Bronze</stuff>
+					<count>3</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>TFJ_Tool_Paxe</thingDef>
+					<stuff>Plasteel</stuff>
+					<count>2</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>TFJ_Tool_Building_Hammer</thingDef>
+					<stuff>Bronze</stuff>
+					<count>1</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>TFJ_Tool_Mining_Pickaxe</thingDef>
+					<stuff>Bronze</stuff>
+                    <count>1</count>
+				</li>
+
+
+				<!-- Player starting things -->
+				<li Class="ScenPart_StartingAnimal">
+					<def>StartingAnimal</def>
+					<animalKind>Rottie</animalKind>
+					<count>1</count>
+					<bondToRandomPlayerPawnChance>1.0</bondToRandomPlayerPawnChance>
+				</li>		
+				
+				<!-- Scatter some things anywhere -->
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>ShipWreck</thingDef>
+					<count>3</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>DropPodLanded</thingDef>
+					<count>8</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<visible>false</visible>
+					<thingDef>ShipChunk</thingDef>
+					<count>12</count>
+					<allowRoofed>false</allowRoofed>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<visible>false</visible>
+					<thingDef>ShipMechChunk</thingDef>
+					<count>7</count>
+					<allowRoofed>false</allowRoofed>
+				</li>				
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>Plasteel</thingDef>
+					<count>90</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>Bronze</thingDef>
+					<count>180</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<visible>false</visible>
+					<thingDef>Cairn</thingDef>
+					<stuff>ClayBrick</stuff>
+					<count>9</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<visible>false</visible>
+					<thingDef>BambooPlank</thingDef>
+					<count>20</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<visible>false</visible>
+					<thingDef>BlocksSandstone</thingDef>
+					<count>30</count>
+				</li>
+				<li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+					<alwaysHostile>True</alwaysHostile>
+					<affectStartingGoodwill>True</affectStartingGoodwill>
+					<startingGoodwillRange>-100~-70</startingGoodwillRange>
+					<affectNaturalGoodwill>True</affectNaturalGoodwill>
+					<naturalGoodwillRange>-100~-70</naturalGoodwillRange>
+					<def>VFEC_ForcedFactionGoodwill</def>
+				</li>
+			</parts>
+		</scenario>
+	</ScenarioDef>
+</Defs>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+
+  <RatkinRebelFactionBase.leaderTitle>Лидер повстанцев</RatkinRebelFactionBase.leaderTitle>
+<RatkinRebelFactionBase.pawnsPlural>раткины</RatkinRebelFactionBase.pawnsPlural>
+
+<RatkinRebel_Unethical.label>Беспринципные раткинские повстанцы</RatkinRebel_Unethical.label>
+<RatkinRebel_Unethical.description>Это раткинские повстанцы, стремящиеся свергнуть существующую монархию и установить новый режим. Им неведомы понятия этики или человечности — они занимаются торговлей наркотиками, мародёрством, резнёй и похищают юных раткинов, чтобы использовать их в качестве детей-солдат. Они постоянно повторяют эти преступления, заработав ненависть различных фракций.</RatkinRebel_Unethical.description>
+
+<RatkinRebel.label>Раткинские повстанцы</RatkinRebel.label>
+<RatkinRebel.description>Это группа раткинских повстанцев, стремящихся свергнуть существующую монархию и установить новый порядок. Они перенимают различные современные технологии, обучают современную армию и пытаются предотвратить гибель невинных людей в битвах с королевскими войсками.</RatkinRebel.description>
+</LanguageData>

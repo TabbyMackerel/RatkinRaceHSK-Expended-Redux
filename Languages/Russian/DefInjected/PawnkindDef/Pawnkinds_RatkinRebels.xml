@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+   <!-- раткинские революционеры (республиканская армия) -->
+<!-- раткинские гражданские -->
+<RK_Rebel_Civilian.label>ратскинский гражданский</RK_Rebel_Civilian.label>
+<RK_Rebel_Civilian.labelPlural>ратскинские гражданские</RK_Rebel_Civilian.labelPlural>
+<RK_Rebel_Civilian.labelMale>гражданский раткин</RK_Rebel_Civilian.labelMale>
+<RK_Rebel_Civilian.labelMalePlural>гражданские раткины</RK_Rebel_Civilian.labelMalePlural>
+<RK_Rebel_Civilian.labelFemale>гражданская раткин</RK_Rebel_Civilian.labelFemale>
+<RK_Rebel_Civilian.labelFemalePlural>гражданские раткины</RK_Rebel_Civilian.labelFemalePlural>
+
+<!-- раткинский вольный торговец -->
+<RK_Rebel_Trader.label>ратскинский вольный торговец</RK_Rebel_Trader.label>
+<RK_Rebel_Trader.labelPlural>ратскинские вольные торговцы</RK_Rebel_Trader.labelPlural>
+<RK_Rebel_Trader.labelMale>ратскинский вольный торговец</RK_Rebel_Trader.labelMale>
+<RK_Rebel_Trader.labelMalePlural>ратскинские вольные торговцы</RK_Rebel_Trader.labelMalePlural>
+<RK_Rebel_Trader.labelFemale>ратскинская вольная торговка</RK_Rebel_Trader.labelFemale>
+<RK_Rebel_Trader.labelFemalePlural>ратскинские вольные торговки</RK_Rebel_Trader.labelFemalePlural>
+
+<!-- сценарий с раткинскими беженцами (игрок) -->
+<RK_Rebel_Militiaman_Crossbow_player.label>вооружённый раткин-беженец</RK_Rebel_Militiaman_Crossbow_player.label>
+<RK_Rebel_Militiaman_Crossbow_player.labelPlural>вооружённые раткины-беженцы</RK_Rebel_Militiaman_Crossbow_player.labelPlural>
+<RK_Rebel_Militiaman_Crossbow_player.labelMale>вооружённый раткин-беженец</RK_Rebel_Militiaman_Crossbow_player.labelMale>
+<RK_Rebel_Militiaman_Crossbow_player.labelMalePlural>вооружённые раткины-беженцы</RK_Rebel_Militiaman_Crossbow_player.labelMalePlural>
+<RK_Rebel_Militiaman_Crossbow_player.labelFemale>вооружённая раткин-беженка</RK_Rebel_Militiaman_Crossbow_player.labelFemale>
+<RK_Rebel_Militiaman_Crossbow_player.labelFemalePlural>вооружённые раткины-беженки</RK_Rebel_Militiaman_Crossbow_player.labelFemalePlural>
+
+<!-- раткинское ополчение -->
+<!-- раткинский ополченец с арбалетом -->
+<RK_Rebel_Militiaman_Crossbow.label>ратскинский арбалетчик-ополченец</RK_Rebel_Militiaman_Crossbow.label>
+<RK_Rebel_Militiaman_Crossbow.labelPlural>ратскинские арбалетчики-ополченцы</RK_Rebel_Militiaman_Crossbow.labelPlural>
+<RK_Rebel_Militiaman_Crossbow.labelMale>ратскинский арбалетчик-ополченец</RK_Rebel_Militiaman_Crossbow.labelMale>
+<RK_Rebel_Militiaman_Crossbow.labelMalePlural>ратскинские арбалетчики-ополченцы</RK_Rebel_Militiaman_Crossbow.labelMalePlural>
+<RK_Rebel_Militiaman_Crossbow.labelFemale>ратскинская арбалетчица-ополченка</RK_Rebel_Militiaman_Crossbow.labelFemale>
+<RK_Rebel_Militiaman_Crossbow.labelFemalePlural>ратскинские арбалетчицы-ополченки</RK_Rebel_Militiaman_Crossbow.labelFemalePlural>
+
+<!-- раткинский ополченец (ближний бой) -->
+<RK_Rebel_Militiaman_Melee.label>ратскинский ополченец ближнего боя</RK_Rebel_Militiaman_Melee.label>
+<RK_Rebel_Militiaman_Melee.labelPlural>ратскинские ополченцы ближнего боя</RK_Rebel_Militiaman_Melee.labelPlural>
+<RK_Rebel_Militiaman_Melee.labelMale>ратскинский ополченец ближнего боя</RK_Rebel_Militiaman_Melee.labelMale>
+<RK_Rebel_Militiaman_Melee.labelMalePlural>ратскинские ополченцы ближнего боя</RK_Rebel_Militiaman_Melee.labelMalePlural>
+<RK_Rebel_Militiaman_Melee.labelFemale>ратскинская ополченка ближнего боя</RK_Rebel_Militiaman_Melee.labelFemale>
+<RK_Rebel_Militiaman_Melee.labelFemalePlural>ратскинские ополченки ближнего боя</RK_Rebel_Militiaman_Melee.labelFemalePlural>
+
+<!-- раткинский ополченец-стрелок -->
+<RK_Rebel_Militiaman_Gunner.label>ратскинский ополченец-стрелок</RK_Rebel_Militiaman_Gunner.label>
+<RK_Rebel_Militiaman_Gunner.labelPlural>ратскинские ополченцы-стрелки</RK_Rebel_Militiaman_Gunner.labelPlural>
+<RK_Rebel_Militiaman_Gunner.labelMale>ратскинский ополченец-стрелок</RK_Rebel_Militiaman_Gunner.labelMale>
+<RK_Rebel_Militiaman_Gunner.labelMalePlural>ратскинские ополченцы-стрелки</RK_Rebel_Militiaman_Gunner.labelMalePlural>
+<RK_Rebel_Militiaman_Gunner.labelFemale>ратскинская ополченка-стрелок</RK_Rebel_Militiaman_Gunner.labelFemale>
+<RK_Rebel_Militiaman_Gunner.labelFemalePlural>ратскинские ополченки-стрелки</RK_Rebel_Militiaman_Gunner.labelFemalePlural>
+
+<!-- раткинский опытный ополченец-стрелок -->
+<RK_Rebel_Militiaman_GunnerAdvanced.label>ратскинский опытный ополченец-стрелок</RK_Rebel_Militiaman_GunnerAdvanced.label>
+<RK_Rebel_Militiaman_GunnerAdvanced.labelPlural>ратскинские опытные ополченцы-стрелки</RK_Rebel_Militiaman_GunnerAdvanced.labelPlural>
+<RK_Rebel_Militiaman_GunnerAdvanced.labelMale>ратскинский опытный ополченец-стрелок</RK_Rebel_Militiaman_GunnerAdvanced.labelMale>
+<RK_Rebel_Militiaman_GunnerAdvanced.labelMalePlural>ратскинские опытные ополченцы-стрелки</RK_Rebel_Militiaman_GunnerAdvanced.labelMalePlural>
+<RK_Rebel_Militiaman_GunnerAdvanced.labelFemale>ратскинская опытная ополченка-стрелок</RK_Rebel_Militiaman_GunnerAdvanced.labelFemale>
+<RK_Rebel_Militiaman_GunnerAdvanced.labelFemalePlural>ратскинские опытные ополченки-стрелки</RK_Rebel_Militiaman_GunnerAdvanced.labelFemalePlural>
+
+<!-- раткинская добровольческая армия -->
+<RK_Rebel_VolunteerArmy.label>ратскинский доброволец</RK_Rebel_VolunteerArmy.label>
+<RK_Rebel_VolunteerArmy.labelPlural>ратскинские добровольцы</RK_Rebel_VolunteerArmy.labelPlural>
+<RK_Rebel_VolunteerArmy.labelMale>ратскинский доброволец</RK_Rebel_VolunteerArmy.labelMale>
+<RK_Rebel_VolunteerArmy.labelMalePlural>ратскинские добровольцы</RK_Rebel_VolunteerArmy.labelMalePlural>
+<RK_Rebel_VolunteerArmy.labelFemale>ратскинская доброволка</RK_Rebel_VolunteerArmy.labelFemale>
+<RK_Rebel_VolunteerArmy.labelFemalePlural>ратскинские доброволки</RK_Rebel_VolunteerArmy.labelFemalePlural>
+
+<!-- сценарий с раткинскими повстанцами (игрок) -->
+<RK_Rebel_VolunteerArmy_Player.label>ратскинский доброволец</RK_Rebel_VolunteerArmy_Player.label>
+<RK_Rebel_VolunteerArmy_Player.labelPlural>ратскинские добровольцы</RK_Rebel_VolunteerArmy_Player.labelPlural>
+<RK_Rebel_VolunteerArmy_Player.labelMale>ратскинский доброволец</RK_Rebel_VolunteerArmy_Player.labelMale>
+<RK_Rebel_VolunteerArmy_Player.labelMalePlural>ратскинские добровольцы</RK_Rebel_VolunteerArmy_Player.labelMalePlural>
+<RK_Rebel_VolunteerArmy_Player.labelFemale>ратскинская доброволка</RK_Rebel_VolunteerArmy_Player.labelFemale>
+<RK_Rebel_VolunteerArmy_Player.labelFemalePlural>ратскинские доброволки</RK_Rebel_VolunteerArmy_Player.labelFemalePlural>
+
+<!-- регулярные повстанческие подразделения -->
+<!-- раткинский повстанец-стрелок -->
+<RK_Rebel_Rifleman.label>ратскинский повстанец-стрелок</RK_Rebel_Rifleman.label>
+<RK_Rebel_Rifleman.labelPlural>ратскинские повстанцы-стрелки</RK_Rebel_Rifleman.labelPlural>
+<RK_Rebel_Rifleman.labelMale>ратскинский повстанец-стрелок</RK_Rebel_Rifleman.labelMale>
+<RK_Rebel_Rifleman.labelMalePlural>ратскинские повстанцы-стрелки</RK_Rebel_Rifleman.labelMalePlural>
+<RK_Rebel_Rifleman.labelFemale>ратскинская повстанка-стрелок</RK_Rebel_Rifleman.labelFemale>
+<RK_Rebel_Rifleman.labelFemalePlural>ратскинские повстанки-стрелки</RK_Rebel_Rifleman.labelFemalePlural>
+
+<!-- раткинский повстанец-штурмовик -->
+<RK_Rebel_Charger.label>ратскинский повстанец-штурмовик</RK_Rebel_Charger.label>
+<RK_Rebel_Charger.labelPlural>ратскинские повстанцы-штурмовики</RK_Rebel_Charger.labelPlural>
+<RK_Rebel_Charger.labelMale>ратскинский повстанец-штурмовик</RK_Rebel_Charger.labelMale>
+<RK_Rebel_Charger.labelMalePlural>ратскинские повстанцы-штурмовики</RK_Rebel_Charger.labelMalePlural>
+<RK_Rebel_Charger.labelFemale>ратскинская повстанка-штурмовик</RK_Rebel_Charger.labelFemale>
+<RK_Rebel_Charger.labelFemalePlural>ратскинские повстанки-штурмовики</RK_Rebel_Charger.labelFemalePlural>
+
+<!-- повстанец-противотанкист -->
+<RK_Rebel_AntiTanker.label>ратскинский повстанец-противотанкист</RK_Rebel_AntiTanker.label>
+<RK_Rebel_AntiTanker.labelPlural>ратскинские повстанцы-противотанкисты</RK_Rebel_AntiTanker.labelPlural>
+<RK_Rebel_AntiTanker.labelMale>ратскинский повстанец-противотанкист</RK_Rebel_AntiTanker.labelMale>
+<RK_Rebel_AntiTanker.labelMalePlural>ратскинские повстанцы-противотанкисты</RK_Rebel_AntiTanker.labelMalePlural>
+<RK_Rebel_AntiTanker.labelFemale>ратскинская повстанка-противотанкист</RK_Rebel_AntiTanker.labelFemale>
+<RK_Rebel_AntiTanker.labelFemalePlural>ратскинские повстанки-противотанкисты</RK_Rebel_AntiTanker.labelFemalePlural>
+
+<!-- повстанец-огнемётчик -->
+<RK_Rebel_Flamethrower.label>ратскинский повстанец-огнемётчик</RK_Rebel_Flamethrower.label>
+<RK_Rebel_Flamethrower.labelPlural>ратскинские повстанцы-огнемётчики</RK_Rebel_Flamethrower.labelPlural>
+<RK_Rebel_Flamethrower.labelMale>ратскинский повстанец-огнемётчик</RK_Rebel_Flamethrower.labelMale>
+<RK_Rebel_Flamethrower.labelMalePlural>ратскинские повстанцы-огнемётчики</RK_Rebel_Flamethrower.labelMalePlural>
+<RK_Rebel_Flamethrower.labelFemale>ратскинская повстанка-огнемётчик</RK_Rebel_Flamethrower.labelFemale>
+<RK_Rebel_Flamethrower.labelFemalePlural>ратскинские повстанки-огнемётчики</RK_Rebel_Flamethrower.labelFemalePlural>
+
+<!-- раткинский повстанец лёгкой пехоты -->
+<RK_Rebel_Light.label>ратскинский повстанец лёгкой пехоты</RK_Rebel_Light.label>
+<RK_Rebel_Light.labelPlural>ратскинские повстанцы лёгкой пехоты</RK_Rebel_Light.labelPlural>
+<RK_Rebel_Light.labelMale>ратскинский повстанец лёгкой пехоты</RK_Rebel_Light.labelMale>
+<RK_Rebel_Light.labelMalePlural>ратскинские повстанцы лёгкой пехоты</RK_Rebel_Light.labelMalePlural>
+<RK_Rebel_Light.labelFemale>ратскинская повстанка лёгкой пехоты</RK_Rebel_Light.labelFemale>
+<RK_Rebel_Light.labelFemalePlural>ратскинские повстанки лёгкой пехоты</RK_Rebel_Light.labelFemalePlural>
+
+<!-- раткинский повстанец-новобранец -->
+<RK_Rebel_Recruit.label>ратскинский повстанец-новобранец</RK_Rebel_Recruit.label>
+<RK_Rebel_Recruit.labelPlural>ратскинские повстанцы-новобранцы</RK_Rebel_Recruit.labelPlural>
+<RK_Rebel_Recruit.labelMale>ратскинский повстанец-новобранец</RK_Rebel_Recruit.labelMale>
+<RK_Rebel_Recruit.labelMalePlural>ратскинские повстанцы-новобранцы</RK_Rebel_Recruit.labelMalePlural>
+<RK_Rebel_Recruit.labelFemale>ратскинская повстанка-новобранец</RK_Rebel_Recruit.labelFemale>
+<RK_Rebel_Recruit.labelFemalePlural>ратскинские повстанки-новобранцы</RK_Rebel_Recruit.labelFemalePlural>
+
+<!-- раткинский командир отряда повстанцев -->
+<RK_Rebel_Squadleader.label>ратскинский командир отряда повстанцев</RK_Rebel_Squadleader.label>
+<RK_Rebel_Squadleader.labelPlural>ратскинские командиры отрядов повстанцев</RK_Rebel_Squadleader.labelPlural>
+<RK_Rebel_Squadleader.labelMale>ратскинский командир отряда повстанцев</RK_Rebel_Squadleader.labelMale>
+<RK_Rebel_Squadleader.labelMalePlural>ратскинские командиры отрядов повстанцев</RK_Rebel_Squadleader.labelMalePlural>
+<RK_Rebel_Squadleader.labelFemale>ратскинская командир отряда повстанцев</RK_Rebel_Squadleader.labelFemale>
+<RK_Rebel_Squadleader.labelFemalePlural>ратскинские командиры отрядов повстанцев</RK_Rebel_Squadleader.labelFemalePlural>
+
+<!-- модернизированные революционные силы -->
+<!-- раткинский солдат спецопераций (игрок) -->
+<RK_Rebel_SpecOpts_Player.label>ратскинский солдат спецопераций</RK_Rebel_SpecOpts_Player.label>
+<RK_Rebel_SpecOpts_Player.labelPlural>ратскинские солдаты спецопераций</RK_Rebel_SpecOpts_Player.labelPlural>
+<RK_Rebel_SpecOpts_Player.labelMale>ратскинский солдат спецопераций</RK_Rebel_SpecOpts_Player.labelMale>
+<RK_Rebel_SpecOpts_Player.labelMalePlural>ратскинские солдаты спецопераций</RK_Rebel_SpecOpts_Player.labelMalePlural>
+<RK_Rebel_SpecOpts_Player.labelFemale>ратскинская солдат спецопераций</RK_Rebel_SpecOpts_Player.labelFemale>
+<RK_Rebel_SpecOpts_Player.labelFemalePlural>ратскинские солдаты спецопераций</RK_Rebel_SpecOpts_Player.labelFemalePlural>
+
+<!-- раткинский элитный повстанец-стрелок -->
+<RK_RebelElite_Rifleman.label>ратскинский элитный повстанец-стрелок</RK_RebelElite_Rifleman.label>
+<RK_RebelElite_Rifleman.labelPlural>ратскинские элитные повстанцы-стрелки</RK_RebelElite_Rifleman.labelPlural>
+<RK_RebelElite_Rifleman.labelMale>ратскинский элитный повстанец-стрелок</RK_RebelElite_Rifleman.labelMale>
+<RK_RebelElite_Rifleman.labelMalePlural>ратскинские элитные повстанцы-стрелки</RK_RebelElite_Rifleman.labelMalePlural>
+<RK_RebelElite_Rifleman.labelFemale>ратскинская элитная повстанка-стрелок</RK_RebelElite_Rifleman.labelFemale>
+<RK_RebelElite_Rifleman.labelFemalePlural>ратскинские элитные повстанки-стрелки</RK_RebelElite_Rifleman.labelFemalePlural>
+
+<!-- раткинский элитный повстанец-штурмовик -->
+<RK_RebelElite_Charger.label>ратскинский элитный повстанец-штурмовик</RK_RebelElite_Charger.label>
+<RK_RebelElite_Charger.labelPlural>ратскинские элитные повстанцы-штурмовики</RK_RebelElite_Charger.labelPlural>
+<RK_RebelElite_Charger.labelMale>ратскинский элитный повстанец-штурмовик</RK_RebelElite_Charger.labelMale>
+<RK_RebelElite_Charger.labelMalePlural>ратскинские элитные повстанцы-штурмовики</RK_RebelElite_Charger.labelMalePlural>
+<RK_RebelElite_Charger.labelFemale>ратскинская элитная повстанка-штурмовик</RK_RebelElite_Charger.labelFemale>
+<RK_RebelElite_Charger.labelFemalePlural>ратскинские элитные повстанки-штурмовики</RK_RebelElite_Charger.labelFemalePlural>
+
+<!-- раткинский элитный повстанец-противотанкист -->
+<RK_RebelElite_AntiTanker.label>ратскинский элитный повстанец-противотанкист</RK_RebelElite_AntiTanker.label>
+<RK_RebelElite_AntiTanker.labelPlural>ратскинские элитные повстанцы-противотанкисты</RK_RebelElite_AntiTanker.labelPlural>
+<RK_RebelElite_AntiTanker.labelMale>ратскинский элитный повстанец-противотанкист</RK_RebelElite_AntiTanker.labelMale>
+<RK_RebelElite_AntiTanker.labelMalePlural>ратскинские элитные повстанцы-противотанкисты</RK_RebelElite_AntiTanker.labelMalePlural>
+<RK_RebelElite_AntiTanker.labelFemale>ратскинская элитная повстанка-противотанкист</RK_RebelElite_AntiTanker.labelFemale>
+<RK_RebelElite_AntiTanker.labelFemalePlural>ратскинские элитные повстанки-противотанкисты</RK_RebelElite_AntiTanker.labelFemalePlural>
+
+<!-- раткинский элитный повстанец лёгкой пехоты -->
+<RK_RebelElite_Light.label>ратскинский элитный повстанец лёгкой пехоты</RK_RebelElite_Light.label>
+<RK_RebelElite_Light.labelPlural>ратскинские элитные повстанцы лёгкой пехоты</RK_RebelElite_Light.labelPlural>
+<RK_RebelElite_Light.labelMale>ратскинский элитный повстанец лёгкой пехоты</RK_RebelElite_Light.labelMale>
+<RK_RebelElite_Light.labelMalePlural>ратскинские элитные повстанцы лёгкой пехоты</RK_RebelElite_Light.labelMalePlural>
+<RK_RebelElite_Light.labelFemale>ратскинская элитная повстанка лёгкой пехоты</RK_RebelElite_Light.labelFemale>
+<RK_RebelElite_Light.labelFemalePlural>ратскинские элитные повстанки лёгкой пехоты</RK_RebelElite_Light.labelFemalePlural>
+
+<!-- раткинский элитный командир отряда -->
+<RK_RebelElite_Squadleader.label>ратскинский элитный командир отряда</RK_RebelElite_Squadleader.label>
+<RK_RebelElite_Squadleader.labelPlural>ратскинские элитные командиры отрядов</RK_RebelElite_Squadleader.labelPlural>
+<RK_RebelElite_Squadleader.labelMale>ратскинский элитный командир отряда</RK_RebelElite_Squadleader.labelMale>
+<RK_RebelElite_Squadleader.labelMalePlural>ратскинские элитные командиры отрядов</RK_RebelElite_Squadleader.labelMalePlural>
+<RK_RebelElite_Squadleader.labelFemale>ратскинская элитная командир отряда</RK_RebelElite_Squadleader.labelFemale>
+<RK_RebelElite_Squadleader.labelFemalePlural>ратскинские элитные командиры отрядов</RK_RebelElite_Squadleader.labelFemalePlural>
+
+<!-- раткинский повстанец-десантник -->
+<RK_Rebel_Paratrooper.label>ратскинский повстанец-десантник</RK_Rebel_Paratrooper.label>
+<RK_Rebel_Paratrooper.labelPlural>ратскинские повстанцы-десантники</RK_Rebel_Paratrooper.labelPlural>
+<RK_Rebel_Paratrooper.labelMale>ратскинский повстанец-десантник</RK_Rebel_Paratrooper.labelMale>
+<RK_Rebel_Paratrooper.labelMalePlural>ратскинские повстанцы-десантники</RK_Rebel_Paratrooper.labelMalePlural>
+<RK_Rebel_Paratrooper.labelFemale>ратскинская повстанка-десантник</RK_Rebel_Paratrooper.labelFemale>
+<RK_Rebel_Paratrooper.labelFemalePlural>ратскинские повстанки-десантники</RK_Rebel_Paratrooper.labelFemalePlural>
+
+<!-- подразделение джаггернаутов -->
+<!-- раткин-джаггернаут авангард -->
+<RK_Rebel_Juggernaut_PM.label>ратскин-джаггернаут авангард</RK_Rebel_Juggernaut_PM.label>
+<RK_Rebel_Juggernaut_PM.labelPlural>ратскины-джаггернауты авангарда</RK_Rebel_Juggernaut_PM.labelPlural>
+<RK_Rebel_Juggernaut_PM.labelMale>ратскин-джаггернаут авангард</RK_Rebel_Juggernaut_PM.labelMale>
+<RK_Rebel_Juggernaut_PM.labelMalePlural>ратскины-джаггернауты авангарда</RK_Rebel_Juggernaut_PM.labelMalePlural>
+<RK_Rebel_Juggernaut_PM.labelFemale>ратскин-джаггернаут авангард</RK_Rebel_Juggernaut_PM.labelFemale>
+<RK_Rebel_Juggernaut_PM.labelFemalePlural>ратскины-джаггернауты авангарда</RK_Rebel_Juggernaut_PM.labelFemalePlural>
+
+<!-- раткин-джаггернаут пулемётчик -->
+<RK_Rebel_Juggernaut_Heavyweaponer.label>ратскин-джаггернаут пулемётчик</RK_Rebel_Juggernaut_Heavyweaponer.label>
+<RK_Rebel_Juggernaut_Heavyweaponer.labelPlural>ратскины-джаггернауты пулемётчики</RK_Rebel_Juggernaut_Heavyweaponer.labelPlural>
+<RK_Rebel_Juggernaut_Heavyweaponer.labelMale>ратскин-джаггернаут пулемётчик</RK_Rebel_Juggernaut_Heavyweaponer.labelMale>
+<RK_Rebel_Juggernaut_Heavyweaponer.labelMalePlural>ратскины-джаггернауты пулемётчики</RK_Rebel_Juggernaut_Heavyweaponer.labelMalePlural>
+<RK_Rebel_Juggernaut_Heavyweaponer.labelFemale>ратскин-джаггернаут пулемётчик</RK_Rebel_Juggernaut_Heavyweaponer.labelFemale>
+<RK_Rebel_Juggernaut_Heavyweaponer.labelFemalePlural>ратскины-джаггернауты пулемётчики</RK_Rebel_Juggernaut_Heavyweaponer.labelFemalePlural>
+
+<!-- раткин-джаггернаут снайпер -->
+<RK_Rebel_Juggernaut_Sniper.label>ратскин-джаггернаут снайпер</RK_Rebel_Juggernaut_Sniper.label>
+<RK_Rebel_Juggernaut_Sniper.labelPlural>ратскины-джаггернауты снайперы</RK_Rebel_Juggernaut_Sniper.labelPlural>
+<RK_Rebel_Juggernaut_Sniper.labelMale>ратскин-джаггернаут снайпер</RK_Rebel_Juggernaut_Sniper.labelMale>
+<RK_Rebel_Juggernaut_Sniper.labelMalePlural>ратскины-джаггернауты снайперы</RK_Rebel_Juggernaut_Sniper.labelMalePlural>
+<RK_Rebel_Juggernaut_Sniper.labelFemale>ратскин-джаггернаут снайпер</RK_Rebel_Juggernaut_Sniper.labelFemale>
+<RK_Rebel_Juggernaut_Sniper.labelFemalePlural>ратскины-джаггернауты снайперы</RK_Rebel_Juggernaut_Sniper.labelFemalePlural>
+
+</LanguageData>

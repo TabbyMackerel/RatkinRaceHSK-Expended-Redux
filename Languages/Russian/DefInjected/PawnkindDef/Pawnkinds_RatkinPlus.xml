@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Отступник -->
+<Ratkin_Deviator.label>раткин-отступник</Ratkin_Deviator.label>
+<Ratkin_Deviator.labelPlural>раткины-отступники</Ratkin_Deviator.labelPlural>
+<Ratkin_Deviator.labelMale>раткин-отступник</Ratkin_Deviator.labelMale>
+<Ratkin_Deviator.labelMalePlural>раткины-отступники</Ratkin_Deviator.labelMalePlural>
+<Ratkin_Deviator.labelFemale>раткин-отступница</Ratkin_Deviator.labelFemale>
+<Ratkin_Deviator.labelFemalePlural>раткины-отступницы</Ratkin_Deviator.labelFemalePlural>
+
+<!-- Маро́дер -->
+<Ratkin_Looter.label>раткин-мародёр</Ratkin_Looter.label>
+<Ratkin_Looter.labelPlural>раткины-мародёры</Ratkin_Looter.labelPlural>
+<Ratkin_Looter.labelMale>раткин-мародёр</Ratkin_Looter.labelMale>
+<Ratkin_Looter.labelMalePlural>раткины-мародёры</Ratkin_Looter.labelMalePlural>
+<Ratkin_Looter.labelFemale>раткин-мародёрка</Ratkin_Looter.labelFemale>
+<Ratkin_Looter.labelFemalePlural>раткины-мародёрки</Ratkin_Looter.labelFemalePlural>
+
+<!-- Громила -->
+<Ratkin_Thug.label>раткин-громила</Ratkin_Thug.label>
+<Ratkin_Thug.labelPlural>раткины-громилы</Ratkin_Thug.labelPlural>
+<Ratkin_Thug.labelMale>раткин-громила</Ratkin_Thug.labelMale>
+<Ratkin_Thug.labelMalePlural>раткины-громилы</Ratkin_Thug.labelMalePlural>
+<Ratkin_Thug.labelFemale>раткин-громила</Ratkin_Thug.labelFemale>
+<Ratkin_Thug.labelFemalePlural>раткины-громилы</Ratkin_Thug.labelFemalePlural>
+
+<!-- Дезертир-боевик -->
+<RatkinCombatant_Deserter.label>раткин-дезертир</RatkinCombatant_Deserter.label>
+<RatkinCombatant_Deserter.labelPlural>раткины-дезертиры</RatkinCombatant_Deserter.labelPlural>
+<RatkinCombatant_Deserter.labelMale>раткин-дезертир</RatkinCombatant_Deserter.labelMale>
+<RatkinCombatant_Deserter.labelMalePlural>раткины-дезертиры</RatkinCombatant_Deserter.labelMalePlural>
+<RatkinCombatant_Deserter.labelFemale>раткин-дезертирка</RatkinCombatant_Deserter.labelFemale>
+<RatkinCombatant_Deserter.labelFemalePlural>раткины-дезертирки</RatkinCombatant_Deserter.labelFemalePlural>
+
+<!-- Дезертир-солдат -->
+<RatkinSoldier_Deserter.label>раткин-солдат-дезертир</RatkinSoldier_Deserter.label>
+<RatkinSoldier_Deserter.labelPlural>раткины-солдаты-дезертиры</RatkinSoldier_Deserter.labelPlural>
+<RatkinSoldier_Deserter.labelMale>раткин-солдат-дезертир</RatkinSoldier_Deserter.labelMale>
+<RatkinSoldier_Deserter.labelMalePlural>раткины-солдаты-дезертиры</RatkinSoldier_Deserter.labelMalePlural>
+<RatkinSoldier_Deserter.labelFemale>раткин-солдатка-дезертирка</RatkinSoldier_Deserter.labelFemale>
+<RatkinSoldier_Deserter.labelFemalePlural>раткины-солдатки-дезертирки</RatkinSoldier_Deserter.labelFemalePlural>
+
+</LanguageData>

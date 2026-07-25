@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<RK_Shelter.label>Ratkin Shelter</RK_Shelter.label>
+	<RK_Shelter.description>This is the area where some Ratkins decided to hide due to the devastation caused by the civil war.</RK_PlayerFaction.description>
+    <RK_Shelter.pawnSingular>Ratkin Refugee</RK_Shelter.pawnSingular>
+	<RK_Shelter.pawnsPlural>Ratkin Refugees</RK_Shelter.pawnsPlural>
+	
+</LanguageData>

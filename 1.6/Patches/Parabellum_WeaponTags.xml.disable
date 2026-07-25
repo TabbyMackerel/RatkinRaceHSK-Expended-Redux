@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationFindMod"> 
+		<mods>
+		  <li>Parabellum</li>
+		</mods>
+		
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="Pa_SR"]/weaponTags</xpath>
+				  <value>
+					<li>RK_Militiaman</li>
+					<li>RK_RebelPT</li>
+				  </value>
+				</li>
+
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="Pa_C96M"]/weaponTags</xpath>
+				  <value>
+					<li>RK_Militiaman</li>
+					<li>RK_RebelPT</li>
+				  </value>
+				</li>
+
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="Pa_W1887L"]/weaponTags</xpath>
+				  <value>
+					<li>RK_Militiaman</li>
+				  </value>
+				</li>
+
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="Pa_W1887S"]/weaponTags</xpath>
+				  <value>
+					<li>RK_Militiaman</li>
+				  </value>
+				</li>
+
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="Pa_M712S"]/weaponTags</xpath>
+				  <value>
+					<li>RK_MilitiamanAdvanced</li>
+				  </value>
+				</li>
+
+<!--			<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="Pa_W1897T"]/weaponTags</xpath>
+				  <value>
+					<li>RK_MilitiamanAdvanced</li>
+				  </value>
+				</li>-->	
+
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="Pa_W1897L"]/weaponTags</xpath>
+				  <value>
+					<li>RK_MilitiamanAdvanced</li>
+				  </value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="Pa_BA5L"]/weaponTags</xpath>
+				  <value>
+					<li>RK_MilitiamanAdvanced</li>
+					<li>RK_RebelST</li>
+				  </value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="Pa_BA5S"]/weaponTags</xpath>
+				  <value>
+					<li>RK_MilitiamanAdvanced</li>
+				  </value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="Pa_Suomi"]/weaponTags</xpath>
+				  <value>
+					<li>RK_RebelSMG</li>
+					<li>RK_Warload</li>
+				  </value>
+				</li>
+
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="Pa_Tommy"]/weaponTags</xpath>
+				  <value>
+					<li>RK_RebelSMG</li>
+				  </value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="Pa_MP18B"]/weaponTags</xpath>
+				  <value>
+					<li>RK_MilitiamanAdvanced</li>
+				  </value>
+				</li>
+
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="Pa_MP717r"]/weaponTags</xpath>
+				  <value>
+					<li>RK_MilitiamanAdvanced</li>
+					<li>RK_RebelSMG</li>
+				  </value>
+				</li>				
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="Pa_K90M"]/weaponTags</xpath>
+				  <value>
+					<li>RK_MilitiamanAdvanced</li>
+					<li>RK_RebelRifle</li>
+				  </value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="Pa_K98k"]/weaponTags</xpath>
+				  <value>
+					<li>RK_MilitiamanAdvanced</li>
+					<li>RK_RebelRifle</li>
+				  </value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="Pa_MKb42H"]/weaponTags</xpath>
+				  <value>
+					<li>RK_VolunteerArmy</li>
+					<li>RK_RebelSquadleader</li>
+					<li>RK_Warload</li>
+				  </value>
+				</li>
+
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="Pa_StG44AR"]/weaponTags</xpath>
+				  <value>
+					<li>RK_VolunteerArmy</li>
+					<li>RK_RebelSquadleader</li>
+					<li>RK_Warload</li>
+				  </value>
+				</li>
+				
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="Pa_Mk14M"]/weaponTags</xpath>
+				  <value>
+					<li>RK_RebelRifleElite</li>
+				  </value>
+				</li>	
+				
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="Pa_DP"]/weaponTags</xpath>
+				  <value>
+					<li>RK_RebelSTElite</li>
+				  </value>
+				</li>	
+				
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="Pa_CAWS"]/weaponTags</xpath>
+				  <value>
+					<li>RK_RebelSTElite</li>
+				  </value>
+				</li>						
+
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="Pa_RPzB"]/weaponTags</xpath>
+				  <value>
+					<li>RK_RebelAntitank</li>
+				  </value>
+				</li>
+
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="Pa_CGR"]/weaponTags</xpath>
+				  <value>
+					<li>RK_RebelAntitankElite</li>
+				  </value>
+				</li>
+
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="Pa_FLASH"]/weaponTags</xpath>
+				  <value>
+					<li>RK_RebelAntitankElite</li>
+				  </value>
+				</li>
+
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="Pa_XM109AMPR"]/weaponTags</xpath>
+				  <value>
+					<li>RK_RebelSquadleaderElite</li>
+				  </value>
+				</li>
+
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="Pa_Mk1250SPR"]/weaponTags</xpath>
+				  <value>
+					<li>RK_RebelSquadleaderElite</li>
+				  </value>
+				</li>
+				
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>

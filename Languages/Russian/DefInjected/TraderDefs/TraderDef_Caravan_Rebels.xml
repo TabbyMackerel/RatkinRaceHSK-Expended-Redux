@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <!-- 랫킨 반군(공화국군) -->
+    <!-- 전쟁물자 상단 -->
+	<Caravan_RatkinRebel_CombatTrader.label>торговец военными материалами</Caravan_RatkinRebel_CombatTrader.label>
+
+    <!-- торговый караван с продовольствием -->
+
+    <Caravan_RatkinRebel_FoodTrader.label>торговец продовольствием</Caravan_RatkinRebel_FoodTrader.label>
+
+    <!-- раткинские беспринципные повстанцы (военачальники) -->
+    <!-- наркоторговец -->
+    <Caravan_RatkinRebel_DrugTrader.label>наркоторговец</Caravan_RatkinRebel_DrugTrader.label>
+
+    <!-- контрабандист -->
+    <Caravan_RatkinRebel_LootTrafficker.label>контрабандист</Caravan_RatkinRebel_LootTrafficker.label>
+
+</LanguageData>

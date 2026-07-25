@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 	<PawnKindDef Name="RatkinPirateBase" Abstract="True">
+	    <race>Ratkin</race>
+		<defaultFactionType>Pirate</defaultFactionType>
+		<chemicalAddictionChance>0.68</chemicalAddictionChance>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>RatkinStory</li>
+					<li>Pirate</li>
+					<li>RatkinMurderer</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<itemQuality>Poor</itemQuality>
+		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+		<techHediffsMoney>			
+			<min>200</min>
+			<max>700</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+		<techHediffsMaxAmount>1</techHediffsMaxAmount>
+		<techHediffsChance>0.28</techHediffsChance>
+		<invNutrition>1.5</invNutrition>
+		<invFoodDef>MealJerky</invFoodDef>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<xenotypeSet>
+		  <xenotypeChances>
+			<Baseline_Ratkin MayRequire="Ludeon.RimWorld.Biotech">999</Baseline_Ratkin>
+		  </xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+	
+	<!-- 랫킨 도적 계열 -->
+ 	<PawnKindDef ParentName="RatkinPirateBase" Name="RatkinBanditBase" Abstract="True">
+		<chemicalAddictionChance>0.50</chemicalAddictionChance>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<minGenerationAge>18</minGenerationAge>
+		<maxGenerationAge>47</maxGenerationAge>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>RatkinStory</li>
+					<li>Pirate</li>
+					<li>RatkinMurderer</li>
+					<li>RatkinThief</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<itemQuality>Poor</itemQuality>
+		<initialWillRange>1~2</initialWillRange>
+		<initialResistanceRange>13~17</initialResistanceRange>
+ 	</PawnKindDef>
+
+ 	<PawnKindDef ParentName="RatkinBanditBase">
+		<defName>Ratkin_Deviator</defName>
+		<label>랫킨 일탈자</label>
+		<combatPower>30</combatPower>
+		<apparelRequired>
+			<li>RK_ApronSkirt</li>
+			<li>RK_Cardigan</li>
+			<li>RK_CrossBack</li>
+		</apparelRequired>
+		<isFighter>true</isFighter>
+		<apparelMoney>
+			<min>175</min>
+			<max>300</max>
+		</apparelMoney>
+		<apparelTags>
+			<li>RK_1Tier</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0.3</apparelAllowHeadgearChance>
+		<weaponMoney>
+			<min>105</min>
+			<max>160</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>RK_RatkinThiefWeapon</li>
+		</weaponTags>
+	</PawnKindDef>
+
+ 	<PawnKindDef ParentName="RatkinBanditBase">
+		<defName>Ratkin_Looter</defName>
+		<label>랫킨 약탈자</label>
+		<combatPower>80</combatPower>
+		<apparelRequired>
+			<li>RK_Backpack</li>
+			<li>Apparello_Bandit</li>
+		</apparelRequired>
+		<isFighter>true</isFighter>
+		<apparelMoney>
+			<min>2200</min>
+			<max>3000</max>
+		</apparelMoney>
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>7~15</initialResistanceRange>
+		<apparelTags>
+			<li>RK_Murderer</li>
+			<li>BanditsLight</li>
+			<li>FeralOutfit</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
+		<weaponMoney>
+			<min>900</min>
+			<max>1800</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>RK_Rifle</li>
+			<li>RK_2TierWeapon</li>
+			<li>RF1</li>
+			<li>PT1</li>
+		</weaponTags>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>4</min>
+					<max>7</max>
+				</primaryMagazineCount>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	 <PawnKindDef ParentName="RatkinBanditBase">
+		<defName>Ratkin_Thug</defName>
+		<label>랫킨 폭력배</label>
+		<combatPower>50</combatPower>
+		<apparelRequired>
+			<li>RK_Backpack</li>
+			<li>Apparello_Bandit</li>
+			<li>RK_WoodenShield</li>
+		</apparelRequired>
+		<isFighter>true</isFighter>
+		<apparelMoney>
+			<min>2000</min>
+			<max>3000</max>
+		</apparelMoney>
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>7~15</initialResistanceRange>
+		<apparelTags>
+			<li>RK_Murderer</li>
+			<li>BanditsLight</li>
+			<li>FeralOutfit</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
+		<weaponMoney>
+			<min>200</min>
+			<max>350</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>MedievalMelee</li>
+		</weaponTags>
+	</PawnKindDef>
+
+	<!-- 플레이어 랫킨 도적 -->
+ 	<PawnKindDef ParentName="RatkinBanditBase">
+		<defName>Ratkin_Bandit_Player</defName>
+		<label>랫킨 도적단 일원</label>
+		<chemicalAddictionChance>0.08</chemicalAddictionChance>
+		<minGenerationAge>18</minGenerationAge>
+		<maxGenerationAge>30</maxGenerationAge>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>RatkinStory</li>
+					<li>RatkinMurderer</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<combatPower>80</combatPower>
+		<apparelRequired>
+			<li>Apparello_Bandit</li>
+		</apparelRequired>
+		<isFighter>true</isFighter>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<defaultFactionType>RK_Bandits_Hideout</defaultFactionType>
+		<apparelMoney>
+			<min>1500</min>
+			<max>2000</max>
+		</apparelMoney>		
+		<apparelTags>
+			<li>RK_Murderer</li>
+			<li>BanditsLight</li>
+			<li>FeralOutfit</li>
+		</apparelTags>
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>7~15</initialResistanceRange>
+		<apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="RatkinPirateBase" Name="RatkinCombatantDeserterBase" Abstract="True">
+		<backstoryFiltersOverride>
+			<li>
+			<categories>
+				<li>RatkinCombatant</li>
+			</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	
+		<PawnKindDef ParentName="RatkinPirateBase">
+		<defName>RatkinCombatant_Deserter</defName>
+		<label>랫킨 탈영 전투원</label>
+		<combatPower>160</combatPower>
+		<apparelRequired>
+			<li>RK_Backpack</li>
+			<li>RK_GaurdenUniform</li>
+		</apparelRequired>
+		<isFighter>true</isFighter>
+
+		<apparelMoney>
+			<min>1000</min>
+			<max>2500</max>
+		</apparelMoney>
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>7~15</initialResistanceRange>
+		<weaponMoney>
+			<min>1200</min>
+			<max>2000</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>RK_Combatant</li>
+		</weaponTags>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>8</min>
+					<max>12</max>
+				</primaryMagazineCount>
+			</li>
+		</modExtensions>
+		<apparelTags>
+			<li>RenegadesLight</li>
+			<li>RK_Combatant</li>
+			<li>RK_Loadbearing</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0.1</apparelAllowHeadgearChance>
+	</PawnKindDef>	
+
+	<PawnKindDef ParentName="RatkinPirateBase" Name="RatkinSoldierDeserterBase" Abstract="True">
+		<backstoryFiltersOverride>
+			<li>
+			<categories>
+				<li>RatkinSoldier</li>
+			</categories>
+			</li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="RatkinPirateBase">
+		<defName>RatkinSoldier_Deserter</defName>
+		<label>랫킨 탈영 군인</label>
+		<combatPower>200</combatPower>
+		<apparelRequired>
+			<li>RK_Backpack</li>
+			<li>RK_OrderUniform</li>
+		</apparelRequired>
+		<isFighter>true</isFighter>
+		<apparelMoney>
+			<min>2000</min>
+			<max>3100</max>
+		</apparelMoney>
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>7~15</initialResistanceRange>
+		<weaponMoney>
+			<min>1000</min>
+			<max>2000</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>RK_Rifle</li>
+		</weaponTags>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>4</min>
+					<max>6</max>
+				</primaryMagazineCount>
+			</li>
+		</modExtensions>
+		<apparelTags>
+			<li>RenegadesLight</li>
+			<li>RK_Soldier</li>
+			<li>RK_Loadbearing</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>8~13</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>6~10</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+</Defs>

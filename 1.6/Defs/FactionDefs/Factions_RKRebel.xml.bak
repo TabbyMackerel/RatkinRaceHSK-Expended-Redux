@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef ParentName="SK_HumanFactionBase" Name="RatkinRebelFactionBase" Abstract="True">
+		<pawnSingular>랫킨</pawnSingular>
+		<pawnsPlural>랫킨들</pawnsPlural>
+		<categoryTag>RatkinStory</categoryTag>
+		<listOrderPriority>30</listOrderPriority>
+		<settlementGenerationWeight>1.7</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<canMakeRandomly>true</canMakeRandomly>
+		<leaderTitle>반군 지도자</leaderTitle>
+		<earliestRaidDays>50</earliestRaidDays>
+		<factionNameMaker>NamerFaction_RatkinRebel</factionNameMaker>
+		<settlementNameMaker>NamerSettlement_RatkinKingdom</settlementNameMaker>	
+		<canSiege>true</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<techLevel>Industrial</techLevel>
+		<backstoryCategories>
+			<li>Offworld</li>
+		</backstoryCategories>
+		<xenotypeSet>
+		  <xenotypeChances>
+			<Baseline_Ratkin MayRequire="Ludeon.RimWorld.Biotech">999</Baseline_Ratkin>
+		  </xenotypeChances>
+		</xenotypeSet>
+		<visitorTraderKinds>
+			<li>Visitor_Outlander_Standard</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+			<li>Base_Outlander_Standard</li>
+		</baseTraderKinds>
+		<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+		<structureMemeWeights>
+			<Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
+			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">2</Structure_TheistAbstract>
+			<Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
+			<Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
+		</structureMemeWeights>
+		<settlementTexturePath>Icon/RK_DefaultColony</settlementTexturePath>
+		<apparelStuffFilter>
+			<stuffCategoriesToAllow>
+				<li>WeaponMetallic</li>
+				<li>Fabric</li>
+				<li>Leathery</li>
+				<li>Woody</li>
+			</stuffCategoriesToAllow>
+			<thingDefs>
+				<li>DevilstrandCloth</li>
+				<li>Kevlar</li>
+				<li>AluminiumBar</li>
+				<li>Bronze</li>
+				<li>SteelBar</li>
+			</thingDefs>
+			<disallowedThingDefs>
+				<li>Chitin</li>
+				<li>Velour</li>
+			</disallowedThingDefs>
+		</apparelStuffFilter>
+		<allowedCultures>
+			<li>RatkiniaTraditionCulture</li>
+		</allowedCultures>
+	</FactionDef>
+
+	<FactionDef ParentName="RatkinRebelFactionBase">
+		<defName>RatkinRebel_Unethical</defName>
+		<label>랫킨 비윤리적인 반군</label>
+		<description>기존의 왕정 질서를 무너뜨리고 새로운 정권을 세우려는 랫킨 반란군들입니다. 이들에개는 윤리와 인간성이라는 것을 하나도 찾을 수 없으며 마약 밀매, 약탈과 학살을 벌이고 어린 랫킨을 납치하여 소년병을 만드는 등 여러 불법적인 행위를 하고 있으며 여러 세력에게도 똑같은 행위를 반복하여 미움을 사고 있습니다.</description>
+		<colorSpectrum>
+			<li>(0.53, 0.45, 0.34)</li>
+			<li>(0.61, 0.32, 0.27)</li>
+		</colorSpectrum>
+		<earliestRaidDays>40</earliestRaidDays>
+		<caravanTraderKinds>
+			<li>Caravan_RatkinRebel_DrugTrader</li>
+			<li>Caravan_RatkinRebel_LootTrafficker</li>
+		</caravanTraderKinds>
+		<xenotypeSet>
+		  <xenotypeChances>
+			<Baseline_Ratkin MayRequire="Ludeon.RimWorld.Biotech">999</Baseline_Ratkin>
+		  </xenotypeChances>
+		</xenotypeSet>
+		<raidCommonalityFromPointsCurve>
+			<points>
+				<li>(0, 0.01)</li>
+				<li>(500, 0.05)</li>
+				<li>(1500, 0.2)</li>
+				<li>(3000, 0.5)</li>
+				<li>(6000, 0.7)</li>
+				<li>(9500, 1.1)</li>
+				<li>(12500, 0.8)</li>
+				<li>(16000, 0.5)</li>
+			</points>
+		</raidCommonalityFromPointsCurve>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(600, 100)</li>
+				<li>(2400, 150)</li>
+				<li>(5500, 180)</li>
+				<li>(7000, 220)</li>
+				<li>(9500, 260)</li>
+				<li>(12000, 300)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<RK_RebelUnethical_Collaborator>15</RK_RebelUnethical_Collaborator>
+					<RK_RebelUnethical_Manhunter>5</RK_RebelUnethical_Manhunter>
+					<RK_RebelUnethical_Raider>5</RK_RebelUnethical_Raider>
+					<RK_RebelUnethical_WarloadMember>3</RK_RebelUnethical_WarloadMember>
+					<RK_RebelUnethical_Warload_Field_Commander>1</RK_RebelUnethical_Warload_Field_Commander>
+					<RK_RebelUnethical_WarloadBoss>1</RK_RebelUnethical_WarloadBoss>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<RK_RebelUnethical_Smuggler>1</RK_RebelUnethical_Smuggler>
+				</traders>
+				<carriers> 
+					<Ratkin_KingHamster>5</Ratkin_KingHamster>
+					<Muffalo>2</Muffalo>
+					<Buffalo>2</Buffalo>
+					<Megabadger>1</Megabadger>
+					<Bear_Grizzly>2</Bear_Grizzly>
+				</carriers>
+				<guards>
+					<RK_RebelUnethical_Collaborator>2</RK_RebelUnethical_Collaborator>
+					<RK_RebelUnethical_Manhunter>4</RK_RebelUnethical_Manhunter>
+					<RK_RebelUnethical_Raider>4</RK_RebelUnethical_Raider>
+					<RK_RebelUnethical_Raider_Destroyer>3</RK_RebelUnethical_Raider_Destroyer>
+					<RK_RebelUnethical_Raider_Kamikaze>2</RK_RebelUnethical_Raider_Kamikaze>
+					<RK_RebelUnethical_WarloadAssaulter>5</RK_RebelUnethical_WarloadAssaulter>
+					<RK_RebelUnethical_WarloadSkirmisher>6</RK_RebelUnethical_WarloadSkirmisher>
+					<RK_RebelUnethical_WarloadMember>2</RK_RebelUnethical_WarloadMember>
+					<RK_RebelUnethical_WarloadSoldier>2</RK_RebelUnethical_WarloadSoldier>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>80</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<options>
+					<RK_RebelUnethical_Rioter_Ranged>10</RK_RebelUnethical_Rioter_Ranged>
+					<RK_RebelUnethical_Rioter_Melee>12</RK_RebelUnethical_Rioter_Melee>
+					<RK_RebelUnethical_Manhunter>8</RK_RebelUnethical_Manhunter>
+					<RK_RebelUnethical_Raider>4</RK_RebelUnethical_Raider>
+					<RK_RebelUnethical_Raider_Destroyer>2</RK_RebelUnethical_Raider_Destroyer>
+					<RK_RebelUnethical_Raider_Kamikaze>1</RK_RebelUnethical_Raider_Kamikaze>
+					<RK_RebelUnethical_WarloadSkirmisher>4</RK_RebelUnethical_WarloadSkirmisher>
+					<RK_RebelUnethical_WarloadMember>3</RK_RebelUnethical_WarloadMember>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>60</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<options>
+					<RK_RebelUnethical_Raider>8</RK_RebelUnethical_Raider>
+					<RK_RebelUnethical_Manhunter>14</RK_RebelUnethical_Manhunter>
+					<RK_RebelUnethical_WarloadSkirmisher>6</RK_RebelUnethical_WarloadSkirmisher>
+					<RK_RebelUnethical_Raider_Destroyer>3</RK_RebelUnethical_Raider_Destroyer>
+					<RK_RebelUnethical_Raider_Kamikaze>3</RK_RebelUnethical_Raider_Kamikaze>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>65</commonality>
+				<options>
+					<RK_RebelUnethical_Raider>5</RK_RebelUnethical_Raider>
+					<RK_RebelUnethical_Manhunter>5</RK_RebelUnethical_Manhunter>
+					<RK_RebelUnethical_Raider_Destroyer>3</RK_RebelUnethical_Raider_Destroyer>
+					<RK_RebelUnethical_Raider_Kamikaze>3</RK_RebelUnethical_Raider_Kamikaze>
+					<RK_RebelUnethical_WarloadSkirmisher>3</RK_RebelUnethical_WarloadSkirmisher>
+					<RK_RebelUnethical_WarloadMember>5</RK_RebelUnethical_WarloadMember>
+					<RK_RebelUnethical_WarloadSoldier>8</RK_RebelUnethical_WarloadSoldier>
+					<RK_RebelUnethical_WarloadSniper>2</RK_RebelUnethical_WarloadSniper>
+					<RK_RebelUnethical_WarloadAssaulter>4</RK_RebelUnethical_WarloadAssaulter>
+					<RK_RebelUnethical_Warload_HeavyGunner>1</RK_RebelUnethical_Warload_HeavyGunner>
+					<RK_RebelUnethical_Warload_Field_Commander>1</RK_RebelUnethical_Warload_Field_Commander>
+					<RK_RebelUnethical_ChildSoldier>5</RK_RebelUnethical_ChildSoldier>
+					<RK_RebelUnethical_ChildSoldier_Biotech MayRequire="Ludeon.RimWorld.Biotech">4</RK_RebelUnethical_ChildSoldier_Biotech>
+					<RK_RebelUnethical_ChildSoldier_Biotech_Kamikaze MayRequire="Ludeon.RimWorld.Biotech">2</RK_RebelUnethical_ChildSoldier_Biotech_Kamikaze>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>75</commonality>
+				<options>
+					<RK_RebelUnethical_WarloadAssaulter>16</RK_RebelUnethical_WarloadAssaulter>
+					<RK_RebelUnethical_WarloadSoldier>5</RK_RebelUnethical_WarloadSoldier>
+					<RK_RebelUnethical_Warload_HeavyGunner>1</RK_RebelUnethical_Warload_HeavyGunner>
+					<RK_RebelUnethical_Warload_Field_Commander>1</RK_RebelUnethical_Warload_Field_Commander>
+					<RK_RebelUnethical_ChildSoldier>5</RK_RebelUnethical_ChildSoldier>
+					<RK_RebelUnethical_ChildSoldier_Biotech MayRequire="Ludeon.RimWorld.Biotech">10</RK_RebelUnethical_ChildSoldier_Biotech>
+					<RK_RebelUnethical_ChildSoldier_Biotech_Kamikaze MayRequire="Ludeon.RimWorld.Biotech">10</RK_RebelUnethical_ChildSoldier_Biotech_Kamikaze>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>75</commonality>
+				<options>
+					<RK_RebelUnethical_WarloadAssaulter>25</RK_RebelUnethical_WarloadAssaulter>
+					<RK_RebelUnethical_Raider_Kamikaze>8</RK_RebelUnethical_Raider_Kamikaze>
+					<RK_RebelUnethical_Raider_Destroyer>8</RK_RebelUnethical_Raider_Destroyer>
+					<RK_RebelUnethical_Warload_Field_Commander>1</RK_RebelUnethical_Warload_Field_Commander>
+					<RK_RebelUnethical_ChildSoldier_Biotech MayRequire="Ludeon.RimWorld.Biotech">5</RK_RebelUnethical_ChildSoldier_Biotech>
+					<RK_RebelUnethical_ChildSoldier_Biotech_Kamikaze MayRequire="Ludeon.RimWorld.Biotech">5</RK_RebelUnethical_ChildSoldier_Biotech_Kamikaze>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>50</commonality>
+				<options>
+					<RK_RebelUnethical_Raider>4</RK_RebelUnethical_Raider>
+					<RK_RebelUnethical_Manhunter>8</RK_RebelUnethical_Manhunter>
+					<RK_RebelUnethical_WarloadSkirmisher>4</RK_RebelUnethical_WarloadSkirmisher>
+					<RK_RebelUnethical_Raider_Destroyer>6</RK_RebelUnethical_Raider_Destroyer>
+					<RK_RebelUnethical_Raider_Kamikaze>2</RK_RebelUnethical_Raider_Kamikaze>
+					<RK_RebelUnethical_WarloadAssaulter>3</RK_RebelUnethical_WarloadAssaulter>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>50</commonality>
+				<options>
+					<RK_RebelUnethical_WarloadSkirmisher>5</RK_RebelUnethical_WarloadSkirmisher>
+					<RK_RebelUnethical_WarloadMember>5</RK_RebelUnethical_WarloadMember>
+					<RK_RebelUnethical_WarloadSoldier>8</RK_RebelUnethical_WarloadSoldier>
+					<RK_RebelUnethical_WarloadSniper>2</RK_RebelUnethical_WarloadSniper>
+					<RK_RebelUnethical_WarloadAssaulter>12</RK_RebelUnethical_WarloadAssaulter>
+					<RK_RebelUnethical_Warload_HeavyGunner>2</RK_RebelUnethical_Warload_HeavyGunner>
+					<RK_RebelUnethical_WarloadBoss>1</RK_RebelUnethical_WarloadBoss>
+					<RK_RebelUnethical_ChildSoldier>4</RK_RebelUnethical_ChildSoldier>
+					<RK_RebelUnethical_ChildSoldier_Biotech MayRequire="Ludeon.RimWorld.Biotech">4</RK_RebelUnethical_ChildSoldier_Biotech>
+					<RK_RebelUnethical_ChildSoldier_Biotech_Kamikaze MayRequire="Ludeon.RimWorld.Biotech">2</RK_RebelUnethical_ChildSoldier_Biotech_Kamikaze>
+				</options>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<RK_RebelUnethical_Raider>5</RK_RebelUnethical_Raider>
+					<RK_RebelUnethical_Manhunter>5</RK_RebelUnethical_Manhunter>
+					<RK_RebelUnethical_Raider_Destroyer>3</RK_RebelUnethical_Raider_Destroyer>
+					<RK_RebelUnethical_Raider_Kamikaze>3</RK_RebelUnethical_Raider_Kamikaze>
+					<RK_RebelUnethical_WarloadAssaulter>6</RK_RebelUnethical_WarloadAssaulter>
+					<RK_RebelUnethical_WarloadSoldier>12</RK_RebelUnethical_WarloadSoldier>
+					<RK_RebelUnethical_WarloadSniper>5</RK_RebelUnethical_WarloadSniper>
+					<RK_RebelUnethical_Warload_HeavyGunner>3</RK_RebelUnethical_Warload_HeavyGunner>
+					<RK_RebelUnethical_Warload_Field_Commander>2</RK_RebelUnethical_Warload_Field_Commander>
+					<RK_RebelUnethical_WarloadBoss>1</RK_RebelUnethical_WarloadBoss>
+					<RK_RebelUnethical_ChildSoldier>1</RK_RebelUnethical_ChildSoldier>
+					<RK_RebelUnethical_ChildSoldier_Biotech MayRequire="Ludeon.RimWorld.Biotech">1</RK_RebelUnethical_ChildSoldier_Biotech>
+					<RK_RebelUnethical_ChildSoldier_Biotech_Kamikaze MayRequire="Ludeon.RimWorld.Biotech">4</RK_RebelUnethical_ChildSoldier_Biotech_Kamikaze>
+				</options>
+			</li>
+		</pawnGroupMakers>
+		<naturalEnemy>true</naturalEnemy>
+		<mustStartOneEnemy>true</mustStartOneEnemy>
+		<factionIconPath>Icon/RK_Rebel_Unethical</factionIconPath>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
+		</requiredMemes>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">FleshPurity</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+		</disallowedMemes>
+		<disallowedPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+		</disallowedPrecepts>
+		<attackersDownPercentageRangeForAutoFlee>0.43~0.71</attackersDownPercentageRangeForAutoFlee>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>58</configurationListOrderPriority>
+	</FactionDef>
+
+	<FactionDef ParentName="RatkinRebelFactionBase">
+		<defName>RatkinRebel</defName>
+		<label>랫킨 반군</label>
+		<description>기존의 왕정 질서를 무너뜨리고 새로운 질서를 세우려는 랫킨 반란군 집단입니다. 이들은 여러 최신 문물을 받아들이고 신식 군대를 양성하고 있으며 무고한 자들이 왕국군과의 전투에서 희생되는것을 최대한 막으려고 합니다.</description>
+		<colorSpectrum>
+			<li>(0.25, 0.57, 0.25)</li>
+			<li>(0.10, 0.50, 0.10)</li>
+		</colorSpectrum>
+		<earliestRaidDays>45</earliestRaidDays>
+		<permanentEnemyToEveryoneExcept>
+		<li>RK_PlayerFaction</li>
+		</permanentEnemyToEveryoneExcept>
+		<caravanTraderKinds>
+			<li>Caravan_RatkinRebel_CombatTrader</li>
+			<li>Caravan_RatkinRebel_FoodTrader</li>
+		</caravanTraderKinds>
+		<xenotypeSet>
+		  <xenotypeChances>
+			<Baseline_Ratkin MayRequire="Ludeon.RimWorld.Biotech">999</Baseline_Ratkin>
+		  </xenotypeChances>
+		</xenotypeSet>
+		<raidCommonalityFromPointsCurve>
+			<points>
+				<li>(0, 0.05)</li>
+				<li>(3000, 0.3)</li>
+				<li>(5000, 0.7)</li>
+				<li>(8500, 1.3)</li>
+				<li>(10000, 1.1)</li>
+				<li>(12500, 0.8)</li>
+				<li>(15000, 0.6)</li>
+			</points>
+		</raidCommonalityFromPointsCurve>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(1000, 60)</li>
+				<li>(3000, 180)</li>
+				<li>(5000, 240)</li>
+				<li>(10000, 300)</li>
+				<li>(12500, 400)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<RK_Rebel_Squadleader>1</RK_Rebel_Squadleader>
+					<RK_Rebel_Militiaman_GunnerAdvanced>4</RK_Rebel_Militiaman_GunnerAdvanced>
+					<RK_Rebel_Militiaman_Gunner>4</RK_Rebel_Militiaman_Gunner>
+					<RK_Rebel_Militiaman_Melee>8</RK_Rebel_Militiaman_Melee>
+					<RK_Rebel_Militiaman_Crossbow>8</RK_Rebel_Militiaman_Crossbow>
+					<RK_Rebel_Civilian>15</RK_Rebel_Civilian>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<RK_Rebel_Trader>1</RK_Rebel_Trader>
+				</traders>
+				<carriers> 
+					<Ratkin_KingHamster>6</Ratkin_KingHamster>
+					<Muffalo>3</Muffalo>
+					<Buffalo>3</Buffalo>
+					<Megabadger>1</Megabadger>
+					<Bear_Grizzly>2</Bear_Grizzly>
+				</carriers>
+				<guards>
+					<RK_Rebel_Militiaman_Crossbow>5</RK_Rebel_Militiaman_Crossbow>
+					<RK_Rebel_Militiaman_Melee>5</RK_Rebel_Militiaman_Melee>
+					<RK_Rebel_Militiaman_Gunner>14</RK_Rebel_Militiaman_Gunner>
+					<RK_Rebel_Militiaman_GunnerAdvanced>9</RK_Rebel_Militiaman_GunnerAdvanced>
+					<RK_Rebel_VolunteerArmy>7</RK_Rebel_VolunteerArmy>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>80</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<options>
+					<RK_Rebel_Militiaman_Crossbow>15</RK_Rebel_Militiaman_Crossbow>
+					<RK_Rebel_Militiaman_Melee>15</RK_Rebel_Militiaman_Melee>
+					<RK_Rebel_Militiaman_Gunner>5</RK_Rebel_Militiaman_Gunner>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>60</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<options>
+					<RK_Rebel_Militiaman_Melee>20</RK_Rebel_Militiaman_Melee>
+					<RK_Rebel_Militiaman_Gunner>12</RK_Rebel_Militiaman_Gunner>
+					<RK_Rebel_Militiaman_GunnerAdvanced>8</RK_Rebel_Militiaman_GunnerAdvanced>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>45</commonality>
+				<options>
+					<RK_Rebel_Militiaman_Gunner>12</RK_Rebel_Militiaman_Gunner>
+					<RK_Rebel_Militiaman_GunnerAdvanced>10</RK_Rebel_Militiaman_GunnerAdvanced>
+					<RK_Rebel_VolunteerArmy>6</RK_Rebel_VolunteerArmy>
+					<RK_Rebel_Squadleader>1</RK_Rebel_Squadleader>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>50</commonality>
+				<options>
+					<RK_Rebel_VolunteerArmy>30</RK_Rebel_VolunteerArmy>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>75</commonality>
+				<options>
+					<RK_Rebel_Militiaman_Melee>20</RK_Rebel_Militiaman_Melee>
+					<RK_Rebel_Militiaman_GunnerAdvanced>15</RK_Rebel_Militiaman_GunnerAdvanced>
+					<RK_Rebel_VolunteerArmy>6</RK_Rebel_VolunteerArmy>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>70</commonality>
+				<options>
+					<RK_Rebel_Rifleman>12</RK_Rebel_Rifleman>
+					<RK_Rebel_Charger>6</RK_Rebel_Charger>
+					<RK_Rebel_AntiTanker>1</RK_Rebel_AntiTanker>
+					<RK_Rebel_Flamethrower>1</RK_Rebel_Flamethrower>
+					<RK_Rebel_Light>6</RK_Rebel_Light>
+					<RK_Rebel_Recruit>3</RK_Rebel_Recruit>
+					<RK_Rebel_Squadleader>3</RK_Rebel_Squadleader>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>50</commonality>
+				<options>
+					<RK_Rebel_Rifleman>14</RK_Rebel_Rifleman>
+					<RK_Rebel_Squadleader>2</RK_Rebel_Squadleader>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>50</commonality>
+				<options>
+					<RK_Rebel_Rifleman>7</RK_Rebel_Rifleman>
+					<RK_Rebel_Light>7</RK_Rebel_Light>
+					<RK_Rebel_Charger>7</RK_Rebel_Charger>
+					<RK_Rebel_Squadleader>3</RK_Rebel_Squadleader>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>65</commonality>
+				<options>
+					<RK_Rebel_Recruit>21</RK_Rebel_Recruit>
+					<RK_Rebel_Squadleader>3</RK_Rebel_Squadleader>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>30</commonality>
+				<options>
+					<RK_RebelElite_Rifleman>14</RK_RebelElite_Rifleman>
+					<RK_RebelElite_Charger>7</RK_RebelElite_Charger>
+					<RK_RebelElite_Light>7</RK_RebelElite_Light>
+					<RK_RebelElite_AntiTanker>1</RK_RebelElite_AntiTanker>
+					<RK_Rebel_Flamethrower>1</RK_Rebel_Flamethrower>
+					<RK_RebelElite_Squadleader>4</RK_RebelElite_Squadleader>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>15</commonality>
+				<options>
+					<RK_RebelElite_Rifleman>28</RK_RebelElite_Rifleman>
+					<RK_RebelElite_AntiTanker>1</RK_RebelElite_AntiTanker>
+					<RK_Rebel_Flamethrower>1</RK_Rebel_Flamethrower>
+					<RK_RebelElite_Squadleader>4</RK_RebelElite_Squadleader>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>15</commonality>
+				<options>
+					<RK_RebelElite_Light>14</RK_RebelElite_Light>
+					<RK_RebelElite_Charger>14</RK_RebelElite_Charger>
+					<RK_RebelElite_AntiTanker>1</RK_RebelElite_AntiTanker>
+					<RK_Rebel_Flamethrower>3</RK_Rebel_Flamethrower>
+				</options>
+			</li>
+			<!-- 공수부대 낙하! -->
+			<!--<li>
+				<kindDef>Combat</kindDef>
+				<commonality>7</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+					<li>EdgeDrop</li>
+					<li>CenterDrop</li>
+					<li>RandomDrop</li>
+					<li>EdgeDropGroups</li>
+				</disallowedStrategies>
+				<options>
+					<RK_Rebel_Paratrooper>15</RK_RebelElite_Light>
+				</options>
+			</li>-->
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+				<!--<RK_Rebel_Civilian>3</RK_Rebel_Civilian>
+					<RK_Rebel_Militiaman_Crossbow>3</RK_Rebel_Militiaman_Crossbow>
+					<RK_Rebel_Militiaman_Melee>3</RK_Rebel_Militiaman_Melee>
+					<RK_Rebel_Militiaman_Gunner>3</RK_Rebel_Militiaman_Gunner>
+					<RK_Rebel_Militiaman_GunnerAdvanced>6</RK_Rebel_Militiaman_GunnerAdvanced>-->
+					<RK_Rebel_VolunteerArmy>10</RK_Rebel_VolunteerArmy>
+					<RK_Rebel_Rifleman>14</RK_Rebel_Rifleman>
+					<RK_Rebel_Charger>7</RK_Rebel_Charger>
+					<RK_Rebel_AntiTanker>1</RK_Rebel_AntiTanker>
+					<RK_Rebel_Light>7</RK_Rebel_Light>
+					<RK_Rebel_Squadleader>4</RK_Rebel_Squadleader>
+					<RK_RebelElite_Rifleman>7</RK_RebelElite_Rifleman>
+					<RK_RebelElite_Charger>7</RK_RebelElite_Charger>
+					<RK_RebelElite_Light>7</RK_RebelElite_Light>
+					<RK_RebelElite_AntiTanker>1</RK_RebelElite_AntiTanker>
+					<RK_Rebel_Flamethrower>1</RK_Rebel_Flamethrower>
+					<RK_RebelElite_Squadleader>1</RK_RebelElite_Squadleader>
+				</options>
+			</li>
+		</pawnGroupMakers>
+		<factionIconPath>Icon/RK_Rebel</factionIconPath>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+		</requiredMemes>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">FleshPurity</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+		</disallowedMemes>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>57</configurationListOrderPriority>
+	</FactionDef>
+	
+</Defs>

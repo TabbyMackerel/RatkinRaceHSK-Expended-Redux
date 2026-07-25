@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+
+    <RatkinRebelFactionBase.leaderTitle>Rebel Leader</RatkinRebelFactionBase.leaderTitle>
+    <RatkinRebelFactionBase.pawnsPlural>Ratkins</RatkinRebelFactionBase.pawnsPlural>
+
+	<RatkinRebel_Unethical.label>Ratkin Unethical Rebels</RatkinRebel_Unethical.label>
+	<RatkinRebel_Unethical.description>These are the Ratkin rebels, seeking to overthrow the existing monarchy and establish a new regime. They lack any sense of ethics or humanity, engaging in drug trafficking, looting, massacres, and kidnapping young Ratkins to be used as child soldiers. They repeatedly commit these acts, earning them the hatred of various factions.</RatkinRebel_Unethical.description>
+	
+	<RatkinRebel.label>Ratkin Rebels</RatkinRebel.label>
+	<RatkinRebel.description>This is a group of Ratkin rebels who seek to overthrow the existing monarchy and establish a new order. They are embracing various modern civilizations, training a modern army, and trying to prevent innocent people from being sacrificed in battles with the royal forces.</RatkinRebel.description>
+
+</LanguageData>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept</xpath>
+						<value>
+							<li>RatkinRebel</li>
+						</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/FactionDef[defName="RatkinRebel"]/permanentEnemyToEveryoneExcept</xpath>
+		<value>
+			<li>PlayerColony</li>
+			<li>PlayerNova</li>
+			<li>PlayerExiled</li>
+			<li>PlayerNorbal</li>
+			<li>PlayerSurvivor</li>
+			<li>OrassanPlayerColony</li>
+			<li>NuclearColonySurvivor</li>
+			<li>OutlanderCivil</li>
+			<li>PlayerTribe</li>
+			<li>TribeCivil</li>
+			<li>NovaAlliance</li>
+			<li>Orassan</li>
+			<li MayRequire="ChJees.Androids">ChjPlayerAndroidColony</li>
+			<li MayRequire="ChJees.Androids">ChjAndroidEnclave</li>
+			<li MayRequire="FS.ReviaRace">ReviaTemplarFaction</li>
+			<li MayRequire="FS.ReviaRace">ReviaPlayerColony</li>
+			<li MayRequire="ViTech.MedievalOverhaul">PlayerLegion</li>
+			<li MayRequire="XxNelsonxX.Parabellum">PlayerParabellumIndustrial</li>
+			<li MayRequire="skyarkhangel.skynet">HumanResistance</li>
+			<li MayRequire="HSK.Watcher.content.Fallout2">Vaultec</li>
+			<li>RK_Shelter</li>
+			<li>RK_Rebel_Player</li>
+			<li>RK_Rebel_Player_SpecOpts</li>
+		</value>
+	</Operation>
+</Patch>

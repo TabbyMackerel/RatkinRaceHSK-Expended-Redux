@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+
+	<RK_Rebel_Player_SpecOpts.label>Раткин-повстанец спецназа</RK_Rebel_Player_SpecOpts.label>
+<RK_Rebel_Player_SpecOpts.description>Раткинские повстанцы — это подразделение спецназа, уполномоченное действовать самостоятельно для саботажа против монархии.</RK_Rebel_Player_SpecOpts.description>
+<RK_Rebel_Player_SpecOpts.pawnSingular>боец спецназа</RK_Rebel_Player_SpecOpts.pawnSingular>
+<RK_Rebel_Player_SpecOpts.pawnsPlural>спецназовцы-повстанцы</RK_Rebel_Player_SpecOpts.pawnsPlural>
+	
+</LanguageData>

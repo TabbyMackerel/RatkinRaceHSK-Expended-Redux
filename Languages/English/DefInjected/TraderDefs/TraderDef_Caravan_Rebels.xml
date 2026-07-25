@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <!-- 랫킨 반군(공화국군) -->
+    <!-- 전쟁물자 상단 -->
+	<Caravan_RatkinRebel_CombatTrader.label>war material merchant</Caravan_RatkinRebel_CombatTrader.label>
+
+    <!-- 식량물자 상단 -->
+
+    <Caravan_RatkinRebel_FoodTrader.label>food supplies merchant</Caravan_RatkinRebel_FoodTrader.label>
+
+    <!-- 랫킨 비윤리적인 반군(군벌) -->
+    <!-- 마약상 -->
+    <Caravan_RatkinRebel_DrugTrader.label>drug dealer</Caravan_RatkinRebel_DrugTrader.label>
+
+    <!-- 밀매상 -->
+    <Caravan_RatkinRebel_LootTrafficker.label>bootleggers</Caravan_RatkinRebel_LootTrafficker.label>
+
+</LanguageData>

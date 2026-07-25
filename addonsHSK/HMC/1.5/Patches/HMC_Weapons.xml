@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationFindMod"> 
+	<mods>
+		<li>arpomo6.hmc.project</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+			<!-- 저거넛 무장 -->
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="Gun_MG3_HMC"]/weaponTags</xpath>
+				  <value>
+					<li>RK_Juggernaut_Heavyweaponer</li>
+				  </value>
+				</li>
+
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="Gun_LWMMG_HMC"]/weaponTags</xpath>
+				  <value>
+					<li>RK_Juggernaut_Heavyweaponer</li>
+				  </value>
+				</li>
+
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="Mag_MG_HMC"]/weaponTags</xpath>
+				  <value>
+					<li>RK_Juggernaut_Heavyweaponer</li>
+				  </value>
+				</li>
+
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="Gun_RT20_HMC"]/weaponTags</xpath>
+				  <value>
+					<li>RK_Juggernaut_Sniper</li>
+				  </value>
+				</li>
+
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="HMC_Gun_LaserSniperRifle"]/weaponTags</xpath>
+				  <value>
+					<li>RK_Juggernaut_Sniper</li>
+				  </value>
+				</li>
+
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="Spas12_HMC"]/weaponTags</xpath>
+				  <value>
+					<li>RK_Juggernaut_PM</li>
+				  </value>
+				</li>
+
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="Gun_AN94A"]/weaponTags</xpath>
+				  <value>
+					<li>RK_Juggernaut_PM</li>
+				  </value>
+				</li>
+
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="Gun_AK19_HMC"]/weaponTags</xpath>
+				  <value>
+					<li>RK_Juggernaut_PM</li>
+				  </value>
+				</li>
+
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="Gun_SA58_HMC"]/weaponTags</xpath>
+				  <value>
+					<li>RK_Juggernaut_PM</li>
+				  </value>
+				</li>
+                
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="Mag_Rifle_HMC"]/weaponTags</xpath>
+				  <value>
+					<li>RK_Juggernaut_PM</li>
+				  </value>
+				</li>
+
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="HMC_Gun_MagShotgun"]/weaponTags</xpath>
+				  <value>
+					<li>RK_Juggernaut_PM</li>
+				  </value>
+				</li>
+
+			<!-- 난민 연맹 소속 무장 -->
+
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="HMC_Sling"]/weaponTags</xpath>
+				  <value>
+					<li></li>
+				  </value>
+				</li>
+
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="HMC_Gun_MagShotgun"]/weaponTags</xpath>
+				  <value>
+					<li></li>
+				  </value>
+				</li>
+
+				<li Class="PatchOperationAdd">	
+				<xpath>Defs/ThingDef[defName="HMC_Gun_MagShotgun"]/weaponTags</xpath>
+				  <value>
+					<li></li>
+				  </value>
+				</li>
+
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>

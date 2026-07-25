@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+	  <li>NewRatkinPlus</li>
+	</mods>
+    
+    <match Class="PatchOperationSequence">
+    <operations>
+
+<!-- 파라벨럼 에드온 모드 있을 시 적용 반군 및 왕실군 참호전 방어구 적용 -->
+
+	<li Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="RK_OutdoorBackpack"]/apparel/tags</xpath>
+	  <value>
+		  <li>RK_Rebel</li>
+		  <li>RK_TrenchWarRebel</li>
+		  <li>RK_TrenchWarRebelInfantry</li>
+		  <li>RK_TrenchWarRebelSapper</li>
+		  <li>RK_TrenchWarRebelHeavygunner</li>
+		  <li>RK_TrenchWarRakiniaInfantry</li>
+		  <li>RK_TrenchWarRakiniaSniper</li>
+          <li>RK_TrenchWarRakiniaSapper</li>
+		  <li>RK_TrenchWarRakiniaLSW</li>
+          <li>RK_TrenchWarRakiniaCQB</li>
+      </value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="RK_BulletProofHelmet"]/apparel/tags</xpath>
+	  <value>
+		  <li>RK_Rebel</li>
+		  <li>RK_TrenchWarRakiniaInfantry</li>
+		  <li>RK_TrenchWarRakiniaSniper</li>
+          <li>RK_TrenchWarRakiniaSapper</li>
+		  <li>RK_TrenchWarRakiniaLSW</li>
+          <li>RK_TrenchWarRakiniaCQB</li>
+      </value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="RK_OrderUniform"]/apparel/tags</xpath>
+	  <value>
+		  <li>RK_Rebel</li> 
+		  <li>RK_TrenchWarRakiniaInfantry</li>
+	      <li>RK_TrenchWarRakiniaSniper</li>
+          <li>RK_TrenchWarRakiniaSapper</li>
+		  <li>RK_TrenchWarRakiniaLSW</li>
+          <li>RK_TrenchWarRakiniaCQB</li>
+      </value>
+	</li>
+	
+	<li Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="RK_OrderUniformB"]/apparel/tags</xpath>
+	  <value>
+		  <li>RK_Rebel</li>
+		  <li>RK_TrenchWarRebel</li>
+		  <li>RK_TrenchWarRebelInfantry</li>
+		  <li>RK_TrenchWarRebelSapper</li>
+		  <li>RK_TrenchWarRebelHeavygunner</li>
+      </value>
+	</li>
+
+<!-- 반군 저거넛 병과 방어구 -->
+	<li Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="RK_BattleSuit"]/apparel/tags</xpath>
+	  <value>
+		  <li>RK_Juggernaut_Sniper</li>
+		  <li>RK_Juggernaut_PM</li>
+      </value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="RK_BattleSuitB"]/apparel/tags</xpath>
+	  <value>
+		  <li>RK_Juggernaut_Heavyweaponer</li>
+      </value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="RK_Mask"]/apparel/tags</xpath>
+	  <value>
+		  <li>RK_Juggernaut_Sniper</li>
+		  <li>RK_Juggernaut_PM</li>
+      </value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="RK_MaskB"]/apparel/tags</xpath>
+	  <value>
+		  <li>RK_Juggernaut_Heavyweaponer</li>
+      </value>
+	</li>
+
+	</operations>
+    </match>
+  </Operation>
+</Patch>

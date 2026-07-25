@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+
+	<RK_Rebel_Player.label>Ratkin Rebel Collaborators</RK_Rebel_Player.label>
+	<RK_Rebel_Player.description>A small group of Ratkins who sympathize with the revolutionaries who seek to overthrow the monarchy and replace it with a republic.</RK_Rebel_Player_SpecOpts.description>
+    <RK_Rebel_Player.pawnSingular>rebel</RK_Rebel_Player.pawnSingular>
+	<RK_Rebel_Player.pawnsPlural>rebels</RK_Rebel_Player.pawnsPlural>
+	
+</LanguageData>

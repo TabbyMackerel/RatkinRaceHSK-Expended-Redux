@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ScenarioDef>
+		<defName>RK_Scenario_Warlords</defName>
+		<label>혁명이라는 본질에 흐려진 랫킨 반란군들</label>
+		<description>랫킨 사회에서 왕과 귀족들을 중심으로 모든 것이 돌아가는 왕정을 무너뜨리면서, 모든 랫킨들이 평등하고 자유롭게 살 수 있는 사회를 만들려는 목적으로 반란을 공화파들의 혁명이 일어났을 당시에는 모두가 "평등과 자유"라는 대의를 위한 목적을 가지고 있었습니다. 그러나 일부 분파들이 변질되고 부패하면서, 자신들만의 이익과 탐욕에 집착한 나머지 결국 군벌이 되어버렸습니다.... 자신들에게 이익이 있으면서, 금전적인 이득만 위해서라면 온갖 불법적인 행위들을 저지르며 혁명이라는 이름에 먹칠을 해도 신경쓰지 않습니다. 어짜피 뭐가 문제인가요? 이 행성에서 살아가는 것 자체가 폭력은 일상이면서, 누가 죽었다는 소식이 계속 들리는 항상 비극이 도사리는 무법지대인데 어쩌라고요? 어쨌든, 돈과 첨단 무기와 방어구만 많으면 그만이니까 군벌의 자부심을 위해 약이나 만듭시다!</description>
+		<scenario>
+			<summary>왕정을 몰아내고 공화정을 세우려는 목적은 변질되어버리면서 결국 자신들의 이익에 눈이 멀어버린 군벌화된 랫킨들</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>RK_Rebel_Player_Warlord</factionDef>
+			</playerFaction>
+			<parts>
+
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+					<def>ConfigurePawnsXenotypes</def>
+					<pawnChoiceCount>8</pawnChoiceCount>
+					<xenotypeCounts>
+						<li>
+							<count>6</count>
+							<requiredAtStart>True</requiredAtStart>
+							<xenotype>Baseline_Ratkin</xenotype>
+							<allowedDevelopmentalStages>Adult</allowedDevelopmentalStages>
+							<description>랫킨</description>
+						</li>
+					</xenotypeCounts>
+				</li>
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>Standing</method>
+				</li>
+
+				<!-- Starting research -->
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>Ratkin_Apparel_B1</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>Ratkin_Apparel_B2</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>Ratkin_Apparel_C1</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>Drugs_A1</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>Drugs_B1</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>PsychoidBrewing</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>DrugProduction</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>Drugs_C2</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>Drugs_C3</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>PsychiteRefining</project>
+				</li>
+
+				<!-- Other -->
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Silver</thingDef>
+					<count>850</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>BasicCannedFood</thingDef>
+					<count>300</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MealSurvivalPack</thingDef>
+					<count>20</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Ammo_762x39mmSoviet_FMJ</thingDef>
+					<count>150</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Gun_AK47Gun</thingDef>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Ammo_303British_FMJ</thingDef>
+					<count>200</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>RK_Rifle</thingDef>
+					<count>2</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Ammo_9x19mmPara_FMJ</thingDef>
+					<count>600</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>RF_Gun_Tecnine</thingDef>
+					<count>3</count>
+				</li>	
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MedicineIndustrial</thingDef>
+					<count>25</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>ComponentIndustrial</thingDef>
+					<count>20</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>Plasteel</thingDef>
+					<count>300</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MeleeWeapon_Knife</thingDef>
+					<stuff>Plasteel</stuff>
+                    <count>2</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MeleeWeapon_Machete</thingDef>
+					<stuff>Plasteel</stuff>
+                    <count>3</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>TFJ_Tool_Paxe</thingDef>
+					<stuff>Plasteel</stuff>
+					<count>3</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>DeployableTentMedium</thingDef>
+					<stuff>Cloth</stuff>
+					<count>2</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>DeployableTent</thingDef>
+					<stuff>Cloth</stuff>
+					<count>2</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>BagBed</thingDef>
+					<stuff>Cloth</stuff>
+					<count>6</count>
+				</li>
+
+				<!-- Warload Ratkin Start with drugs! -->
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>TobaccoCigar</thingDef>
+					<count>60</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>TobaccoCigarette</thingDef>
+					<count>60</count>
+				</li>				
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>SmokeleafJoint</thingDef>
+					<count>30</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Flake</thingDef>
+					<count>30</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Yayo</thingDef>
+					<count>15</count>
+				</li>
+
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>Plasteel</thingDef>
+					<count>150</count>
+				</li>
+
+				<!-- Player starting things 
+				<li Class="ScenPart_StartingAnimal">
+					<def>StartingAnimal</def>
+					<animalKind>Rottie</animalKind>
+					<count>1</count>
+					<bondToRandomPlayerPawnChance>1.0</bondToRandomPlayerPawnChance>
+				</li>		-->
+				
+				<!-- Scatter some things anywhere -->
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<visible>false</visible>
+					<thingDef>ShipChunk</thingDef>
+					<count>14</count>
+					<allowRoofed>false</allowRoofed>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<visible>false</visible>
+					<thingDef>ShipMechChunk</thingDef>
+					<count>10</count>
+					<allowRoofed>false</allowRoofed>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<visible>false</visible>
+					<thingDef>Cairn</thingDef>
+					<stuff>ClayBrick</stuff>
+					<count>9</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<visible>false</visible>
+					<thingDef>BambooPlank</thingDef>
+					<count>20</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<visible>false</visible>
+					<thingDef>BlocksSandstone</thingDef>
+					<count>30</count>
+				</li>
+				<li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+				    <factionDef>Rakinia</factionDef>
+					<alwaysHostile>True</alwaysHostile>
+					<def>VFEC_ForcedFactionGoodwill</def>
+			    </li>
+			    <li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+				    <factionDef>Rakiniville</factionDef>
+					<alwaysHostile>True</alwaysHostile>
+					<def>VFEC_ForcedFactionGoodwill</def>
+			    </li>
+				<li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+					<factionDef>RatkinRebel_Unethical</factionDef>
+					<affectStartingGoodwill>True</affectStartingGoodwill>
+					<startingGoodwillRange>100~100</startingGoodwillRange>
+					<affectNaturalGoodwill>True</affectNaturalGoodwill>
+					<naturalGoodwillRange>50~75</naturalGoodwillRange>
+					<def>VFEC_ForcedFactionGoodwill</def>
+				</li>
+				<li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+					<factionDef>RatkinRebel</factionDef>
+					<affectStartingGoodwill>True</affectStartingGoodwill>
+					<startingGoodwillRange>-75~-100</startingGoodwillRange>
+					<affectNaturalGoodwill>True</affectNaturalGoodwill>
+					<naturalGoodwillRange>-55~-100</naturalGoodwillRange>
+					<def>VFEC_ForcedFactionGoodwill</def>
+				</li>
+			</parts>
+		</scenario>
+	</ScenarioDef>
+</Defs>

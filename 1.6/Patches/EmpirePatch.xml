@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/FactionDef[defName = "RK_Shelter"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationSequence">
+    <operations>
+	
+    <li Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/FactionDef[defName = "Empire"]/permanentEnemyToEveryoneExcept</xpath>
+      <value>
+        <li>RK_Shelter</li>
+      </value>
+    </li>
+	
+    </operations>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/FactionDef[defName = "RK_Rebel_Player"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationSequence">
+    <operations>
+	
+    <li Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/FactionDef[defName = "Empire"]/permanentEnemyToEveryoneExcept</xpath>
+      <value>
+        <li>RK_Rebel_Player</li>
+      </value>
+    </li>
+	
+    </operations>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/FactionDef[defName = "RK_Rebel_Player_SpecOpts"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationSequence">
+    <operations>
+	
+    <li Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/FactionDef[defName = "Empire"]/permanentEnemyToEveryoneExcept</xpath>
+      <value>
+        <li>RK_Rebel_Player_SpecOpts</li>
+      </value>
+    </li>
+	
+    </operations>
+    </match>
+  </Operation>
+  
+</Patch>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+
+<RK_Rebel_Player.label>Соратники раткинских повстанцев</RK_Rebel_Player.label>
+<RK_Rebel_Player.description>Небольшая группа раткинов, которые сочувствуют революционерам, стремящимся свергнуть монархию и установить республику.</RK_Rebel_Player.description>
+<RK_Rebel_Player.pawnSingular>повстанец</RK_Rebel_Player.pawnSingular>
+<RK_Rebel_Player.pawnsPlural>повстанцы</RK_Rebel_Player.pawnsPlural>
+	
+</LanguageData>

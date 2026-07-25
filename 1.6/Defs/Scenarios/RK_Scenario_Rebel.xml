@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ScenarioDef>
+		<defName>RK_Scenario_Rebel</defName>
+		<label>랫킨 반란군 동조자들</label>
+		<description>왕이 통치하고 신분제와 전근대적인 사회 체제에 대한 모순에 쌓일대로 쌓인 분노한 일부 랫킨들은 왕정을 뒤엎고 공화정을 세우려는 반군에 가담하기로 하였습니다. 반군은 이 랫킨들에게 무장을 지원해주었으며 혁명에 가담하는것에 환영했습니다.</description>
+		<scenario>
+			<summary>랫킨 공화정을 세우려는 반군을 돕는 랫킨들</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>RK_Rebel_Player</factionDef>
+			</playerFaction>
+			<parts>
+
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+					<def>ConfigurePawnsXenotypes</def>
+					<pawnChoiceCount>8</pawnChoiceCount>
+					<xenotypeCounts>
+						<li>
+							<count>5</count>
+							<requiredAtStart>True</requiredAtStart>
+							<xenotype>Baseline_Ratkin</xenotype>
+							<allowedDevelopmentalStages>Adult</allowedDevelopmentalStages>
+							<description>랫킨</description>
+						</li>
+					</xenotypeCounts>
+				</li>
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>Standing</method>
+				</li>
+
+				<!-- Starting research -->
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>Ratkin_Apparel_B1</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>Ratkin_Apparel_B2</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>Ratkin_Apparel_C1</project>
+				</li>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>Machining</project>
+				</li>
+
+				<!-- Other -->
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Silver</thingDef>
+					<count>400</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>BasicCannedFood</thingDef>
+					<count>300</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MealSurvivalPack</thingDef>
+					<count>10</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>PickledVeg</thingDef>
+					<count>450</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Plant_Potato</thingDef>
+					<count>30</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>RawPotatoes</thingDef>
+					<count>300</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>PlantCarrot</thingDef>
+					<count>30</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>RawCarrots</thingDef>
+					<count>300</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Ammo_9x19mmPara_FMJ</thingDef>
+					<count>300</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>RF_Gun_93R</thingDef>
+					<count>2</count>
+				</li>	
+                <li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>RK_BulletProofHelmet</thingDef>
+					<stuff>Plasteel</stuff>
+					<count>5</count>
+				</li>			
+                <li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>RK_OrderUniform</thingDef>
+					<stuff>RK_Wool_KingHamster</stuff>
+					<count>3</count>
+				</li>
+                <li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>RK_OrderUniformB</thingDef>
+					<stuff>RK_Wool_KingHamster</stuff>
+					<count>2</count>
+				</li>
+                <li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>RK_OutdoorBackpack</thingDef>
+					<stuff>RK_Wool_KingHamster</stuff>
+					<count>5</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MedicineIndustrial</thingDef>
+					<count>15</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>HerbMedicine</thingDef>
+					<count>20</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>ComponentIndustrial</thingDef>
+					<count>30</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>Plasteel</thingDef>
+					<count>400</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MeleeWeapon_Dagger</thingDef>
+					<stuff>Plasteel</stuff>
+                    <count>2</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>TFJ_Tool_Woodcutting_Handaxe</thingDef>
+					<stuff>Plasteel</stuff>
+                    <count>2</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>TFJ_Tool_Mining_Pickaxe</thingDef>
+					<stuff>Plasteel</stuff>
+                    <count>2</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>TFJ_Tool_Building_Hammer</thingDef>
+					<stuff>Plasteel</stuff>
+                    <count>2</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>TFJ_Tool_Sickle</thingDef>
+					<stuff>Plasteel</stuff>
+                    <count>2</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>TFJ_Tool_Hoe</thingDef>
+					<stuff>Plasteel</stuff>
+                    <count>2</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>DeployableTentMedium</thingDef>
+					<stuff>Cloth</stuff>
+					<count>2</count>
+				</li>				
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>BagBed</thingDef>
+					<stuff>Cloth</stuff>
+					<count>5</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>Plasteel</thingDef>
+					<count>220</count>
+				</li>
+
+				<!-- Player starting things -->
+				<li Class="ScenPart_StartingAnimal">
+					<def>StartingAnimal</def>
+					<animalKind>Rottie</animalKind>
+					<count>1</count>
+					<bondToRandomPlayerPawnChance>1.0</bondToRandomPlayerPawnChance>
+				</li>		
+				
+				<!-- Scatter some things anywhere -->
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<visible>false</visible>
+					<thingDef>ShipChunk</thingDef>
+					<count>14</count>
+					<allowRoofed>false</allowRoofed>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<visible>false</visible>
+					<thingDef>ShipMechChunk</thingDef>
+					<count>10</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<visible>false</visible>
+					<thingDef>Cairn</thingDef>
+					<stuff>ClayBrick</stuff>
+					<count>9</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<visible>false</visible>
+					<thingDef>BambooPlank</thingDef>
+					<count>20</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<visible>false</visible>
+					<thingDef>BlocksSandstone</thingDef>
+					<count>30</count>
+				</li>
+				<li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+				    <factionDef>Rakinia</factionDef>
+					<alwaysHostile>True</alwaysHostile>
+					<def>VFEC_ForcedFactionGoodwill</def>
+			    </li>
+			    <li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+				    <factionDef>Rakiniville</factionDef>
+					<alwaysHostile>True</alwaysHostile>
+					<def>VFEC_ForcedFactionGoodwill</def>
+			    </li>
+				<li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+					<factionDef>RatkinRebel</factionDef>
+					<affectStartingGoodwill>True</affectStartingGoodwill>
+					<startingGoodwillRange>100~100</startingGoodwillRange>
+					<affectNaturalGoodwill>True</affectNaturalGoodwill>
+					<naturalGoodwillRange>-55~25</naturalGoodwillRange>
+					<def>VFEC_ForcedFactionGoodwill</def>
+				</li>
+			</parts>
+		</scenario>
+	</ScenarioDef>
+</Defs>

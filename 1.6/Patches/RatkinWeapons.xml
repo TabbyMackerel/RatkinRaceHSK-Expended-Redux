@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+	  <li>NewRatkinPlus</li>
+	</mods>
+    
+    <match Class="PatchOperationSequence">
+    <operations>
+
+	<li Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="RK_Crossbow"]/weaponTags</xpath>
+	  <value>
+		  <li>RK_RioterRanged</li>
+      </value>
+	</li>
+	 
+	<li Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="RK_EnhanceCrossBow"]/weaponTags</xpath>
+	  <value>
+		  <li>RK_RioterRanged</li>
+      </value>
+	</li>
+	
+	<li Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="RK_BFR"]/weaponTags</xpath>
+	  <value>
+		  <li>RK_RebelSquadleaderElite</li>
+      </value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="RK_PrototypePulseRifle"]/weaponTags</xpath>
+	  <value>
+		  <li>RK_Juggernaut_Sniper</li>
+      </value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="RK_BFR"]/weaponTags</xpath>
+	  <value>
+		  <li>RK_Juggernaut_Sniper</li>
+      </value>
+	</li>
+
+<!--<li Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="RK_Fork"]/weaponTags</xpath>
+	  <value>
+		  <li>RK_PartisanMelee</li>
+      </value>
+	</li>
+	
+	<li Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="MeleeWeapon_Dagger"]/weaponTags</xpath>
+	  <value>
+		  <li>RK_PartisanMelee</li>
+      </value>
+	</li>
+	
+	<li Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="MeleeWeapon_Gladius"]/weaponTags</xpath>
+	  <value>
+		  <li>RK_PartisanMelee</li>
+      </value>
+	</li>
+	
+	<li Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="MeleeWeapon_Gladius"]/weaponTags</xpath>
+	  <value>
+		  <li>RK_GuerrillaMelee</li>
+      </value>
+	</li>
+	
+	<li Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="MeleeWeapon_Morningstar"]/weaponTags</xpath>
+	  <value>
+		  <li>RK_GuerrillaMelee</li>
+      </value>
+	</li> 
+
+	<li Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Bow_Great"]/apparel/tags</xpath>
+	  <value>
+		  <li>RK_RefugeeUnion_Skirmisher</li>
+      </value>
+	</li> -->
+
+<!-- 왕실군 참호전 무기(파라벨럼 에드온 모드 있을 시 적용) -->
+
+	<li Class="PatchOperationAdd">	
+	  <xpath>Defs/ThingDef[defName="RK_Rifle"]/weaponTags</xpath>
+	  <value>
+		<li>RK_TrenchWarRakiniaWeapon_Infantry</li>
+	  </value>
+	</li>
+
+    <li Class="PatchOperationAdd">	
+	  <xpath>Defs/ThingDef[defName="RK_SniperRifle"]/weaponTags</xpath>
+	  <value>
+		<li>RK_TrenchWarRakiniaWeapon_Sniper</li>
+	  </value>
+	</li>
+
+    <li Class="PatchOperationAdd">
+	  <xpath>Defs/ThingDef[defName="Gun_RKShotgun"]/weaponTags</xpath>
+	  <value>
+	    <li>RK_TrenchWarRakiniaWeapon_CQB</li>
+	  </value>
+	</li>
+	
+	</operations>
+    </match>
+  </Operation>
+</Patch>

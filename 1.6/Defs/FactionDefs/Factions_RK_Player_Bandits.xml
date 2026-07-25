@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef ParentName="RK_PlayerFactionBase">
+		<defName>RK_Bandits_Hideout</defName>
+		<label>랫킨 도적 은신처</label>
+		<description>살아남으려고 극단적인 생존주의를 중요하게 여긴 나머지, 결국 동족과 행성의 이웃 세력들에게도 약탈과 살인 등의 수단과 방법을 가리지 않고 선을 넘은 나머지, 결국 이제는 환영받지 못하는 도적단이 된 랫킨들의 은신처입니다.</description>
+		<isPlayer>true</isPlayer>
+		<basicMemberKind>Ratkin_Bandit_Player</basicMemberKind>
+		<pawnSingular>랫킨 도적</pawnSingular>
+		<pawnsPlural>랫킨 도적단</pawnsPlural>
+		<techLevel>Industrial</techLevel>
+		<backstoryCategories>
+			<li>Offworld</li>
+		</backstoryCategories>
+		<settlementTexturePath>Icon/RK_DefaultColony</settlementTexturePath>
+		<factionIconPath>Icon/RK_Rebel_Unethical</factionIconPath>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFaction_RatkinWarlord</factionNameMaker>
+		<settlementNameMaker>NamerSettlement_RatkinWarlord</settlementNameMaker>
+		<melaninRange>0~1</melaninRange>
+		<xenotypeSet>
+		  <xenotypeChances>
+			<Baseline_Ratkin MayRequire="Ludeon.RimWorld.Biotech">999</Baseline_Ratkin>
+		  </xenotypeChances>
+		</xenotypeSet>
+		<startingResearchTags>
+			<li>RatkinStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>RatkinStart</li>
+		</startingTechprintsResearchTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Plasteel</li>
+				<li>RK_Wool_KingHamster</li>
+				<li>Bronze</li>
+				<li>SteelBar</li>
+			</thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
+
+</Defs>

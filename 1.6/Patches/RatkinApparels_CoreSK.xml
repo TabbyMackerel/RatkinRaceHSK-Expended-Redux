@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+	  <li>Core SK</li>
+	</mods>
+    
+    <match Class="PatchOperationSequence">
+    <operations>
+
+	<li Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="MedievalTimes_Plates_Steel_Middle"]/apparel/tags</xpath>
+	  <value>
+		  <li>RK_Militia</li>
+		  <li>RK_MilitiaAdvanced</li>
+      </value>
+	</li>
+	
+	<li Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="MedievalTimes_PaddedJacket"]/apparel/tags</xpath>
+	  <value>
+		  <li>RK_Militia</li>
+		  <li>RK_MilitiaAdvanced</li>
+      </value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Apparel_FlakJacket"]/apparel/tags</xpath>
+	  <value>
+		  <li>RK_MilitiaAdvanced</li>
+		  <li>RK_VolunteerArmy</li>
+      </value>
+	</li>
+	
+	<li Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="WeldingHelmet"]/apparel/tags</xpath>
+	  <value>
+		  <li>RK_Militia</li>
+		  <li>RK_MilitiaAdvanced</li>
+      </value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Apparel_SimpleHelmet"]/apparel/tags</xpath>
+	  <value>
+		  <li>RK_MilitiaAdvanced</li>
+		  <li>RK_VolunteerArmy</li>
+      </value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Apparel_AdvancedHelmet"]/apparel/tags</xpath>
+	  <value>
+		  <li>RK_MilitiaAdvanced</li>
+		  <li>RK_VolunteerArmy</li>
+      </value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Apparello_Beret"]/apparel/tags</xpath>
+	  <value>
+		  <li>RK_RebelSquad</li>
+      </value>
+	</li>
+	
+	<li Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Apparello_ViperGas"]/apparel/tags</xpath>
+	  <value>
+		  <li>RK_RebelSquad</li>
+      </value>
+	</li>
+	
+	<li Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Apparello_Gas"]/apparel/tags</xpath>
+	  <value>
+		  <li>RK_RebelSquad</li>
+      </value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Marine_Armor"]/apparel/tags</xpath>
+	  <value>
+		  <li>RK_RebelElite</li>
+      </value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Rimarsenal_VestPlate"]/apparel/tags</xpath>
+	  <value>
+		  <li>RK_RebelElite</li>
+		  <li>RK_RebelElite_Light</li>
+      </value>
+	</li>
+	
+	<li Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Apparello_Ammobelt"]/apparel/tags</xpath>
+	  <value>
+		  <li>RK_RebelElite</li>
+		  <li>RK_RebelElite_Light</li>
+		  <li>RK_TrenchWarRebel</li>
+		  <li>RK_TrenchWarRebelInfantry</li>
+		  <li>RK_TrenchWarRakiniaInfantry</li>
+		  <li>RK_TrenchWarRakiniaSniper</li>
+          <li>RK_TrenchWarRakiniaCQB</li>  
+      </value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Tactical_Helmet"]/apparel/tags</xpath>
+	  <value>
+		  <li>RK_RebelElite</li>
+      </value>
+	</li>
+	
+	<li Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Marine_Helmet"]/apparel/tags</xpath>
+	  <value>
+		  <li>RK_RebelElite_Light</li>
+      </value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Apparel_FlakPants"]/apparel/tags</xpath>
+	  <value>
+		  <li>RK_RebelElite_Light</li>
+      </value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="MedievalTimes_Boots_Combat"]/apparel/tags</xpath>
+	  <value>
+	  	  <li>RK_Rebel</li>
+		  <li>RK_RebelElite</li>
+      </value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Apparel_HatHood"]/apparel/tags</xpath>
+	  <value>
+		  <li>RK_RefugeeUnionLight</li>
+      </value>
+	</li>
+
+	<li Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Apparello_Sheet"]/apparel/tags</xpath>
+	  <value>
+		  <li>RK_RefugeeUnionLight</li>
+      </value>
+	</li>
+
+<!-- 왕실군 및 반군 참호전 병과 방어구(파라벨럼 에드온 모드 있을 시 적용) -->
+	<li Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="Apparello_Workglove"]/apparel/tags</xpath>
+	  <value>
+		  <li>RK_TrenchWarRebel</li>
+		  <li>RK_TrenchWarRebelInfantry</li>
+		  <li>RK_TrenchWarRebelSapper</li>
+		  <li>RK_TrenchWarRebelHeavygunner</li>
+		  <li>RK_TrenchWarRakiniaInfantry</li>
+	      <li>RK_TrenchWarRakiniaSniper</li>
+          <li>RK_TrenchWarRakiniaSapper</li>
+		  <li>RK_TrenchWarRakiniaLSW</li>
+          <li>RK_TrenchWarRakiniaCQB</li>
+      </value>
+	</li>
+
+	<li Class="PatchOperationAdd">	
+	  <xpath>Defs/ThingDef[defName="CE_Apparel_TacVest"]/apparel/tags</xpath>
+	  <value>
+		  <li>RK_TrenchWarRebelSapper</li>
+		  <li>RK_TrenchWarRebelHeavygunner</li>
+		  <li>RK_TrenchWarRakiniaSapper</li>
+		  <li>RK_TrenchWarRakiniaLSW</li>
+	  </value>
+	</li>
+
+	</operations>
+    </match>
+  </Operation>
+</Patch>
