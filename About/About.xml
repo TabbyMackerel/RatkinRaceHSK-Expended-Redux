@@ -5,7 +5,7 @@
 	<supportedVersions>
 		<li>1.6</li>
 	</supportedVersions>
-	<packageId>TabbyMackerel.RatkinExpendedSK</packageId>
+	<packageId>TabbyMackerel.RatkinExpendedSK_Redux</packageId>
 	<description>
 KOR: 랫킨 종족 확장모드. 1.6 버전 히드코어 SK 모드팩 전용.
 
@@ -24,7 +24,6 @@ KOR: 랫킨 종족 확장모드. 1.6 버전 히드코어 SK 모드팩 전용.
 
 + 일부 랫킨들은 잃을 것이 없어서 도적이 되어버렸으며, 랫킨 병사들 일부가 탈영하면서 해적질에 가담했다는 설정으로, 우주 해적 세력의 습격에서 등장할 수 있습니다.
  난민 시나리오는 HSK more contents 모드가 있으면 추가적인 물품이 지급됩니다.
-
 
 
 	</description>
