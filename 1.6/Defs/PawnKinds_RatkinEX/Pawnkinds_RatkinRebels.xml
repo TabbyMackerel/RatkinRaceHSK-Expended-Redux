@@ -1492,9 +1492,9 @@
 		</skills>
 	  </PawnKindDef>
 
-<!-- 랫킨 비윤리적인 공화국군 -->	
+<!-- 랫킨 혁명군 과격파 계열 -->	
 <!-- 동조자들 -->
- 	<PawnKindDef Name="RK_RepublicUnethical_CollaboratorBase" Abstract="True">
+ 	<PawnKindDef Name="RK_RevolutionRadicals_CollaboratorBase" Abstract="True">
 	    <race>Ratkin</race>
 		<defaultFactionType>RatkinRepublic_Unethical</defaultFactionType>
 		<chemicalAddictionChance>0.30</chemicalAddictionChance>
@@ -1531,8 +1531,8 @@
 	</PawnKindDef>
 
 <!-- 랫킨 부역자 -->
-	<PawnKindDef ParentName="RK_RepublicUnethical_CollaboratorBase">
-		<defName>RK_RepublicUnethical_Collaborator</defName>
+	<PawnKindDef ParentName="RK_RevolutionRadicals_CollaboratorBase">
+		<defName>RK_RevolutionRadicals_Collaborator</defName>
 		<label>랫킨 부역자</label>
 		<combatPower>35</combatPower>
 		<isFighter>false</isFighter>
@@ -1555,9 +1555,10 @@
 		</apparelTags>
 	</PawnKindDef>	
 	
-	<PawnKindDef ParentName="RK_RepublicUnethical_CollaboratorBase">
-		<defName>RK_RepublicUnethical_Smuggler</defName>
-		<label>랫킨 밀수꾼</label>
+	<!-- 암거래상 -->
+	<PawnKindDef ParentName="RK_RevolutionRadicals_CollaboratorBase">
+		<defName>RK_RevolutionRadicals_smuggler</defName>
+		<label>랫킨 암거래상</label>
 		<combatPower>40</combatPower>
 		<isFighter>false</isFighter>
 		<trader>true</trader>
@@ -1591,8 +1592,9 @@
 		</apparelTags>
 	</PawnKindDef>	
 	
-	<PawnKindDef ParentName="RK_RepublicUnethical_CollaboratorBase">
-		<defName>RK_RepublicUnethical_Rioter_Ranged</defName>
+	<!-- 폭도 (원거리) -->
+	<PawnKindDef ParentName="RK_RevolutionRadicals_CollaboratorBase">
+		<defName>RK_RevolutionRadicals_Rioter_Ranged</defName>
 		<label>랫킨 폭도</label>
 		<combatPower>55</combatPower>
 		<apparelRequired>
@@ -1660,8 +1662,9 @@
 		</modExtensions>
 	</PawnKindDef>	
 
-	<PawnKindDef ParentName="RK_RepublicUnethical_CollaboratorBase">
-		<defName>RK_RepublicUnethical_Rioter_Melee</defName>
+	<!-- 폭도 (근거리) -->
+	<PawnKindDef ParentName="RK_RevolutionRadicals_CollaboratorBase">
+		<defName>RK_RevolutionRadicals_Rioter_Melee</defName>
 		<label>랫킨 폭도</label>
 		<combatPower>55</combatPower>
 		<apparelRequired>
@@ -1705,7 +1708,8 @@
 		</weaponTags>
 	</PawnKindDef>
 	
- 	<PawnKindDef Name="RK_RepublicUnethical_RaiderBase" Abstract="True">
+	<!-- 랫킨 습격자 계열 -->
+ 	<PawnKindDef Name="RK_RevolutionRadicals_RaiderBase" Abstract="True">
 	    <race>Ratkin</race>
 		<defaultFactionType>RatkinRepublic_Unethical</defaultFactionType>
 		<chemicalAddictionChance>0.40</chemicalAddictionChance>
@@ -1745,10 +1749,11 @@
 		  </xenotypeChances>
 		</xenotypeSet>
 	</PawnKindDef>
-	
-	<PawnKindDef ParentName="RK_RepublicUnethical_RaiderBase">
-		<defName>RK_RepublicUnethical_Manhunter</defName>
-		<label>랫킨 인간 사냥꾼</label>
+
+	<!-- 사회혼란 유발자 -->
+	<PawnKindDef ParentName="RK_RevolutionRadicals_RaiderBase">
+		<defName>RK_RevolutionRadicals_SocialTroublemaker</defName>
+		<label>랫킨 사회혼란 유발자</label>
 		<combatPower>80</combatPower>
 		<isFighter>true</isFighter>
 		<canBeSapper>true</canBeSapper>
@@ -1793,8 +1798,9 @@
 		</skills>
 	</PawnKindDef>
 	
-	<PawnKindDef ParentName="RK_RepublicUnethical_RaiderBase">
-		<defName>RK_RepublicUnethical_Raider</defName>
+	<!-- 강탈자 -->
+	<PawnKindDef ParentName="RK_RevolutionRadicals_RaiderBase">
+		<defName>RK_RevolutionRadicals_Raider</defName>
 		<label>랫킨 강탈자</label>
 		<combatPower>80</combatPower>
 		<isFighter>true</isFighter>
@@ -1846,8 +1852,9 @@
 		</skills>
 	</PawnKindDef>
 	
-	<PawnKindDef ParentName="RK_RepublicUnethical_RaiderBase">
-		<defName>RK_RepublicUnethical_Raider_Destroyer</defName>
+	<!-- 마을 파괴자 -->
+	<PawnKindDef ParentName="RK_RevolutionRadicals_RaiderBase">
+		<defName>RK_RevolutionRadicals_Raider_Destroyer</defName>
 		<label>랫킨 마을 파괴자</label>
 		<combatPower>80</combatPower>
 		<isFighter>true</isFighter>
@@ -1904,8 +1911,9 @@
 		</modExtensions>
 	</PawnKindDef>
 	
-	<PawnKindDef ParentName="RK_RepublicUnethical_RaiderBase">
-		<defName>RK_RepublicUnethical_Raider_Kamikaze</defName>
+	<!-- 카미카제 -->
+	<PawnKindDef ParentName="RK_RevolutionRadicals_RaiderBase">
+		<defName>RK_RevolutionRadicals_Raider_Kamikaze</defName>
 		<label>랫킨 카미카제</label>
 		<combatPower>80</combatPower>
 		<isFighter>true</isFighter>
@@ -1954,8 +1962,8 @@
 		</apparelTags>
 	</PawnKindDef>
 
-<!-- 랫킨 군벌 -->
- 	<PawnKindDef Name="RK_RepublicUnethical_WarloadBase" Abstract="True">
+	<!-- 랫킨 군벌 계열 -->
+ 	<PawnKindDef Name="RK_RevolutionRadicals_WarloadBase" Abstract="True">
 	    <race>Ratkin</race>
 		<defaultFactionType>RatkinRepublic_Unethical</defaultFactionType>
 		<chemicalAddictionChance>0.57</chemicalAddictionChance>
@@ -1998,8 +2006,9 @@
 		</xenotypeSet>
 	</PawnKindDef>
 	
-	<PawnKindDef ParentName="RK_RepublicUnethical_WarloadBase">
-		<defName>RK_RepublicUnethical_WarloadAssaulter</defName>
+	<!-- 군벌 돌격병 -->
+	<PawnKindDef ParentName="RK_RevolutionRadicals_WarloadBase">
+		<defName>RK_RevolutionRadicals_WarloadAssaulter</defName>
 		<label>랫킨 군벌 돌격병</label>
 		<combatPower>100</combatPower>
 		<isFighter>true</isFighter>
@@ -2064,8 +2073,9 @@
 		</skills>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="RK_RepublicUnethical_WarloadBase">
-		<defName>RK_RepublicUnethical_WarloadSkirmisher</defName>
+	<!-- 군벌 척후병 -->
+	<PawnKindDef ParentName="RK_RevolutionRadicals_WarloadBase">
+		<defName>RK_RevolutionRadicals_WarloadSkirmisher</defName>
 		<label>랫킨 군벌 척후병</label>
 		<combatPower>125</combatPower>
 		<isFighter>true</isFighter>	
@@ -2144,8 +2154,9 @@
 		</modExtensions>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="RK_RepublicUnethical_WarloadBase">
-		<defName>RK_RepublicUnethical_WarloadMember</defName>
+	<!-- 군벌 단원 -->
+	<PawnKindDef ParentName="RK_RevolutionRadicals_WarloadBase">
+		<defName>RK_RevolutionRadicals_WarloadMember</defName>
 		<label>랫킨 군벌 단원</label>
 		<combatPower>150</combatPower>
 		<isFighter>true</isFighter>	
@@ -2220,8 +2231,8 @@
 
 	<!-- 플레이어 군벌 단원 -->
 
-		<PawnKindDef ParentName="RK_RepublicUnethical_WarloadBase">
-		<defName>RK_RepublicUnethical_WarloadMember_Player</defName>
+		<PawnKindDef ParentName="RK_RevolutionRadicals_WarloadBase">
+		<defName>RK_RevolutionRadicals_WarloadMember_Player</defName>
 		<label>랫킨 군벌 단원</label>
 		<combatPower>130</combatPower>
 		<isFighter>true</isFighter>	
@@ -2277,8 +2288,9 @@
 		</skills>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="RK_RepublicUnethical_WarloadBase">
-		<defName>RK_RepublicUnethical_WarloadSoldier</defName>
+	<!-- 군벌 전투원 -->
+	<PawnKindDef ParentName="RK_RevolutionRadicals_WarloadBase">
+		<defName>RK_RevolutionRadicals_WarloadSoldier</defName>
 		<label>랫킨 군벌 전투원</label>
 		<combatPower>225</combatPower>
 		<isFighter>true</isFighter>	
@@ -2355,8 +2367,9 @@
 		</modExtensions>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="RK_RepublicUnethical_WarloadBase">
-		<defName>RK_RepublicUnethical_WarloadSniper</defName>
+	<!-- 군벌 저격수 -->
+	<PawnKindDef ParentName="RK_RevolutionRadicals_WarloadBase">
+		<defName>RK_RevolutionRadicals_WarloadSniper</defName>
 		<label>랫킨 군벌 저격수</label>
 		<combatPower>200</combatPower>
 		<isFighter>true</isFighter>		
@@ -2429,8 +2442,9 @@
 		</skills>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="RK_RepublicUnethical_WarloadBase">
-		<defName>RK_RepublicUnethical_Warload_HeavyGunner</defName>
+	<!-- 군벌 중화기병 -->
+	<PawnKindDef ParentName="RK_RevolutionRadicals_WarloadBase">
+		<defName>RK_RevolutionRadicals_Warload_HeavyGunner</defName>
 		<label>랫킨 군벌 중화기병</label>
 		<combatPower>350</combatPower>
 		<isFighter>true</isFighter>
@@ -2511,8 +2525,9 @@
 		</skills>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="RK_RepublicUnethical_WarloadBase">
-		<defName>RK_RepublicUnethical_Warload_Field_Commander</defName>
+	<!-- 군벌 야전 사령관 -->
+	<PawnKindDef ParentName="RK_RevolutionRadicals_WarloadBase">
+		<defName>RK_RevolutionRadicals_Warload_Field_Commander</defName>
 		<label>랫킨 군벌 야전 사령관</label>
 		<combatPower>300</combatPower>
 		<isFighter>true</isFighter>	
@@ -2592,8 +2607,9 @@
 		</skills>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="RK_RepublicUnethical_WarloadBase">
-		<defName>RK_RepublicUnethical_WarloadBoss</defName>
+	<!-- 군벌 수장 -->
+	<PawnKindDef ParentName="RK_RevolutionRadicals_WarloadBase">
+		<defName>RK_RevolutionRadicals_WarloadBoss</defName>
 		<label>랫킨 군벌 수장</label>
 		<combatPower>350</combatPower>
 		<isFighter>true</isFighter>
@@ -2680,8 +2696,8 @@
 		</skills>
 	</PawnKindDef>
 
-<!-- 강제징집된 랫킨 소년병 -->
- 	<PawnKindDef Name="RK_RepublicUnethical_ChildSoldierBase" Abstract="True">
+    <!-- 강제징집된 랫킨 소년병 -->
+ 	<PawnKindDef Name="RK_RevolutionRadicals_ChildSoldierBase" Abstract="True">
 	    <race>Ratkin</race>
 		<defaultFactionType>RatkinRepublic_Unethical</defaultFactionType>
 		<chemicalAddictionChance>0.25</chemicalAddictionChance>
@@ -2718,8 +2734,9 @@
 		</xenotypeSet>
 	</PawnKindDef>
 	
-	<PawnKindDef ParentName="RK_RepublicUnethical_ChildSoldierBase">
-		<defName>RK_RepublicUnethical_ChildSoldier</defName>
+	<!-- 랫킨 소년병 -->
+	<PawnKindDef ParentName="RK_RevolutionRadicals_ChildSoldierBase">
+		<defName>RK_RevolutionRadicals_ChildSoldier</defName>
 		<label>랫킨 군벌 소년병</label>
 		<combatPower>65</combatPower>
 		<minGenerationAge>14</minGenerationAge>
@@ -2764,14 +2781,15 @@
 		</skills>
 	</PawnKindDef> 
 
-    <PawnKindDef ParentName="RK_RepublicUnethical_ChildSoldierBase" Name="RK_RepublicUnethical_ChildSoldierBiotechBase" Abstract="True">
+    <PawnKindDef ParentName="RK_RevolutionRadicals_ChildSoldierBase" Name="RK_RevolutionRadicals_ChildSoldierBiotechBase" Abstract="True">
 		<pawnGroupDevelopmentStage>Child</pawnGroupDevelopmentStage>
 		<minGenerationAge>5</minGenerationAge>
 		<maxGenerationAge>12</maxGenerationAge>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="RK_RepublicUnethical_ChildSoldierBiotechBase">
-		<defName>RK_RepublicUnethical_ChildSoldier_Biotech</defName>
+	<!-- 랫킨 소년병 (바이오테크 DLC) -->
+	<PawnKindDef ParentName="RK_RevolutionRadicals_ChildSoldierBiotechBase">
+		<defName>RK_RevolutionRadicals_ChildSoldier_Biotech</defName>
 		<label>랫킨 군벌 소년병</label>
 		<combatPower>25</combatPower>
 		<isFighter>true</isFighter>
@@ -2807,8 +2825,9 @@
 		</skills>
 	</PawnKindDef> 
 
-	<PawnKindDef ParentName="RK_RepublicUnethical_ChildSoldierBiotechBase">
-		<defName>RK_RepublicUnethical_ChildSoldier_Biotech_Kamikaze</defName>
+	<!-- 군벌 소년병 총알받이 -->
+	<PawnKindDef ParentName="RK_RevolutionRadicals_ChildSoldierBiotechBase">
+		<defName>RK_RevolutionRadicals_ChildSoldier_Biotech_Kamikaze</defName>
 		<label>랫킨 군벌 소년병 총알받이</label>
 		<combatPower>25</combatPower>
 		<isFighter>true</isFighter>
