@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<!-- 우주해적 가담 랫킨들 -->
  	<PawnKindDef Name="RatkinPirateBase" Abstract="True">
 	    <race>Ratkin</race>
 		<defaultFactionType>Pirate</defaultFactionType>
