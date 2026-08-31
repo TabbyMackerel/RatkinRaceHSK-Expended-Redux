@@ -2,30 +2,21 @@
 <Defs>
 <!-- 랫킨 반군 세력 이름 -->
 	<RulePackDef>
-		<defName>NamerFaction_RatkinRebel</defName>
+		<defName>NamerFaction_RatkinRepublic</defName>
 		<include>
 			<li>RebelNameUtility</li>
 		</include>
 		<rulePack>
 			<rulesStrings>
-				<li>r_name->[ofThing]의 [front]</li>
 				<li>r_name->래키니아 [army]</li>
-				<li>r_name->랫킨 시민통합정부</li>
-				<li>r_name->래키니아 과도정부</li>
 				<li>r_name->래키니아 인민민주공화국</li>
 				<li>r_name->래키니아 공화국</li>
-				<li>r_name->래키니아 자유주의자 연맹</li>
-				<li>r_name->랫킨 국민국가 설립 위원회</li>
-				<li>r_name->랫킨 공화국 임시정부</li>
-				<li>r_name->랫킨 왕정체제 타도 운동</li>
-				<li>r_name->랫킨 농민 반란군</li>
 				<li>r_name->독립 랫킨 연합</li>
 				<li>r_name->뮤러데이스탄 민주공화국</li>
-				<li>r_name->로덴티아 자유국</li>
+				<li>r_name->로덴티아 자유공화국</li>
 				<li>r_name->래키니아 제1공화국</li>
-				<li>r_name->래키니아 신정부</li>
+				<li>r_name->래키니아 정부</li>
 
-				<li>front->전선</li>
 				<li>army->자유군</li>
 				<li>army->혁명군</li>
 				<li>army->공화국군</li>
@@ -45,9 +36,9 @@
 		</rulePack>
 	</RulePackDef>
 
-<!-- 반군 거점 이름 -->
+<!-- 공화국/구 혁명군 과격파 거점 이름 -->
 	<RulePackDef>
- 	   <defName>NamerSettlement_RatkinRebel</defName>
+ 	   <defName>NamerSettlement_RatkinRepublic</defName>
 		<include>
 			<li>RebelNameUtility</li>
 		</include>
@@ -66,26 +57,21 @@
 			<li>townend->마일던버러</li>
 			<li>townend->리버티랜드</li>
 			<li>townend->데모크라시 빌리지</li>
-			<li>townend->프리덤 시티</li>
 			<li>townend->하베스트필드</li>
 			<li>townend->로덴트홀름</li>
-			<li>townend->자유 랫킨들의 낙원</li>
+			<li>townend->타운 오브 프리덤</li>
 			<li>townend->로스트라슈타트</li>
-			<li>townend->반군 지원 랫킨 마을</li>
-			<li>townend->봉기의 마을</li>
-			<li>townend->분노한 혁명가들의 중심지</li>
-			<li>townend->신분제가 없는 정착지</li>
 			<li>townend->이퀄타운</li>
 			<li>townend->랫체스터</li>
 			<li>townend->피넛빌</li>
      	    <li>townend->로즈버러</li>
-			<li>townend->전초기지 레볼루션</li>
-			<li>townend->전초기지 프리덤</li>
-			<li>townend->전초기지 레지스탕스</li>
-			<li>townend->전초기지 업라이징</li>
-			<li>townend->전초기지 벤전스</li>
-			<li>townend->전초기지 저지먼트</li>
-			<li>townend->전초기지 인저렉션</li>
+			<li>townend->케모마일부르크</li>
+			<li>townend->캐슈넛타운</li>
+			<li>townend->썬플라워</li>
+			<li>townend->레볼루션그라드</li>
+			<li>townend->세인트 노르베기쿠스</li>
+			<li>townend->소프트테일 빌리지</li>
+			<li>townend->뉴 랫킨스크</li>
 			<li>townend->헤븐홀름</li>
 			<li>townend->래트톤</li>
 			<li>townend->라이스톤</li>
@@ -113,7 +99,35 @@
    		</rulePack>
  	</RulePackDef>
 
-<!-- 랫킨 비윤리적인 반군(군벌) 세력 이름 -->
+	<!-- 랫킨 공화국 과격파 세력 이름 -->
+	<RulePackDef>
+		<defName>NamerFaction_Revolutionary_Radical</defName>
+		<include>
+			<li>RebelNameUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->래키니아 [army]</li>
+				<li>r_name->래키니아 무장 투쟁 연합</li>
+				<li>r_name->래키니아 저항군 연맹</li>
+				<li>r_name->래키니아 완전독립운동</li>
+				<li>r_name->래키니아 구 혁명군 조직</li>
+				<li>r_name->래키니아 완전혁명파</li>
+				<li>r_name->동족 해방을 위한 투쟁</li>
+				<li>r_name->완전한 해방과 자유를 원하는 레지스탕스</li>
+
+				<li>army->자유군</li>
+				<li>army->완전혁명군</li>
+				<li>army->공화국군</li>
+				<li>army->공화국군 임시파</li>
+				<li>army->해방군</li>
+				<li>army->저항군</li>
+				<li>army->왕정 및 비정통 공화국 대항군</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+<!-- 랫킨 군벌 세력 이름 -->
 	<RulePackDef>
 		<defName>NamerFaction_RatkinWarlord</defName>
 		<include>

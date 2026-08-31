@@ -11,8 +11,8 @@
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
 		<canMakeRandomly>true</canMakeRandomly>
 		<earliestRaidDays>50</earliestRaidDays>
-		<factionNameMaker>NamerFaction_RatkinRepublic</factionNameMaker>
-		<settlementNameMaker>NamerSettlement_RatkinRepublic</settlementNameMaker>	
+		<factionNameMaker>NamerFaction_RatkinWarlord</factionNameMaker>
+		<settlementNameMaker>NamerSettlement_RatkinWarlord</settlementNameMaker>	
 		<canSiege>true</canSiege>
 		<canStageAttacks>true</canStageAttacks>
 		<techLevel>Industrial</techLevel>
@@ -75,7 +75,7 @@
 			<li>(0.53, 0.45, 0.34)</li>
 			<li>(0.61, 0.32, 0.27)</li>
 		</colorSpectrum>
-		<earliestRaidDays>40</earliestRaidDays>
+		<earliestRaidDays>25</earliestRaidDays>
 		<factionNameMaker>NamerFaction_RatkinWarlord</factionNameMaker>
 		<settlementNameMaker>NamerSettlement_RatkinWarlord</settlementNameMaker>	
 		<caravanTraderKinds>

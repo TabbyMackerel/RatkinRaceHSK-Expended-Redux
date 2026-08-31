@@ -76,8 +76,8 @@
 			<li>(0.61, 0.32, 0.27)</li>
 		</colorSpectrum>
 		<earliestRaidDays>40</earliestRaidDays>
-		<factionNameMaker>NamerFaction_RatkinWarlord</factionNameMaker>
-		<settlementNameMaker>NamerSettlement_RatkinWarlord</settlementNameMaker>	
+		<factionNameMaker>NamerFaction_Revolutionary_Radical</factionNameMaker>
+		<settlementNameMaker>NamerSettlement_RatkinRepublic</settlementNameMaker>	
 		<caravanTraderKinds>
 			<!-- 추후 추가 예정 -->
 		</caravanTraderKinds>
