@@ -102,7 +102,7 @@
 	</PawnKindDef>
 
 <!-- 공화국군 민병대 -->
- 	<PawnKindDef ParentName="RK_Republic_CivilianBase" Name="RK_Republic_MilitiaBase" Abstract="True">
+<!--	<PawnKindDef ParentName="RK_Republic_CivilianBase" Name="RK_Republic_MilitiaBase" Abstract="True">
 	    <race>Ratkin</race>
 		<defaultFactionType>RatkinRepublic</defaultFactionType>
 		<chemicalAddictionChance>0.08</chemicalAddictionChance>
@@ -113,10 +113,10 @@
 			<li>Violent</li>
 		</requiredWorkTags>
 	    <isFighter>true</isFighter>
-	</PawnKindDef>
+	</PawnKindDef> -->
 
 <!-- 플레이어 소속 민병대원 -->
-	<PawnKindDef ParentName="RK_Republic_MilitiaBase">
+<!--	<PawnKindDef ParentName="RK_Republic_MilitiaBase">
 		<defName>RK_Republic_Militiaman_Crossbow_player</defName>
 		<label>랫킨 석궁 민병대원</label>
 		<combatPower>35</combatPower>
@@ -329,10 +329,10 @@
 			<li>BanditsLight</li>
 			<li>RK_VolunteerArmy</li>
 		</apparelTags>
-	</PawnKindDef>	
+	</PawnKindDef>	-->
 
 	<!--플레이어 소속 의용군--> 
-	<PawnKindDef ParentName="RK_Republic_MilitiaBase">
+<!--	<PawnKindDef ParentName="RK_Republic_MilitiaBase">
 		<defName>RK_Republic_VolunteerArmy_Player</defName>
 		<label>랫킨 의용병</label>
 		<race>Ratkin</race>
@@ -385,7 +385,7 @@
 			<li>BanditsLight</li>
 			<li>RK_VolunteerArmy</li>
 		</apparelTags>
-	</PawnKindDef> 
+	</PawnKindDef> -->
 
 	<!-- 공화국 정규군 계열 -->
 	<!-- 랫킨 저티어 정규군들 -->
@@ -1492,11 +1492,11 @@
 		</skills>
 	  </PawnKindDef>
 
-<!-- 랫킨 혁명군 과격파 계열 -->	
+<!-- 랫킨 혁명군 과격파 맟 군벌 민간인 계열 -->	
 <!-- 동조자들 -->
  	<PawnKindDef Name="RK_RevolutionRadicals_CollaboratorBase" Abstract="True">
 	    <race>Ratkin</race>
-		<defaultFactionType>RatkinRepublic_Unethical</defaultFactionType>
+		<defaultFactionType>Ratkin_Revolutionary_Radical_Remnants</defaultFactionType>
 		<chemicalAddictionChance>0.30</chemicalAddictionChance>
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
 		<minGenerationAge>15</minGenerationAge>
@@ -1711,7 +1711,7 @@
 	<!-- 랫킨 습격자 계열 -->
  	<PawnKindDef Name="RK_RevolutionRadicals_RaiderBase" Abstract="True">
 	    <race>Ratkin</race>
-		<defaultFactionType>RatkinRepublic_Unethical</defaultFactionType>
+		<defaultFactionType>Ratkin_Revolutionary_Radical_Remnants</defaultFactionType>
 		<chemicalAddictionChance>0.40</chemicalAddictionChance>
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
 		<combatEnhancingDrugsChance>0.10</combatEnhancingDrugsChance>
@@ -1965,7 +1965,7 @@
 	<!-- 랫킨 군벌 계열 -->
  	<PawnKindDef Name="RK_RevolutionRadicals_WarloadBase" Abstract="True">
 	    <race>Ratkin</race>
-		<defaultFactionType>RatkinRepublic_Unethical</defaultFactionType>
+		<defaultFactionType>Ratkin_Warlord</defaultFactionType>
 		<chemicalAddictionChance>0.57</chemicalAddictionChance>
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
 		<combatEnhancingDrugsChance>0.25</combatEnhancingDrugsChance>
@@ -2697,9 +2697,9 @@
 	</PawnKindDef>
 
     <!-- 강제징집된 랫킨 소년병 -->
- 	<PawnKindDef Name="RK_RevolutionRadicals_ChildSoldierBase" Abstract="True">
+ 	<PawnKindDef Name="RK_Warlord_ChildSoldierBase" Abstract="True">
 	    <race>Ratkin</race>
-		<defaultFactionType>RatkinRepublic_Unethical</defaultFactionType>
+		<defaultFactionType>Ratkin_Warlord</defaultFactionType>
 		<chemicalAddictionChance>0.25</chemicalAddictionChance>
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
 		<combatEnhancingDrugsChance>0.15</combatEnhancingDrugsChance>
@@ -2735,8 +2735,8 @@
 	</PawnKindDef>
 	
 	<!-- 랫킨 소년병 -->
-	<PawnKindDef ParentName="RK_RevolutionRadicals_ChildSoldierBase">
-		<defName>RK_RevolutionRadicals_ChildSoldier</defName>
+	<PawnKindDef ParentName="RK_Warlord_ChildSoldierBase">
+		<defName>RK_Warlord_ChildSoldier</defName>
 		<label>랫킨 군벌 소년병</label>
 		<combatPower>65</combatPower>
 		<minGenerationAge>14</minGenerationAge>
@@ -2781,15 +2781,15 @@
 		</skills>
 	</PawnKindDef> 
 
-    <PawnKindDef ParentName="RK_RevolutionRadicals_ChildSoldierBase" Name="RK_RevolutionRadicals_ChildSoldierBiotechBase" Abstract="True">
+    <PawnKindDef ParentName="RK_Warlord_ChildSoldierBase" Name="RK_Warlord_ChildSoldierBiotechBase" Abstract="True">
 		<pawnGroupDevelopmentStage>Child</pawnGroupDevelopmentStage>
 		<minGenerationAge>5</minGenerationAge>
 		<maxGenerationAge>12</maxGenerationAge>
 	</PawnKindDef>
 
 	<!-- 랫킨 소년병 (바이오테크 DLC) -->
-	<PawnKindDef ParentName="RK_RevolutionRadicals_ChildSoldierBiotechBase">
-		<defName>RK_RevolutionRadicals_ChildSoldier_Biotech</defName>
+	<PawnKindDef ParentName="RK_Warlord_ChildSoldierBiotechBase">
+		<defName>RK_Warlord_ChildSoldier_Biotech</defName>
 		<label>랫킨 군벌 소년병</label>
 		<combatPower>25</combatPower>
 		<isFighter>true</isFighter>
@@ -2826,8 +2826,8 @@
 	</PawnKindDef> 
 
 	<!-- 군벌 소년병 총알받이 -->
-	<PawnKindDef ParentName="RK_RevolutionRadicals_ChildSoldierBiotechBase">
-		<defName>RK_RevolutionRadicals_ChildSoldier_Biotech_Kamikaze</defName>
+	<PawnKindDef ParentName="RK_Warlord_ChildSoldierBiotechBase">
+		<defName>RK_Warlord_ChildSoldier_Biotech_Kamikaze</defName>
 		<label>랫킨 군벌 소년병 총알받이</label>
 		<combatPower>25</combatPower>
 		<isFighter>true</isFighter>

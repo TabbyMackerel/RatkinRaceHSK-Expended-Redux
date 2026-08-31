@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- 랫킨 군벌 세력 기반 -->
+	<FactionDef ParentName="SK_HumanFactionBase" Name="RatkinWarlordFactionBase" Abstract="True">
+		<pawnSingular>랫킨</pawnSingular>
+		<pawnsPlural>랫킨들</pawnsPlural>
+		<categoryTag>RatkinStory</categoryTag>
+		<listOrderPriority>25</listOrderPriority>
+		<settlementGenerationWeight>1.7</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<canMakeRandomly>true</canMakeRandomly>
+		<earliestRaidDays>50</earliestRaidDays>
+		<factionNameMaker>NamerFaction_RatkinRepublic</factionNameMaker>
+		<settlementNameMaker>NamerSettlement_RatkinRepublic</settlementNameMaker>	
+		<canSiege>true</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<techLevel>Industrial</techLevel>
+		<backstoryCategories>
+			<li>Offworld</li>
+		</backstoryCategories>
+		<xenotypeSet>
+		  <xenotypeChances>
+			<Baseline_Ratkin MayRequire="Ludeon.RimWorld.Biotech">999</Baseline_Ratkin>
+		  </xenotypeChances>
+		</xenotypeSet>
+		<visitorTraderKinds>
+			<li>Visitor_Outlander_Standard</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+			<li>Base_Outlander_Standard</li>
+		</baseTraderKinds>
+		<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+		<structureMemeWeights>
+			<Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
+			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">2</Structure_TheistAbstract>
+			<Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
+			<Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
+		</structureMemeWeights>
+		<settlementTexturePath>Icon/RK_DefaultColony</settlementTexturePath>
+		<apparelStuffFilter>
+			<categories>
+				<li>Leathers</li>
+			</categories>
+			<thingDefs>
+				<li>Cloth</li>
+				<li>WoolMuffalo</li>
+				<li>WoolDromedary</li>
+				<li>WoolAlpaca</li>
+				<li>HempCloth</li>
+				<li>WoolSheep</li>
+				<li>RK_Wool_KingHamster</li>
+				<li>DevilstrandCloth</li>
+				<li>CopperBar</li>
+				<li>Kevlar</li>
+				<li>Bronze</li>
+				<li>SteelBar</li>
+				<li>Plasteel</li>
+				<li>AluminiumBar</li>
+				<li>FerrosiliconAlloy</li>
+				<li>CupronickelAlloy</li>
+			</thingDefs>
+		</apparelStuffFilter>
+		<allowedCultures>
+			<li>RatkiniaTraditionCulture</li>
+		</allowedCultures>
+	</FactionDef>
+
+	<!-- 랫킨 군벌 세력 -->
+	<FactionDef Name="RatkinWarlordFactionBase">
+		<defName>Ratkin_Warlord</defName>
+		<lapublic>랫킨 군벌</lapublic>
+		<description>랫킨 내전 당시에 공화파 혁명군이 변질되어 약물 밀매 및 무기 밀수 등의 각종 범죄산업과 침략과 약탈 등의 불법적인 행위들로 자신들만의 사리사욕만을 채우려는 집단입니다. 이 군벌 집단은 무질서하고 부패했으며 이기적인 성향을 가지고 있습니다. 게다가 기회주의적으로 활동하며 자신들보다 기술력이 떨어지는 만만한 세력들을 노려서 침략하기도 합니다.</description>
+		<colorSpectrum>
+			<li>(0.53, 0.45, 0.34)</li>
+			<li>(0.61, 0.32, 0.27)</li>
+		</colorSpectrum>
+		<earliestRaidDays>40</earliestRaidDays>
+		<factionNameMaker>NamerFaction_RatkinWarlord</factionNameMaker>
+		<settlementNameMaker>NamerSettlement_RatkinWarlord</settlementNameMaker>	
+		<caravanTraderKinds>
+			<!-- 추후 추가 예정 -->
+		</caravanTraderKinds>
+		<xenotypeSet>
+		  <xenotypeChances>
+			<Baseline_Ratkin MayRequire="Ludeon.RimWorld.Biotech">999</Baseline_Ratkin>
+		  </xenotypeChances>
+		</xenotypeSet>
+		<raidCommonalityFromPointsCurve>
+			<points>
+				<li>(0, 0.01)</li>
+				<li>(500, 0.05)</li>
+				<li>(1500, 0.2)</li>
+				<li>(3000, 0.5)</li>
+				<li>(6000, 0.7)</li>
+				<li>(9500, 1.1)</li>
+				<li>(12500, 0.8)</li>
+				<li>(16000, 0.5)</li>
+			</points>
+		</raidCommonalityFromPointsCurve>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(600, 100)</li>
+				<li>(2400, 150)</li>
+				<li>(5500, 180)</li>
+				<li>(7000, 220)</li>
+				<li>(9500, 260)</li>
+				<li>(12000, 300)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<!-- 추후 추가 예정 -->
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<!-- 추후 추가 예정 -->
+				</traders>
+				<carriers> 
+					<Ratkin_KingHamster>5</Ratkin_KingHamster>
+					<Muffalo>2</Muffalo>
+					<Buffalo>2</Buffalo>
+					<Megabadger>1</Megabadger>
+					<Bear_Grizzly>2</Bear_Grizzly>
+				</carriers>
+				<guards>
+					<!-- 추후 추가 예정 -->
+				</guards>
+			</li>
+			<!-- 다양한 병과 습격 -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>80</commonality>
+				<disallowedStrategies>
+					<RK_RepublicUnethical_WarloadSkirmisher>6</RK_RepublicUnethical_WarloadSkirmisher>
+					<RK_RepublicUnethical_WarloadMember>2</RK_RepublicUnethical_WarloadMember>
+					<RK_RepublicUnethical_WarloadSoldier>2</RK_RepublicUnethical_WarloadSoldier>
+				</guards>
+			</li>
+			<!-- 도적단 및 약탈자 습격 -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>80</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+					<li>ImmediateAttackSmart</li>
+					<li>ImmediateAttackBreachingSmart</li>
+<!--				<li>RK_Paratrooper_ImmediateAttack_Center</li>
+					<li>RK_Paratrooper_StageThenAttack_Edge</li>
+					<li>RK_Paratrooper_Smart</li>
+					<li>RK_Paratrooper_Sappers</li>
+					<li>RK_Paratrooper_Siege</li>
+					<li>RK_Paratrooper_Failed</li>
+					<li>RK_Juggernaut_ImmediateAttack_Center</li>
+					<li>RK_Juggernaut_StandardEdgeDrop_Smart</li>
+					<li>RK_Juggernaut_StandardEdgeDrop_Stage</li>
+					<li>RK_Juggernaut_SiegeDrop</li>-->
+				</disallowedStrategies>
+				<options>
+
+				</options>
+			</li>
+			<!-- 저티어 원거리 및 근거리 군벌 단원 습격-->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>60</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+					<li>ImmediateAttackSmart</li>
+					<li>ImmediateAttackBreachingSmart</li>
+<!--				<li>RK_Paratrooper_ImmediateAttack_Center</li>
+					<li>RK_Paratrooper_StageThenAttack_Edge</li>
+					<li>RK_Paratrooper_Smart</li>
+					<li>RK_Paratrooper_Sappers</li>
+					<li>RK_Paratrooper_Siege</li>
+					<li>RK_Paratrooper_Failed</li>
+					<li>RK_Juggernaut_ImmediateAttack_Center</li>
+					<li>RK_Juggernaut_StandardEdgeDrop_Smart</li>
+					<li>RK_Juggernaut_StandardEdgeDrop_Stage</li>
+					<li>RK_Juggernaut_SiegeDrop</li>-->
+				</disallowedStrategies>
+				<options>
+					<!-- 추후 추가 예정 -->
+				</options>
+			</li>
+			<!-- 저티어 및 일부 고티어 군벌 단원 습격 -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>38</commonality>
+				<disallowedStrategies>
+					<li>ImmediateAttackSappers</li>
+					<li>ImmediateAttackBreaching</li>
+					<li>ImmediateAttackBreachingSmart</li>
+<!--				<li>RK_Paratrooper_ImmediateAttack_Center</li>
+					<li>RK_Paratrooper_StageThenAttack_Edge</li>
+					<li>RK_Paratrooper_Smart</li>
+					<li>RK_Paratrooper_Sappers</li>
+					<li>RK_Paratrooper_Siege</li>
+					<li>RK_Paratrooper_Failed</li>
+					<li>RK_Juggernaut_ImmediateAttack_Center</li>
+					<li>RK_Juggernaut_StandardEdgeDrop_Smart</li>
+					<li>RK_Juggernaut_StandardEdgeDrop_Stage</li>
+					<li>RK_Juggernaut_SiegeDrop</li>-->
+				</disallowedStrategies>
+				<options>
+					<!-- 추후 추가 예정 -->
+				</options>
+			</li>
+			<!-- 군벌 고티어 습격 -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>20</commonality>				
+				<disallowedStrategies>
+				    <li>ImmediateAttackSappers</li>
+					<li>ImmediateAttackBreachingSmart</li>
+<!--				<li>RK_Paratrooper_ImmediateAttack_Center</li>
+					<li>RK_Paratrooper_StageThenAttack_Edge</li>
+					<li>RK_Paratrooper_Smart</li>
+					<li>RK_Paratrooper_Sappers</li>
+					<li>RK_Paratrooper_Siege</li>
+					<li>RK_Paratrooper_Failed</li>
+					<li>RK_Juggernaut_ImmediateAttack_Center</li>
+					<li>RK_Juggernaut_StandardEdgeDrop_Smart</li>
+					<li>RK_Juggernaut_StandardEdgeDrop_Stage</li>
+					<li>RK_Juggernaut_SiegeDrop</li>-->
+				</disallowedStrategies>
+				<options>
+					<!-- 추후 추가 예정 -->
+				</options>
+			</li>
+			<!-- 군벌 돌격대 위주 습격 -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>40</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+					<li>StageThenAttack</li>
+					<li>ImmediateAttackBreachingSmart</li>
+<!--				<li>RK_Paratrooper_ImmediateAttack_Center</li>
+					<li>RK_Paratrooper_StageThenAttack_Edge</li>
+					<li>RK_Paratrooper_Smart</li>
+					<li>RK_Paratrooper_Sappers</li>
+					<li>RK_Paratrooper_Siege</li>
+					<li>RK_Paratrooper_Failed</li>
+					<li>RK_Juggernaut_ImmediateAttack_Center</li>
+					<li>RK_Juggernaut_StandardEdgeDrop_Smart</li>
+					<li>RK_Juggernaut_StandardEdgeDrop_Stage</li>
+					<li>RK_Juggernaut_SiegeDrop</li>-->
+				</disallowedStrategies>
+				<options>
+					<!-- 추후 추가 예정 -->
+				</options>
+			</li>
+			<!-- 군벌 고티어 습격 -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>50</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+					<li>ImmediateAttackSmart</li>
+<!--				<li>RK_Paratrooper_ImmediateAttack_Center</li>
+					<li>RK_Paratrooper_StageThenAttack_Edge</li>
+					<li>RK_Paratrooper_Smart</li>
+					<li>RK_Paratrooper_Sappers</li>
+					<li>RK_Paratrooper_Siege</li>
+					<li>RK_Paratrooper_Failed</li>
+					<li>RK_Juggernaut_ImmediateAttack_Center</li>
+					<li>RK_Juggernaut_StandardEdgeDrop_Smart</li>
+					<li>RK_Juggernaut_StandardEdgeDrop_Stage</li>
+					<li>RK_Juggernaut_SiegeDrop</li>-->
+				</disallowedStrategies>
+				<options>
+					<!-- 추후 추가 예정 -->
+				</options>
+			</li>
+			<!-- 군벌 무장단체 총력전 -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>10</commonality>
+<!--				<disallowedStrategies>
+					<li>RK_Paratrooper_ImmediateAttack_Center</li>
+					<li>RK_Paratrooper_StageThenAttack_Edge</li>
+					<li>RK_Paratrooper_Smart</li>
+					<li>RK_Paratrooper_Sappers</li>
+					<li>RK_Paratrooper_Siege</li>
+					<li>RK_Paratrooper_Failed</li>
+					<li>RK_Juggernaut_ImmediateAttack_Center</li>
+					<li>RK_Juggernaut_StandardEdgeDrop_Smart</li>
+					<li>RK_Juggernaut_StandardEdgeDrop_Stage<li>
+					<li>RK_Juggernaut_SiegeDrop</li>
+                </disallowedStrategies>-->
+				<options>
+					<!-- 추후 추가 예정 -->
+				</options>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<!-- 추후 추가 예정 -->
+				</options>
+			</li>
+		</pawnGroupMakers>
+		<naturalEnemy>true</naturalEnemy>
+		<mustStartOneEnemy>true</mustStartOneEnemy>
+		<factionIconPath>Icon/RK_Republic_Unethical</factionIconPath>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
+		</requiredMemes>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">FleshPurity</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+		</disallowedMemes>
+		<disallowedPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+		</disallowedPrecepts>
+		<attackersDownPercentageRangeForAutoFlee>0.43~0.71</attackersDownPercentageRangeForAutoFlee>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>58</configurationListOrderPriority>
+	</FactionDef>
+
+</Defs>
