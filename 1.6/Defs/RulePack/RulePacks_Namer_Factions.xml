@@ -109,16 +109,16 @@
 			<rulesStrings>
 				<li>r_name->래키니아 [army]</li>
 				<li>r_name->래키니아 무장 투쟁 연합</li>
-				<li>r_name->래키니아 저항군 연맹</li>
-				<li>r_name->래키니아 완전독립운동</li>
+				<li>r_name->로덴트 루주</li>
+				<li>r_name->뮤러데이 동족해방운동</li>
 				<li>r_name->래키니아 구 혁명군 조직</li>
-				<li>r_name->래키니아 완전혁명파</li>
-				<li>r_name->동족 해방을 위한 투쟁</li>
+				<li>r_name->래키니아 왕정 타도 운동</li>
+				<li>r_name->동족 해방을 위한 운동</li>
 				<li>r_name->완전한 해방과 자유를 원하는 레지스탕스</li>
 
 				<li>army->자유군</li>
 				<li>army->완전혁명군</li>
-				<li>army->공화국군</li>
+				<li>army->공화국군 연속파</li>
 				<li>army->공화국군 임시파</li>
 				<li>army->해방군</li>
 				<li>army->저항군</li>
