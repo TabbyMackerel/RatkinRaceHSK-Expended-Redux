@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-
-
 	<!-- 랫킨 공화국 세력 및 과격파 잔당 기반 -->
 	<FactionDef ParentName="FactionBase" Name="RatkinRevolutionaryRadicalRemnantsFactionBase" Abstract="True">
 		<pawnSingular>랫킨</pawnSingular>

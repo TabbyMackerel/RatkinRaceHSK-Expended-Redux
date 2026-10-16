@@ -54,11 +54,11 @@
 			</disallowedThingDefs>
 		</apparelStuffFilter>
 		<allowedCultures>
-			<li>RatkiniaTraditionCulture</li>
+			<li>RK_Culture_Virtuard</li>
 		</allowedCultures>
 	</FactionDef>
 
-	<FactionDef ParentName="RatkinRefugeeFactionBase">
+<!--	<FactionDef ParentName="RatkinRefugeeFactionBase">
 		<defName>RatkinRefugeeUnion</defName>
 		<label>랫킨 난민 연맹</label>
 		<description>랫킨 왕국에서 기존의 왕정체제를 유지하려는 왕당파와 국민 중심의 새로운 체제를 세우려는 공화파간의 내전이 발생하자, 전쟁의 혼란 속에서 살아남기 위해 많은 랫킨들이 도망치면서 삶의 터전을 잃어버리고 힘겹게 생존해야하는 난민이 되었습니다. 내전으로 인해 난민이 되어버린 많은 랫킨들 중에서, 가장 규모와 영향력이 큰 파벌이 살아남기 위해서는 같은 난민들과 서로 도와주며 사회통합의 중요성을 설득하고, 외부의 적에 대항하기 위해서는 함께 힘을 합쳐야 한다고 주장하면서 결성된 내전의 여파로 평등하게 난민이 되어버린 랫킨들의 느슨한 공동체 집단입니다.</description>

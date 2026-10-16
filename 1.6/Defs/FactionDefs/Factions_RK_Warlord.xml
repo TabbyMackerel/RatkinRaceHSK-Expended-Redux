@@ -10,7 +10,7 @@
 		<settlementGenerationWeight>1.7</settlementGenerationWeight>
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
 		<canMakeRandomly>true</canMakeRandomly>
-		<earliestRaidDays>50</earliestRaidDays>
+		<earliestRaidDays>30</earliestRaidDays>
 		<factionNameMaker>NamerFaction_RatkinWarlord</factionNameMaker>
 		<settlementNameMaker>NamerSettlement_RatkinWarlord</settlementNameMaker>	
 		<canSiege>true</canSiege>
@@ -57,8 +57,6 @@
 				<li>SteelBar</li>
 				<li>Plasteel</li>
 				<li>AluminiumBar</li>
-				<li>FerrosiliconAlloy</li>
-				<li>CupronickelAlloy</li>
 			</thingDefs>
 		</apparelStuffFilter>
 		<allowedCultures>

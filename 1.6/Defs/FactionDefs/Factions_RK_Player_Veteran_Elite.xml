@@ -2,13 +2,13 @@
 <Defs>
 
 	<FactionDef ParentName="RK_PlayerFactionBase">
-		<defName>RK_Rebel_Player</defName>
-		<label>랫킨 반군 협력자</label>
-		<description>왕정을 뒤엎고 공화정으로 바꾸려는 혁명군에 동조하는 소규모 랫킨 집단입니다.</description>
+		<defName>RK_Veteran_Residence_Elite</defName>
+		<label>랫킨 퇴역군인 거주지(정예병)</label>
+		<description>왕정과 공화파 반군이 평화조약을 맺으면서 랫킨 공화국이 분리독립하여 내전이 종식되면서, 정예병 출신 공화국군이 새 삶을 살아가려고 거주하는 지역입니다.</description>
 		<isPlayer>true</isPlayer>
-		<basicMemberKind>RK_Rebel_VolunteerArmy_Player</basicMemberKind>
-		<pawnSingular>반군</pawnSingular>
-		<pawnsPlural>반란군들</pawnsPlural>
+		<basicMemberKind>RK_Republic_Veteran_Elite_Player</basicMemberKind>
+		<pawnSingular>퇴역군인</pawnSingular>
+		<pawnsPlural>퇴역군인들</pawnsPlural>
 		<techLevel>Industrial</techLevel>
 		<backstoryCategories>
 			<li>Offworld</li>
@@ -16,8 +16,8 @@
 		<settlementTexturePath>Icon/RK_DefaultColony</settlementTexturePath>
 		<factionIconPath>Icon/RK_Rebel</factionIconPath>
 		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
-		<factionNameMaker>NamerFaction_RatkinRebel</factionNameMaker>
-		<settlementNameMaker>NamerSettlement_RatkinRebel</settlementNameMaker>
+		<factionNameMaker>NamerFaction_RatkinRepublic</factionNameMaker>
+		<settlementNameMaker>NamerSettlement_RatkinRepublic</settlementNameMaker>
 		<melaninRange>0~1</melaninRange>
 		<xenotypeSet>
 		  <xenotypeChances>

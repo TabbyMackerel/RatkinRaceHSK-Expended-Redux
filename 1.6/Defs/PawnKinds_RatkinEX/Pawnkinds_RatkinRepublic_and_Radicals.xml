@@ -480,9 +480,11 @@
 		</skills>
 	</PawnKindDef>
 
+<!-- 랫킨 공화국군 일반병 출신 퇴역군인 -->
 	<PawnKindDef ParentName="RK_RepublicBase">
-		<defName>RK_Republic_Charger</defName>
-		<label>랫킨 공화국군 돌격병</label>
+		<defName>RK_Republic_Veteran_Player</defName>
+		<label>랫킨 공화국군 퇴역군인</label>
+		<race>Ratkin</race>
 		<combatPower>150</combatPower>		
 		<apparelRequired>
 			<li>RK_OrderUniformB</li>
@@ -490,23 +492,26 @@
 			<li>Apparello_Ammobelt</li>
 			<li>RK_OutdoorBackpack</li>
 		</apparelRequired>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
 		<isFighter>true</isFighter>
-		<canBeSapper>true</canBeSapper>
 		<apparelMoney>
-			<min>4000</min>
+			<min>3000</min>
 			<max>5000</max>
 		</apparelMoney>
 		<apparelTags>
 			<li>RK_Republic</li>
 		</apparelTags>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<defaultFactionType>RK_Veteran_Residence_General</defaultFactionType>
 		<weaponMoney>
 			<min>1000</min>
 			<max>2500</max>
 		</weaponMoney>
 		<weaponTags>
 			<li>RK_RepublicST</li>
-			</weaponTags>
+		</weaponTags>
 		<modExtensions>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
 				<primaryMagazineCount>
@@ -520,11 +525,11 @@
 		<skills>
 			<li>
 				<skill>Shooting</skill>
-				<range>4~8</range>
+				<range>4~11</range>
 			</li>
 			<li>
 				<skill>Melee</skill>
-				<range>9~14</range>
+				<range>5~8</range>
 			</li>
 		</skills>
 	</PawnKindDef>
@@ -819,10 +824,10 @@
 		</xenotypeSet>
 	</PawnKindDef>
 
-<!-- 플레이어 소속 특수부대원 -->
+<!-- 플레이어 소속 공화국 정예병 출신 퇴역군인 -->
 	<PawnKindDef ParentName="RK_RepublicEliteBase">
-		<defName>RK_Republic_SpecOpts_Player</defName>
-		<label>랫킨 공화국군 특수부대원</label>
+		<defName>RK_Republic_Veteran_Elite_Player</defName>
+		<label>랫킨 공화국군 정예병 출신 퇴역군인</label>
 		<race>Ratkin</race>
 		<combatPower>150</combatPower>
 		<isFighter>true</isFighter>
@@ -835,7 +840,7 @@
 		<requiredWorkTags>
 			<li>Violent</li>
 		</requiredWorkTags>
-		<defaultFactionType>RK_Republic_Player_SpecOpts</defaultFactionType>
+		<defaultFactionType>RK_Veteran_Residence_Elite</defaultFactionType>
 		<apparelTags>
 			<li>RK_RepublicElite</li>
 			<li>Military</li>
@@ -863,11 +868,11 @@
 		<skills>
 			<li>
 				<skill>Shooting</skill>
-				<range>7~12</range>
+				<range>6~14</range>
 			</li>
 			<li>
 				<skill>Melee</skill>
-				<range>5~10</range>
+				<range>6~12</range>
 			</li>
 		</skills>
 		<modExtensions>
@@ -880,43 +885,6 @@
 		</modExtensions>
 	</PawnKindDef>
 
-<!-- 	<PawnKindDef ParentName="RK_RepublicEliteBase" Name="RK_RepublicEliteInfantryBase" Abstract="True">
-		<combatPower>180</combatPower>
-		<apparelRequired>
-			<li>Apparel_FlakJacket</li>
-			<li>Tactical_Helmet</li>
-			<li>CE_Apparel_TacVest</li>
-			<li>RK_OutdoorBackpack</li>
-		</apparelRequired>
-		<isFighter>true</isFighter>
-		<apparelMoney>
-			<min>6000</min>
-			<max>8000</max>
-		</apparelMoney>
-		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
-		<weaponMoney>
-			<min>2000</min>
-			<max>4500</max>
-		</weaponMoney>
-		<initialWillRange>2~4</initialWillRange>
-		<initialResistanceRange>15~25</initialResistanceRange>
-		<apparelTags>
-			<li>RK_RepublicElite</li>
-			<li>Military</li>
-			<li>IndustrialMilitaryAdvanced</li>
-		</apparelTags>
-		<skills>
-			<li>
-				<skill>Shooting</skill>
-				<range>8~15</range>
-			</li>
-			<li>
-				<skill>Melee</skill>
-				<range>5~15</range>
-			</li>
-		</skills>
-	</PawnKindDef>
--->	
 	<PawnKindDef ParentName="RK_RepublicEliteBase">
 		<defName>RK_RepublicElite_Rifleman</defName>
 		<label>랫킨 정예 공화국군 소총병</label>
