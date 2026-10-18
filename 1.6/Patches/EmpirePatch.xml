@@ -2,7 +2,7 @@
 <Patch>
 
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/FactionDef[defName = "RK_Shelter"]</xpath>
+    <xpath>/Defs/FactionDef[defName = "RK_Veteran_Residence_General"]</xpath>
     <success>Always</success>
     <match Class="PatchOperationSequence">
     <operations>
@@ -11,7 +11,7 @@
       <success>Always</success>
       <xpath>/Defs/FactionDef[defName = "Empire"]/permanentEnemyToEveryoneExcept</xpath>
       <value>
-        <li>RK_Shelter</li>
+        <li>RK_Veteran_Residence_General</li>
       </value>
     </li>
 	
@@ -20,7 +20,7 @@
   </Operation>
 
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/FactionDef[defName = "RK_Rebel_Player"]</xpath>
+    <xpath>/Defs/FactionDef[defName = "RK_Veteran_Residence_Elite"]</xpath>
     <success>Always</success>
     <match Class="PatchOperationSequence">
     <operations>
@@ -29,7 +29,7 @@
       <success>Always</success>
       <xpath>/Defs/FactionDef[defName = "Empire"]/permanentEnemyToEveryoneExcept</xpath>
       <value>
-        <li>RK_Rebel_Player</li>
+        <li>RK_Veteran_Residence_Elite</li>
       </value>
     </li>
 	
@@ -38,7 +38,7 @@
   </Operation>
 
   <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/FactionDef[defName = "RK_Rebel_Player_SpecOpts"]</xpath>
+    <xpath>/Defs/FactionDef[defName = "RatkinRepublic"]</xpath>
     <success>Always</success>
     <match Class="PatchOperationSequence">
     <operations>
