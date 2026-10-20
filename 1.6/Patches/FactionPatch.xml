@@ -9,7 +9,7 @@
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept</xpath>
 						<value>
-							<li>RatkinRebel</li>
+							<li>RatkinRepublic</li>
 						</value>
 				</li>
 			</operations>
@@ -17,7 +17,7 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/FactionDef[defName="RatkinRebel"]/permanentEnemyToEveryoneExcept</xpath>
+		<xpath>Defs/FactionDef[defName=RatkinRepublic"]/permanentEnemyToEveryoneExcept</xpath>
 		<value>
 			<li>PlayerColony</li>
 			<li>PlayerNova</li>
@@ -40,8 +40,8 @@
 			<li MayRequire="skyarkhangel.skynet">HumanResistance</li>
 			<li MayRequire="HSK.Watcher.content.Fallout2">Vaultec</li>
 			<li>RK_Shelter</li>
-			<li>RK_Rebel_Player</li>
-			<li>RK_Rebel_Player_SpecOpts</li>
+			<li>RK_Veteran_Residence_General</li>
+			<li>RK_Veteran_Residence_Elite</li>
 		</value>
 	</Operation>
 </Patch>
