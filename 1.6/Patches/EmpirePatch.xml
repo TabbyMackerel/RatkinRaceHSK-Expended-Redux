@@ -47,7 +47,8 @@
       <success>Always</success>
       <xpath>/Defs/FactionDef[defName = "Empire"]/permanentEnemyToEveryoneExcept</xpath>
       <value>
-        <li>RK_Rebel_Player_SpecOpts</li>
+        <li>RK_Veteran_Residence_General</li>
+        <li>RK_Veteran_Residence_Elite</li>
       </value>
     </li>
 	
