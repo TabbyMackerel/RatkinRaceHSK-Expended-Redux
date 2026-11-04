@@ -3,28 +3,59 @@
 
 <!-- 랫킨 공화국 계열 유년기 -->
 
+	<!-- 군대 및 전투 관련(유년기) -->
 	<!-- 사관생도 -->
 	<AlienRace.AlienBackstoryDef ParentName="BaseRatkinBackStory" Name="BaseRatkinBackStoryExpended">
-		<defName>RatkinEX_Republic_</defName>
-		<title>랫킨 사관생도</title>
-		<titleShort>사관생도</titleShort>
-		<description>[PAWN_nameDef]은 왕정에서 지냈을 때 농부였습니다. 귀족들이 자신을 부모님과 함께 천박하다고 모욕을 하며 무시했으며, 그동안 노동 착취를 당한 것에 분노를 느꼈습니다. 이런 일을 더 이상 참을 수 없었던 [PAWN_pronoun]은 왕정 체제를 무너뜨리고 공화정을 세우려는 반군 세력에게 가담했으며, 받은 권총과 단검으로 그동안 차별하고 무시한 귀족들을 죽인 다음에 도망치면서 부모님과 같이 반란군 집단에 합류했습니다.</description>
+		<defName>RatkinEX_Republic_Military_Academy_Student_Elite</defName>
+		<title>랫킨 엘리트 사관생도</title>
+		<titleShort>엘리트 사관생도</titleShort>
+		<description>[PAWN_nameDef]은 공화국의 부유한 집안에서 태어남과 동시에 분리독립할때까지 공화정 독립운동에 공로훈장을 받은 [PAWN_objective] 부모님의 혜택 덕분에 사관학교에서 입학하면서 군사학을 배우면서 전술을 교육받고 자랐습니다. 게다가 [PAWN_objective] 뛰어난 언번과 지휘관같은 리더십으로 같은 반 생도들을 이끌었으며, 성적도 항상 상위권이었기 때문에 항상 부모님에게 사랑받으며 자랐습니다.</description>
 		<bodyTypeMale>Thin</bodyTypeMale>
 		<bodyTypeFemale>Thin</bodyTypeFemale>
 		<slot>Childhood</slot>
 		<skillGains>
-            <Shooting></Shooting>
-			<Melee></Melee>
-            <Plants></Plants>
+            <Shooting>4</Shooting>
+			<Melee>3</Melee>
+			<Social>3</Social>
 		</skillGains>
 		<workDisables>
-			<li></li>
+			<li>Animals</li>
+			<li>ManualDumb</li>
+			<li>PlantWork</li>
 		</workDisables>
+		<requiredWorkTags>Violent</requiredWorkTags>
 		<spawnCategories>
-			<li>RatkinEX_Republic</li>
+			<li>RatkinEX_Republic_Military</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 
+	<!-- 사관생도(부조리로 망가짐 1) -->
+	<AlienRace.AlienBackstoryDef ParentName="BaseRatkinBackStory" Name="BaseRatkinBackStoryExpended">
+		<defName>RatkinEX_Republic_Military_Academy_Student_PTSD_one</defName>
+		<title>랫킨 망가진 사관생도</title>
+		<titleShort>엘리트 사관생도</titleShort>
+		<description>[PAWN_nameDef]은 공화국의 사관생도였지만, [PAWN_possessive] 소극적이고 겁이 많은 소심한 태도와 사격 훈련에서 형편없는 사격실력으로 지휘관은 [PAWN_objective] 무섭게 야단치면서 항상 매질로 다스렸습니다. 게다가 같은 생도들도 [PAWN_objective] 무시하는 동시에 괴롭히고 마구 때리는게 일상이었습니다. [PAWN_pronoun]는 지휘관의 매질과 같은 사관생도들의 구타로 생긴 아픈 신체적, 정신적인 상처를 스스로 어설프게 치료하면서 몰래 울었습니다. 그러나 다행스럽게도 고양이가 사관학교에 나타나서 [PAWN_possessive] 몸에 비비면서 다가왔을 때 유일한 친구가 되어줌과 동시에 마음씨 좋은 군의관이 [PAWN_possessive] 대충 치료한 상처를 목격했고, 연고를 발라주면서 붕대를 제대로 감아주는 동시에 [PAWN_nameDef]의 재능이 다른 분야에 있다는 걸 눈치챈 군의관은 자신이 할 수 있는 한, [PAWN_possessive] 보직을 군용목적 동물과 의무병과 관련된 후방으로 배치하는 게 좋다며 상부에 보고했습니다. 이후 [PAWN_pronoun]는 자신과 만난 고양이를 데려가서 돌보는 동시에 군용동물과 의무관에 최적화된 사관학교에 배치되었습니다. 하지만 트라우마는 여전히 간직한 채 말이죠......</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<skillGains>
+            <Shooting>1</Shooting>
+			<Melee>-2</Melee>
+			<Animals>3</Animals>
+			<Caring>3</Caring>
+			<Social>-3</Social>
+		</skillGains>
+		<workDisables>
+			<li>ManualDumb</li>
+			<li>PlantWork</li>
+		</workDisables>
+		<requiredWorkTags>Violent,Animals</requiredWorkTags>
+		<spawnCategories>
+			<li>RatkinEX_Republic_Military</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<!-- 생산 및 제조 관련 -->
 	<!-- 경공업 생산공장 견습생 -->
 	<AlienRace.AlienBackstoryDef ParentName="BaseRatkinBackStory" Name="BaseRatkinBackStoryExpended">
 		<defName>RatkinEX_Republic_</defName>
@@ -96,9 +127,9 @@
 	<!-- 빈곤층 자식 -->
 	<AlienRace.AlienBackstoryDef ParentName="BaseRatkinBackStory" Name="BaseRatkinBackStoryExpended">
 		<defName>RatkinEX_Republic_PoorChild</defName>
-		<title>랫킨 빈곤층 자식</title>
+		<title>랫킨 빈곤층 농부 아이</title>
 		<titleShort>빈민</titleShort>
-		<description>[PAWN_nameDef]는 혁명군에게 중요한 전투식량이 될 곡물을 생산하고 공급하는 새로운 체제에 동조하는 농부입니다. 물론 쉴 수 있다면 사냥을 하면서, 잡은 사냥감과 수확한 곡물로 만든 스튜를 요리해서 배를 채웠습니다.</description>
+		<description>[PAWN_nameDef]는 빈곤층에서 자라난 공화국 출신 농부 랫킨입니다. 중공업이 발달한 공화국의 특성상, 농업의 기계화로 인해서 소수의 땅으로 경작하는 어려운 환경 속에서 자라난 [PAWN_pronoun]는 그나마 지원되는 복지 제도로 입에 풀칠을 할 수 있었으며, 부모님을 도와서 여러가지 부업을 해야만 했습니다.</description>
 		<bodyTypeMale>Thin</bodyTypeMale>
 		<bodyTypeFemale>Thin</bodyTypeFemale>
 		<slot>Childhood</slot>
@@ -120,7 +151,7 @@
 		<defName>RatkinEX_Republic_</defName>
 		<title>랫킨 가정폭력 피해자</title>
 		<titleShort>가정폭력 피해자</titleShort>
-		<description>[PAWN_nameDef]은  [PAWN_pronoun]은</description>
+		<description>[PAWN_nameDef]은 어린 시절 행복했던 기억이 없었습니다. [PAWN_possessive] 부모님이 말다툼하고 싸우는 걸 말리면서 각종 심리적인 상처를 안고 살았으며, 자신이 잘못된 시간과 장소에 태어났다고 느끼면서 부모님과 사회에 대한 원망과 증오, 자기혐오에 찌들면서 사회불만과 동시에 극단주의에 빠져들기 시작했습니다. [PAWN_pronoun]는 결국 이런 삶을 끝내려고 공화국에서 진행하는 재사회화 부대 실험인 "정화된 부대"에 자발적으로 참여하기로 결정했습니다.</description>
 		<bodyTypeMale>Thin</bodyTypeMale>
 		<bodyTypeFemale>Thin</bodyTypeFemale>
 		<slot>Childhood</slot>
@@ -138,5 +169,29 @@
 	</AlienRace.AlienBackstoryDef>
 
 <!-- 랫킨 공화국 성년기 -->
+	
+	<!-- 군대 및 전투 관련 -->
+	<!-- 징집병 -->
 
+	<!-- 저격수 -->
+
+	<!-- 포병 -->
+
+	<!-- 의무병 -->
+
+	<!-- 고문관 -->
+
+	<!-- 공병 -->
+
+	<!-- 행정병 -->
+		
+	<!-- 정찰병 -->
+
+	<!-- 보급장교 -->
+
+	<!-- 야전 지휘관 -->
+
+	<!-- 행정보급관 -->
+
+	<!-- 장교 -->
 </Defs>
