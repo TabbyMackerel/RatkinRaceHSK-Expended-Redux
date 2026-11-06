@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-<!-- 랫킨 반군 세력 이름 -->
+<!-- 랫킨 공화국 세력 이름 -->
 	<RulePackDef>
 		<defName>NamerFaction_RatkinRepublic</defName>
 		<include>
-			<li>RebelNameUtility</li>
+			<li>RepublicFactionNameUtility</li>
 		</include>
 		<rulePack>
 			<rulesStrings>
@@ -15,7 +15,7 @@
 				<li>r_name->뮤러데이스탄 민주공화국</li>
 				<li>r_name->로덴티아 자유공화국</li>
 				<li>r_name->래키니아 제1공화국</li>
-				<li>r_name->래키니아 정부</li>
+				<li>r_name->래키니아 공화연방정부</li>
 
 				<li>army->자유군</li>
 				<li>army->혁명군</li>
@@ -36,11 +36,11 @@
 		</rulePack>
 	</RulePackDef>
 
-<!-- 공화국/구 혁명군 과격파 거점 이름 -->
+<!-- 공화국 거점 이름 -->
 	<RulePackDef>
  	   <defName>NamerSettlement_RatkinRepublic</defName>
 		<include>
-			<li>RebelNameUtility</li>
+			<li>RepublicFactionBaseNameUtility</li>
 		</include>
  	    <rulePack>
   	    <rulesStrings>
@@ -103,7 +103,7 @@
 	<RulePackDef>
 		<defName>NamerFaction_Revolutionary_Radical</defName>
 		<include>
-			<li>RebelNameUtility</li>
+			<li>RadicalFactionNameUtility</li>
 		</include>
 		<rulePack>
 			<rulesStrings>
@@ -127,11 +127,58 @@
 		</rulePack>
 	</RulePackDef>
 
+<!-- 구 혁명군 과격파 거점 이름 -->
+	<RulePackDef>
+ 	   <defName>NamerSettlement_Revolutionary_Radical</defName>
+		<include>
+			<li>RadicalFactionBaseNameUtility</li>
+		</include>
+ 	    <rulePack>
+  	    <rulesStrings>
+   		    <li>r_name->[fort] [hsk_developers] [number]</li>
+			<li>r_name->[citadel] [my_rimworld_pawnname]</li>
+			<li>fort->포트</li>
+			<li>citadel->시타델</li>
+			<!-- HSK 개발자들 이름 -->
+        	<li>hsk_developers->스카이아크</li>
+			<li>hsk_developers->자카드</li>
+			<li>hsk_developers->론택</li>
+			<li>hsk_developers->키리</li>
+			<li>hsk_developers->파카스</li>
+			<li>hsk_developers->엘다르</li>
+			<li>hsk_developers->키리</li>
+			<li>hsk_developers->와쳐</li>
+
+			<!-- 시타델 접미사(림월드 플레이 중 인게임 캐릭터 기반)-->
+			<li>my_rimworld_pawnname->페이</li>
+			<li>my_rimworld_pawnname->토토리</li>
+			<li>my_rimworld_pawnname->로라이네</li>
+			<li>my_rimworld_pawnname->버던트</li>
+			<li>my_rimworld_pawnname->솔스티스</li>
+			<li>my_rimworld_pawnname->미첼</li>
+			<li>my_rimworld_pawnname->하리</li>
+			<li>my_rimworld_pawnname->노카</li>
+
+			<!-- 숫자 -->
+			<li>number->1</li>
+			<li>number->2</li>
+			<li>number->3</li>
+			<li>number->4</li>
+			<li>number->5</li>
+			<li>number->6</li>
+			<li>number->7</li>
+			<li>number->8</li>
+			<li>number->9</li>
+			<li>number->0</li>
+    	  </rulesStrings>
+   		</rulePack>
+ 	</RulePackDef>
+
 <!-- 랫킨 군벌 세력 이름 -->
 	<RulePackDef>
 		<defName>NamerFaction_RatkinWarlord</defName>
 		<include>
-			<li>WarlordNameUtility</li>
+			<li>WarlordFactionNameUtility</li>
 		</include>
 		<rulePack>
 			<rulesStrings>
@@ -162,7 +209,7 @@
 	<RulePackDef>
     	<defName>NamerSettlement_RatkinWarlord</defName>
 		<include>
-			<li>WarlordNameUtility</li>
+			<li>WarlordFactionBaseNameUtility</li>
 		</include>
     	<rulePack>
       		<rulesStrings>
@@ -240,7 +287,7 @@
 	<RulePackDef>
 		<defName>NamerFaction_RatkinRefugeeUnion</defName>
 		<include>
-			<li>RefugeeNameUtility</li>
+			<li>RefugeeFactionNameUtility</li>
 		</include>
 		<rulePack>
 			<rulesStrings>
@@ -272,7 +319,7 @@
 <RulePackDef>
     <defName>NamerSettlement_RatkinRefugee</defName>
 		<include>
-			<li>RefugeeNameUtility</li>
+			<li>RefugeeFactionBaseNameUtility</li>
 		</include>
     	<rulePack>
       	<rulesStrings>
