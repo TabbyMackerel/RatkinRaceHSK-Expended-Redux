@@ -6,7 +6,7 @@
 		<defaultFactionType>RatkinRebel</defaultFactionType>
 		<chemicalAddictionChance>0.02</chemicalAddictionChance>
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
-		<minGenerationAge>19</minGenerationAge>
+		<minGenerationAge>20</minGenerationAge>
 		<maxGenerationAge>35</maxGenerationAge>
 		<backstoryFilters>
 		<li>
