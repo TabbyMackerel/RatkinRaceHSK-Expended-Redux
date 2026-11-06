@@ -11,8 +11,8 @@
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
 		<canMakeRandomly>true</canMakeRandomly>
 		<earliestRaidDays>45</earliestRaidDays>
-		<factionNameMaker>NamerFaction_RatkinRepublic</factionNameMaker>
-		<settlementNameMaker>NamerSettlement_RatkinRepublic</settlementNameMaker>	
+		<factionNameMaker>NamerFaction_Revolutionary_Radical</factionNameMaker>
+		<settlementNameMaker>NamerSettlement_Revolutionary_Radical</settlementNameMaker>	
 		<canSiege>true</canSiege>
 		<canStageAttacks>true</canStageAttacks>
 		<techLevel>Industrial</techLevel>
@@ -81,7 +81,7 @@
 		</colorSpectrum>
 		<earliestRaidDays>35</earliestRaidDays>
 		<factionNameMaker>NamerFaction_Revolutionary_Radical</factionNameMaker>
-		<settlementNameMaker>NamerSettlement_RatkinRepublic</settlementNameMaker>	
+		<settlementNameMaker>NamerSettlement_Revolutionary_Radical</settlementNameMaker>	
 		<caravanTraderKinds>
 			<!-- 추후 추가 예정(임시용 원본 모드 상단) -->
 			<li>RK_TraderKind_KingdomBulkGoods</li>			<!-- 원자재상 -->
