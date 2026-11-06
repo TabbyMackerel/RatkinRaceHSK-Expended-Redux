@@ -8,30 +8,18 @@
 		</include>
 		<rulePack>
 			<rulesStrings>
-				<li>r_name->래키니아 [army]</li>
 				<li>r_name->래키니아 인민민주공화국</li>
-				<li>r_name->래키니아 공화국</li>
-				<li>r_name->독립 랫킨 연합</li>
+				<li>r_name->래키니아 연방공화국</li>
+				<li>r_name->래키니아 연방국</li>
+				<li>r_name->로덴티아스탄 연방자유국</li>
 				<li>r_name->뮤러데이스탄 민주공화국</li>
+				<li>r_name->래키니아 자유국</li>
+				<li>r_name->로덴티아 민주공화국</li>
 				<li>r_name->로덴티아 자유공화국</li>
 				<li>r_name->래키니아 제1공화국</li>
-				<li>r_name->래키니아 공화연방정부</li>
+				<li>r_name->래키니아 연방정부</li>
+				<li>r_name->로덴티아 민주공화국</li>
 
-				<li>army->자유군</li>
-				<li>army->혁명군</li>
-				<li>army->공화국군</li>
-				<li>army->신체제 정부군</li>
-				<li>army->국민군</li>
-				<li>army->해방군</li>
-				<li>army->저항군</li>
-				<li>army->독립군</li>
-
-				<li>ofThing->평등</li>
-				<li>ofThing->자유</li>
-				<li>ofThing->해방</li>
-				<li>ofThing->인민</li>
-				<li>ofThing->혁명</li>
-				<li>ofThing->국민</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
