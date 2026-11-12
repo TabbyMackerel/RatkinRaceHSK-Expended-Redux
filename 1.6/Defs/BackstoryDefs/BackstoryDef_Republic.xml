@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+<!-- [PAWN_nameDef] - The short name of the pawn, i.e. its first name.
+[PAWN_pronoun] - he/she 그/그녀
+[PAWN_possessive] - his/her 그의/그녀의
+[PAWN_objective] - him/her 그를/그녀를 -->
 <!-- 랫킨 공화국 계열 유년기 -->
 
 	<!-- 군대 및 전투 관련(유년기) -->
@@ -58,44 +62,50 @@
 	<!-- 생산 및 제조 관련 -->
 	<!-- 경공업 생산공장 견습생 -->
 	<AlienRace.AlienBackstoryDef ParentName="BaseRatkinBackStory" Name="BaseRatkinBackStoryExpended">
-		<defName>RatkinEX_Republic_</defName>
+		<defName>RatkinEX_Republic_Light_Industry_Apprentice</defName>
 		<title>랫킨 경공업 생산공장 견습생</title>
 		<titleShort>경공업 견습생</titleShort>
-		<description>[PAWN_nameDef]은 귀족들의 부당한 대우와 착취, 그리고 많은 랫킨들이 성공한 삶을 살아갈 수 없는 더 높은 계층으로 올라오지 못하게 막아버리는는 사회 제도에 저항하기로 결정했습니다. 그리고 [PAWN_nameDef]은 혁명군에게 우호적인 마을에서 자신을 포함한 구체제의 몰락을 원하는 랫킨 주민들과 함께 스스로를 지키는 전투 훈련을 했습니다.</description>
-		<bodyTypeMale>Thin</bodyTypeMale>
-		<bodyTypeFemale>Thin</bodyTypeFemale>
-		<slot>Childhood</slot>
-		<skillGains>
-            <Shooting>2</Shooting>
-			<Melee>2</Melee>
-            <Plants>4</Plants>
-		</skillGains>
-		<workDisables>
-			<li>Intellectual</li>
-		</workDisables>
-		<spawnCategories>
-			<li>RatkinEX_Republic</li>
-		</spawnCategories>
-	</AlienRace.AlienBackstoryDef>
-
-	<!-- 엘리트 학생 -->
-	<AlienRace.AlienBackstoryDef ParentName="BaseRatkinBackStory" Name="BaseRatkinBackStoryExpended">
-		<defName>RatkinEX_Republic_EliteStudent</defName>
-		<title>랫킨 엘리트 학생</title>
-		<titleShort>엘리트 학생</titleShort>
-		<description>[PAWN_nameDef]은 혁명군 소속의 학교에서 교육을 받았습니다. 기초적인 교육을 받았으며, 특히 랫킨 왕국의 체제의 대하여 모순에 의문점을 가졌습니다. "모든 랫킨들은 평등하지만, 귀족 랫킨들은 평범반 랫킨들보다 더 평등하면서 그들을 섬겨야 하는 점"이 이상했습니다.</description>
+		<description>[PAWN_nameDef]은 부모님이 경공업과 관련된 산업에 종사했기 때문에 자연스럽게 제조업의 기초 산업이 되는 경공업과 관련된 기술을 익혔습니다. 식품 제조, 의류 생산, 가구 등을 제작하는 견습생으로 기술 학교에서 공부하는 동시에 경공업 생산 공장에서 보조 담당 역할도 하였습니다.</description>
 		<bodyTypeMale>Thin</bodyTypeMale>
 		<bodyTypeFemale>Thin</bodyTypeFemale>
 		<slot>Childhood</slot>
 		<skillGains>
             <Shooting>-2</Shooting>
 			<Melee>-2</Melee>
-			<Mining>2</Mining>
-            <Plants>2</Plants>
-			<Crafting>2</Crafting>
+			<Construction>-3</Construction>
+			<Plants>1</Plants>
+            <Crafting>2</Crafting>
+			<Cooking>2</Cooking>
 		</skillGains>
 		<workDisables>
-			<li></li>
+			<li>Intellectual</li>
+			<li>Mining</li>
+			<li>Artistic</li>
+		</workDisables>
+		<spawnCategories>
+			<li>RatkinEX_Republic</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
+	<!-- 연구 및 사교 관련 -->
+	<!-- 엘리트 학생 -->
+	<AlienRace.AlienBackstoryDef ParentName="BaseRatkinBackStory" Name="BaseRatkinBackStoryExpended">
+		<defName>RatkinEX_Republic_EliteStudent</defName>
+		<title>랫킨 엘리트 학생</title>
+		<titleShort>엘리트 학생</titleShort>
+		<description>[PAWN_nameDef]은 분리독립한 공화국에서 교육을 받으면서 상위권의 성적을 받은 학생이었습니다. [PAWN_pronoun]는 학교에서 자유가 얼마나 중요한지를 배우는 동시에, 지도자의 역량이 얼마나 중요한지를 깨달으면서 폭력 없이 말이 통하는 상대와 타협하는 방법 등을 배우면서, 과학기술이 얼마나 중요한 지 깨달았습니다.</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<skillGains>
+            <Social>3</Social>
+			<Intellectual>4</Intellectual>
+		</skillGains>
+		<workDisables>
+			<li>Hunting</li>
+			<li>Shooting</li>
+			<li>ManualDumb</li>
+			<li>Violent</li>
 		</workDisables>
 		<spawnCategories>
 			<li>RatkinEX_Republic</li>
