@@ -112,22 +112,35 @@
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 
+	<!-- 농축산 관련 -->
+
+	<!-- 제작 관련 -->
+
+	<!-- 예술 관련 -->
+
+	<!-- 그 외 기타 혼합 백스토리들 -->
 	<!-- 말썽쟁이 학생 -->
 	<AlienRace.AlienBackstoryDef ParentName="BaseRatkinBackStory" Name="BaseRatkinBackStoryExpended">
 		<defName>RatkinEX_Republic_DelinquentStudent</defName>
 		<title>말썽쟁이 학생</title>
 		<titleShort>문제아</titleShort>
-		<description>[PAWN_nameDef]은 원래 상류층에 속하는 귀족었으며, 가족들과 함께 귀족으로써의 권리를 누릴 수 있는 행복한 삶을 지냈지만, 불행하게도 다른 귀족 계층에서 [PAWN_nameDef]의 자신을 포함한 가족들을 위협이 될 경쟁자로 취급했습니다. 결국 커다란 비리를 저질렀다는 조작된 증거와 함께 누명을 당한 이후에는, 더 이상 귀족으로 돌아갈 수 없는 몰락하는 피해를 받았습니다. 가족들과 함께 어두운 나날을 보내야만 했던 [PAWN_nameDef]은 자신과 가족의 인생을 망친 왕국과 귀족들을 증오했습니다. 혁명군에게 가족과 함께 거두어진 이후에는 다른 평민 출신 랫킨들과 지냈으며, 그들의 삶에 대한 사연에 대해 위로하면서 공감했습니다.</description>
+		<description>[PAWN_nameDef]은 공화국의 학교에서 문제만 일으키는 말썽쟁이이자, 구제불능 그 자체였습니다. 또래들을 괴롭히는 동시에 선생님들에게 삿대질을 하면서 짓궃은 장난을 치는 게 일상이었으며, 교사들이 [PAWN_objective] 야단을 치고 혼을 내도 [PAWN_pronoun]는 한 귀로 흘러듣고 계속 문제행동을 일삼다가, 결국에는 실수로 선생님을 밀친 사건으로 인해서 자신은 오해로 인해서 사과하며 오해라고 주장했지만, 그동안의 업보 때문에 학교 측에서는 [PAWN_objective] 청소년 교정시설로 보내졌고, 반성하는 시간과 함께 눈물을 흘리면서 자신이 늘 혼자 지내는게 힘들고 외로움으로 인해 그런 행동을 하였다고 고백했습니다. 이후 [PAWN_objective] 위한 상담과 심리치료를 병행해서 정신적인 문제를 치료하는 동시에, 사회성을 기르는 교육을 중심으로 다른 사람과 대화하는 법을 배우면서, 텃밭에서 농사를 하며 수확한 밀과 농작물로 제빵과 요리를 하는 교육을 받았습니다.</description>
 		<bodyTypeMale>Thin</bodyTypeMale>
 		<bodyTypeFemale>Thin</bodyTypeFemale>
 		<slot>Childhood</slot>
 		<skillGains>
             <Shooting>-3</Shooting>
-			<Melee>-2</Melee>
-            <Social>4</Social>
+			<Melee>1</Melee>
+            <Social>2</Social>
+			<Cooking>2</Cooking>
+			<Plants>2</Plants>
 		</skillGains>
 		<workDisables>
-			<li></li>
+			<li>Caring</li>
+			<li>Animals</li>
+			<li>Intellectual</li>
+			<li>Artistic</li>
+			<li>Mining</li>
 		</workDisables>
 		<spawnCategories>
 			<li>RatkinEX_Republic</li>
@@ -136,20 +149,22 @@
 
 	<!-- 빈곤층 자식 -->
 	<AlienRace.AlienBackstoryDef ParentName="BaseRatkinBackStory" Name="BaseRatkinBackStoryExpended">
-		<defName>RatkinEX_Republic_PoorChild</defName>
+		<defName>RatkinEX_Republic_PoorPeasantChild</defName>
 		<title>랫킨 빈곤층 농부 아이</title>
-		<titleShort>빈민</titleShort>
-		<description>[PAWN_nameDef]는 빈곤층에서 자라난 공화국 출신 농부 랫킨입니다. 중공업이 발달한 공화국의 특성상, 농업의 기계화로 인해서 소수의 땅으로 경작하는 어려운 환경 속에서 자라난 [PAWN_pronoun]는 그나마 지원되는 복지 제도로 입에 풀칠을 할 수 있었으며, 부모님을 도와서 여러가지 부업을 해야만 했습니다.</description>
+		<titleShort>빈민 농민 아이</titleShort>
+		<description>[PAWN_nameDef]는 빈곤층에서 자라난 공화국 출신 농부 랫킨입니다. 중공업이 발달한 공화국의 특성상, 농업의 기계화로 인해서 소수의 땅으로 경작하는 어려운 환경 속에서 자라난 [PAWN_pronoun]는 그나마 지원되는 복지 제도로 입에 풀칠을 할 수 있었으며, 교육을 받았지만 가난으로 인하여 중퇴하였고, 부모님을 도와 농사, 가축 돌보기, 장사 등의 여러가지 부업을 해야만 했습니다.</description>
 		<bodyTypeMale>Thin</bodyTypeMale>
 		<bodyTypeFemale>Thin</bodyTypeFemale>
 		<slot>Childhood</slot>
 		<skillGains>
-            <Shooting>2</Shooting>
-			<Melee>2</Melee>
-            <Plants>4</Plants>
+            <Social>1</Social>
+			<Animals>2</Melee>
+            <Plants>2</Plants>
 		</skillGains>
 		<workDisables>
-			<li>Intellectual</li>
+			<li>ManualSkilled</li>
+			<li>Artistic</li>
+			<li>Caring</li>
 		</workDisables>
 		<spawnCategories>
 			<li>RatkinEX_Republic</li>
@@ -158,7 +173,7 @@
 
 	<!-- 가정폭력 피해자-->
 	<AlienRace.AlienBackstoryDef ParentName="BaseRatkinBackStory" Name="BaseRatkinBackStoryExpended">
-		<defName>RatkinEX_Republic_</defName>
+		<defName>RatkinEX_Republic_Victim_Of_Domestic_Violence</defName>
 		<title>랫킨 가정폭력 피해자</title>
 		<titleShort>가정폭력 피해자</titleShort>
 		<description>[PAWN_nameDef]은 어린 시절 행복했던 기억이 없었습니다. [PAWN_possessive] 부모님이 말다툼하고 싸우는 걸 말리면서 각종 심리적인 상처를 안고 살았으며, 자신이 잘못된 시간과 장소에 태어났다고 느끼면서 부모님과 사회에 대한 원망과 증오, 자기혐오에 찌들면서 사회불만과 동시에 극단주의에 빠져들기 시작했습니다. [PAWN_pronoun]는 결국 이런 삶을 끝내려고 공화국에서 진행하는 재사회화 부대 실험인 "정화된 부대"에 자발적으로 참여하기로 결정했습니다.</description>
@@ -166,15 +181,18 @@
 		<bodyTypeFemale>Thin</bodyTypeFemale>
 		<slot>Childhood</slot>
 		<skillGains>
-            <Shooting></Shooting>
-			<Melee></Melee>
-            <Plants></Plants>
+            <Shooting>3</Shooting>
+			<Melee>3</Melee>
 		</skillGains>
 		<workDisables>
-			<li></li>
+			<li>ManualSkilled</li>
+			<li>Artistic</li>
+			<li>Animals</li>
+			<li>PlantWork</li>
+			<li>Artistic</li>
 		</workDisables>
 		<spawnCategories>
-			<li>RatkinEX_Republic</li>
+			<li>RatkinEX_Republic_Military_Special</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
 
@@ -182,14 +200,62 @@
 	
 	<!-- 군대 및 전투 관련 -->
 	<!-- 징집병 -->
+	<AlienRace.AlienBackstoryDef ParentName="BaseRatkinBackStory" Name="BaseRatkinBackStoryExpended">
+		<defName>RatkinEX_Republic_Conscript</defName>
+		<title>랫킨 징집병</title>
+		<titleShort>징집병</titleShort>
+		<description>[PAWN_nameDef]는 공화국에서 의무적으로 복무를 해야 하기 때문에 징병되었으며, 군대에서 사격 훈련, 수류탄 투척 훈련, 근접전, 진지 공사, 부상병 응급처치 등의 기초적인 군사 훈련을 받았습니다.</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+            <Shooting>3</Shooting>
+			<Melee>3</Melee>
+			<Mining>1</Mining>
+			<Construction>2</Construction>
+            <Caring>1</Caring>
+		</skillGains>
+		<workDisables>
+			<li>ManualSkilled</li>
+			<li>Artistic</li>
+		</workDisables>
+		<requiredWorkTags>Violent</requiredWorkTags>
+		<spawnCategories>
+			<li>RatkinEX_Republic_Military</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
 
 	<!-- 저격수 -->
-
+	<AlienRace.AlienBackstoryDef ParentName="BaseRatkinBackStory" Name="BaseRatkinBackStoryExpended">
+		<defName>RatkinEX_Republic_Sniper</defName>
+		<title>랫킨 공화국 저격수</title>
+		<titleShort>저격수</titleShort>
+		<description>[PAWN_nameDef]는 공화국에서 의무복무를 하는 제도로 인해서 징병되었지만, 뛰어난 사격 실력 덕분에 저격수 보직으로 재배정되었습니다. [PAWN_possessive] 역할은 주로 저격소총으로 기관총으로 제압사격을 하는 중화기병, 곡사포나 박격포로 아군을 위협하는 포병 등의 위험한 적을 먼저 처리하거나 중요 인물을 사살하는 임무였으며, [PAWN_pronoun]는 적의 머리에 구멍을 내거나 급소를 노려서 끝장내는 실력이 명사수였습니다. 가끔은 부상당해서 생명의 위협을 느꼈지만, 그동안 배운 위장술과 응급처치로 자신의 흔적을 없에는 동시에 치료했습니다. 가끔씩은 적의 거점에 몰래 잠입해서 몰래 적에게 다가가서 빠르게 근접무기로 목을 그어서 즉사시키는 등 공화국군에서 없어서는 안 될 타고난 인재입니다.</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+            <Shooting>5</Shooting>
+			<Melee>3</Melee>
+            <Caring>3</Caring>
+		</skillGains>
+		<workDisables>
+			<li>ManualSkilled</li>
+			<li>Plants</li>
+			<li>Cooking</li>
+		</workDisables>
+		<requiredWorkTags>Violent</requiredWorkTags>
+		<spawnCategories>
+			<li>RatkinEX_Republic_Military</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
 	<!-- 포병 -->
 
 	<!-- 의무병 -->
 
 	<!-- 고문관 -->
+
+	<!-- 조리병 -->
 
 	<!-- 공병 -->
 
@@ -197,7 +263,9 @@
 		
 	<!-- 정찰병 -->
 
-	<!-- 내부군 -->
+	<!-- 연안함 수병 -->
+
+	<!-- 대양함 수병 -->
 
 	<!-- 장비 정비병 -->
 
@@ -209,10 +277,52 @@
 
 	<!-- 장교 -->
 
+	<!-- 특수병과 관련(내무군) -->
+	<!-- 내무군 -->
+
+	<!-- 특수병과 관련(스페츠말리쉬) -->
+
+	<!-- 특수병과 관련(스페츠크리사) -->
+
+	<!-- 특수병과 관련(저거너트) -->
+
 	<!-- 생산 및 제작 관련 -->
+	<!-- 부품 조립공 -->
+
+	<!-- 엔지니어 -->
+
+	<!-- 석유화학 제품 생산직-->
 
 	<!-- 농축산 관련 -->
 
+	<!-- 농부 -->
+
+	<!-- 기계화 농업 종사자 -->
+
+	<!-- 스마트팜 종사자 -->
+
+	<!-- 사교 관련 -->
+
+	<!-- 외교관 -->
+
+	<!-- 심리학자 -->
+
+	<!-- 트라우마 치료사 -->
+
+	<!-- 공무원 -->
+
+	<!-- 건설 관련 -->
+
+	<!-- 건축가-->
+
+	<!-- 건축 인부 -->
+
+	<!-- 건설업 현장 감독 -->
+
 	<!-- 의학 관련 -->
 	
+	<!-- 의사 -->
+
+	<!-- 간호사 -->
+
 </Defs>
