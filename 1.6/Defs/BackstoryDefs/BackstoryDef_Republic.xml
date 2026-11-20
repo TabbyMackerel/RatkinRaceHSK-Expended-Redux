@@ -278,6 +278,29 @@
 	<!-- 고문관 -->
 
 	<!-- 조리병 -->
+	<AlienRace.AlienBackstoryDef ParentName="BaseRatkinBackStory" Name="BaseRatkinBackStoryExpended">
+		<defName>RatkinEX_Republic_ArmyCook</defName>
+		<title>랫킨 공화국 조리병</title>
+		<titleShort>조리병</titleShort>
+		<description>[PAWN_nameDef]는 공화국의 조리병으로 항상 전우들과 군대의 병영식을 조리해서 제공하는 것입니다. 그러나 군대 자체가 당연하게도 조리할 수 있는 시간을 줄이면서 최소한의 예산으로 많은 효율을 내는 데 집중하기 때문에, [PAWN_possessive]는 동료 조리병들과 함께 늘 정성이 없는 퍼석퍼석한 까샤, 된장을 풀어서 국을 끓였지만 건더기가 보이지 않는 속된 말로 "똥국"이라는 악명높은 국, 그리고 "비린내가 엄청난 잔가시가 많은 뒤틀린 명태 튀김"을 만들면서 전우들에게 뒷담으로 야유나 욕을 먹는 게 일상이었습니다. 뭐 자신이 만든 [PAWN_possessive] 병영식도 자신이 먹으면서 한탄했습니다...... 하지만 군대는 다양한 군상들이 모이는 곳이라 어느 유능한 농업에 박식한 랫킨 공화국군 조리병 동료가 채소를 재배하고 가금류를 길러서 수확한 채소와 가금류 고기로 끔찍하게 맛없는 병영식을 개선하자고 제안했으며, [PAWN_pronoun]는 이 제안에 다른 조리병들과 함께 동참했으며 이후에 채소를 재배하며 가축을 기르는 법을 어느 정도 보조하는 일도 했습니다.</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+            <Shooting>1</Shooting>
+			<Melee>1</Melee>
+            <Cooking>3</Cooking>
+			<Plants>2</Plants>
+			<Animals>2</Animals>
+		</skillGains>
+		<workDisables>
+			<li>ManualSkilled</li>
+		</workDisables>
+		<requiredWorkTags>Violent</requiredWorkTags>
+		<spawnCategories>
+			<li>RatkinEX_Republic_Military</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
 
 	<!-- 공병 -->
 
