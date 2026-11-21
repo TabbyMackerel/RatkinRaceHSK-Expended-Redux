@@ -118,6 +118,31 @@
 
 	<!-- 예술 관련 -->
 
+	<AlienRace.AlienBackstoryDef ParentName="BaseRatkinBackStory" Name="BaseRatkinBackStoryExpended">
+		<defName>RatkinEX_Republic_ArtistProdigy</defName>
+		<title>예술 유망주</title>
+		<titleShort>예술 영재</titleShort>
+		<description>[PAWN_nameDef]는 세밀하고 섬세한 묘사가 담긴 그림을 그리면서, 여러가지 아름다운 공예품을 만들면서 자신이 만든 예술적 가치가 있는 물품들이 사람들이 관심을 가지도록 대화를 통해서 사람들에게 자신의 작품들의 가치가 있는 것을 설득하는 동시에 판매를 하여 용돈도 벌었습니다. 하지만 이후에 생성형 작품을 만드는 인공지능 기술이 발달하면서, [PAWN_possessive] 예술적 가치가 물거품이 되어가기 시작하자, [PAWN_pronoun]는 AI에 반대하는 신념을 가지는 동시에, 자기 스스로 할 수 있는 자신의 개성넘치는 스타일이 담긴 작품들이 진정한 예술적 가치와 아름다움을 것을 풍자하는 그림을 그려서 널리 알렸습니다.</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<skillGains>
+            <Shooting>-2</Shooting>
+			<Melee>-3</Melee>
+            <Social>3</Social>
+			<Artistic>4</Artistic>
+		</skillGains>
+		<workDisables>
+			<li>Caring</li>
+			<li>Animals</li>
+			<li>Intellectual</li>
+			<li>Mining</li>
+		</workDisables>
+		<spawnCategories>
+			<li>RatkinEX_Republic</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
+
 	<!-- 그 외 기타 혼합 백스토리들 -->
 	<!-- 말썽쟁이 학생 -->
 	<AlienRace.AlienBackstoryDef ParentName="BaseRatkinBackStory" Name="BaseRatkinBackStoryExpended">
