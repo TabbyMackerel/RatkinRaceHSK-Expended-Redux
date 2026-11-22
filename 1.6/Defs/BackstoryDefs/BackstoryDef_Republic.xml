@@ -183,7 +183,8 @@
 		<slot>Childhood</slot>
 		<skillGains>
             <Social>1</Social>
-			<Animals>2</Melee>
+			<Melee>2</Melee>
+			<Animaks>2</Animals>
             <Plants>2</Plants>
 		</skillGains>
 		<workDisables>
@@ -214,7 +215,6 @@
 			<li>Artistic</li>
 			<li>Animals</li>
 			<li>PlantWork</li>
-			<li>Artistic</li>
 		</workDisables>
 		<spawnCategories>
 			<li>RatkinEX_Republic_Military_Special</li>
@@ -287,7 +287,7 @@
 		<skillGains>
             <Shooting>5</Shooting>
 			<Melee>1</Melee>
-            <InIntellectual>2</Intellectual>
+            <Intellectual>2</Intellectual>
 		</skillGains>
 		<workDisables>
 			<li>ManualSkilled</li>
@@ -314,7 +314,7 @@
 			<Melee>2</Melee>
 			<Caring>4</Caring>
 			<Social>2</Social>
-            <InIntellectual>2</Intellectual>
+            <Intellectual>2</Intellectual>
 		</skillGains>
 		<workDisables>
 			<li>ManualDumb</li>
