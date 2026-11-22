@@ -2,9 +2,9 @@
 <Defs>
 
 <!-- [PAWN_nameDef] - The short name of the pawn, i.e. its first name. -->
-<!--	[PAWN_pronoun] - he/she 그/그녀 -->
-<!--	[PAWN_possessive] - his/her 그의/그녀의 -->
-<!--	[PAWN_objective] - him/her 그를/그녀를 -->
+<!-- [PAWN_pronoun] - he/she 그/그녀	-->
+<!-- [PAWN_possessive] - his/her 그의/그녀의 -->
+<!-- [PAWN_objective] - him/her 그를/그녀를 -->
 
 <!-- 랫킨 공화국 계열 유년기 -->
 
@@ -327,7 +327,34 @@
 			<li>RatkinEX_Republic_Military</li>
 		</spawnCategories>
 	</AlienRace.AlienBackstoryDef>
+
 	<!-- 고문관 -->
+	<AlienRace.AlienBackstoryDef ParentName="BaseRatkinBackStory" Name="BaseRatkinBackStoryExpended">
+		<defName>RatkinEX_Republic_ClumsySoldier</defName>
+		<title>랫킨 공화국 고문관</title>
+		<titleShort>고문관</titleShort>
+		<description>[PAWN_nameDef]는 공화국군에서 징병되어 군대 생활에 적응하려고 하지만 [PAWN_possessive]의 부족한 사회성으로 인한 소통의 어려움과 함께 의도치 않은 민폐와 실수를 저지르는 행동으로 전우들에게 민폐를 끼치는 짐덩어리 취급이었습니다. 결국 [PAWN_pronoun]는 공화국군에서 없는 병사 취급을 받는 것이 일상이었으며, 되도록이면 작업에서 위험한 일을 맡는 보직에서 열외되었습니다. 하지만 단순하고 반복적인 작업들은 에이스급 인재라서 잡초를 제거하거나 삽을 파는 일, 진지공사 등의 육체노동과 관련된 작업을 할 때는 간부들의 보물과도 같습니다.</description>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<slot>Adulthood</slot>
+		<skillGains>
+            <Shooting>1</Shooting>
+			<Melee>3</Melee>
+			<Construction>3</Construction>
+			<mining>2</mining>
+			<plants>1</plants>
+		</skillGains>
+		<workDisables>
+			<li>ManualSkilled</li>
+			<li>Intellectual</li>
+			<li>Crafting</li>
+			<li>Social</li>
+		</workDisables>
+		<requiredWorkTags>Violent,ManualDumb</requiredWorkTags>
+		<spawnCategories>
+			<li>RatkinEX_Republic_Military</li>
+		</spawnCategories>
+	</AlienRace.AlienBackstoryDef>
 
 	<!-- 조리병 -->
 	<AlienRace.AlienBackstoryDef ParentName="BaseRatkinBackStory" Name="BaseRatkinBackStoryExpended">
