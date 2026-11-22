@@ -2,9 +2,10 @@
 <Defs>
 
 <!-- [PAWN_nameDef] - The short name of the pawn, i.e. its first name.
-[PAWN_pronoun] - he/she 그/그녀
-[PAWN_possessive] - his/her 그의/그녀의
-[PAWN_objective] - him/her 그를/그녀를 -->
+	[PAWN_pronoun] - he/she 그/그녀
+	[PAWN_possessive] - his/her 그의/그녀의
+	[PAWN_objective] - him/her 그를/그녀를
+-->
 <!-- 랫킨 공화국 계열 유년기 -->
 
 	<!-- 군대 및 전투 관련(유년기) -->
